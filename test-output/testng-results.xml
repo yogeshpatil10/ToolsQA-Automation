@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-10T02:31:35Z" name="Default suite" finished-at="2021-07-10T02:31:59Z" duration-ms="23335">
+    <groups>
+    </groups>
+    <test started-at="2021-07-10T02:31:35Z" name="Default test" finished-at="2021-07-10T02:31:59Z" duration-ms="23335">
+      <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:35Z" name="setup" finished-at="2021-07-10T02:31:35Z" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:35Z" name="beforeTest" finished-at="2021-07-10T02:31:46Z" duration-ms="10760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="goBookStoreAppLoginPage()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:46Z" name="goBookStoreAppLoginPage" finished-at="2021-07-10T02:31:58Z" duration-ms="11797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBookStoreAppLoginPage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:58Z" name="getResult" finished-at="2021-07-10T02:31:58Z" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=goBookStoreAppLoginPage status=SUCCESS method=AccessLoginPageTest.goBookStoreAppLoginPage()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:58Z" name="afterTest" finished-at="2021-07-10T02:31:59Z" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@5b7a8434]" started-at="2021-07-10T02:31:59Z" name="tearDown" finished-at="2021-07-10T02:32:00Z" duration-ms="1062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.toolsqa.automation.tests.AccessLoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
