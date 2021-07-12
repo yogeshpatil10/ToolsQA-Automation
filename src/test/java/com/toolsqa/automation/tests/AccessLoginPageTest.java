@@ -41,7 +41,7 @@ public class AccessLoginPageTest extends LaunchBrowser {
 
 		loginPage.loginToBookStore();
 		logger.info("User is successfully logged in to BookStore App");
-		sleep(2);
+		// sleep(2);
 		assertTrue(driver.findElement(By.xpath("//*[@id='userName-value']")).getText().contentEquals("joybutta"));
 	}
 }
