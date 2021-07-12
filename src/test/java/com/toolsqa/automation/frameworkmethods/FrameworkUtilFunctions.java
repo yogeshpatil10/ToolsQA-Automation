@@ -18,7 +18,7 @@ public class FrameworkUtilFunctions {
 	public void scrollPageDownAndClickElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].scrollIntoView();", element);
@@ -38,6 +38,10 @@ public class FrameworkUtilFunctions {
 	public void clickSubmitButton(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
+		element.click();
+	}
+
+	public void clickElement(WebElement element) {
 		element.click();
 	}
 

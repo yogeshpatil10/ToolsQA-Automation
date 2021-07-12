@@ -25,3 +25,41 @@
 [INFO ] 2021-07-12 09:50:28.906 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
 [INFO ] 2021-07-12 09:50:31.326 [main] AccessLoginPageTest - User clicked Login Menu Option from list
 [INFO ] 2021-07-12 09:50:32.350 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 10:02:50.625 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 10:02:51.977 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 10:02:53.553 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 10:03:37.389 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 10:03:38.347 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 10:03:39.097 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:06:59.770 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:07:01.040 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:07:02.445 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:18:03.848 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:18:04.664 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:18:05.824 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:19:34.407 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:19:34.656 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:19:35.683 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:21:56.867 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:21:57.825 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:21:58.545 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:23:46.662 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:23:47.028 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:23:48.218 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:23:50.549 [main] AccessLoginPageTest - User clicked on Go To BookStore button
+[INFO ] 2021-07-12 13:23:53.017 [main] AccessLoginPageTest - User clicked Book Name=Git Pockect Guide
+[INFO ] 2021-07-12 13:25:14.644 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:25:15.409 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:25:16.132 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:25:18.409 [main] AccessLoginPageTest - User clicked on Go To BookStore button
+[INFO ] 2021-07-12 13:25:19.342 [main] AccessLoginPageTest - User clicked Book Name=Git Pockect Guide
+[INFO ] 2021-07-12 13:27:10.744 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:27:11.475 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:27:12.224 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:27:14.443 [main] AccessLoginPageTest - User clicked on Go To BookStore button
+[INFO ] 2021-07-12 13:27:15.694 [main] AccessLoginPageTest - User clicked Book Name=Git Pockect Guide
+[INFO ] 2021-07-12 13:33:34.779 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-12 13:33:35.568 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-12 13:33:36.343 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-12 13:33:38.728 [main] AccessLoginPageTest - User clicked on Go To BookStore button
+[INFO ] 2021-07-12 13:33:40.475 [main] AccessLoginPageTest - User clicked Book Name=Git Pockect Guide
