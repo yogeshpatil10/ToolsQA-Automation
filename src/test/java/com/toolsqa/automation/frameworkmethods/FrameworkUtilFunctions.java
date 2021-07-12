@@ -18,10 +18,27 @@ public class FrameworkUtilFunctions {
 	public void scrollPageDownAndClickElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+
+	public void enterUserName(WebElement element, String username) {
+		element.clear();
+		element.sendKeys(username);
+
+	}
+
+	public void enterPassword(WebElement element, String password) {
+		element.clear();
+		element.sendKeys(password);
+	}
+
+	public void clickSubmitButton(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
+		element.click();
 	}
 
 }

@@ -30,11 +30,37 @@ public class LoginPageAccessObjects {
 	@FindBy(className = "main-header")
 	private WebElement mainheader;
 
+	@FindBy(xpath = "//div[@class='element-list collapse show']/ul/li[@id='item-0']")
+	private WebElement loginmenu;
+
+	@FindBy(css = "input#userName")
+	private WebElement username;
+
+	@FindBy(css = "input#password")
+	private WebElement password;
+
+	@FindBy(id = "login")
+	private WebElement loginbutton;
+
 	public void clickBookStoreApp() {
 		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
 		function.scrollPageDownAndClickElement(bookStoreApp);
 		bookStoreApp.click();
 
+	}
+
+	public void clickLoginMenuOption() {
+		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
+		function.scrollPageDownAndClickElement(loginmenu);
+		loginmenu.click();
+
+	}
+
+	public void loginToBookStore() {
+		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
+		function.enterUserName(username, "joybutta");
+		function.enterPassword(password, "Joybutta@123");
+		function.clickSubmitButton(loginbutton);
 	}
 
 }

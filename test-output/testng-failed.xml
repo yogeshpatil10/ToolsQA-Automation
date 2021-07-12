@@ -6,7 +6,7 @@
       <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
         <methods>
           <include name="getResult"/>
-          <include name="goBookStoreAppLoginPage"/>
+          <include name="loginToBookStoreApplication"/>
           <include name="afterTest"/>
           <include name="setup"/>
           <include name="beforeTest"/>
