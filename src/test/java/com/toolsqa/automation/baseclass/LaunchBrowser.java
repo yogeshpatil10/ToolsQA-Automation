@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
@@ -43,9 +42,9 @@ public abstract class LaunchBrowser {
 		if (browser.equalsIgnoreCase("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.setHeadless(true);
-			driver = new ChromeDriver(options);
+//			ChromeOptions options = new ChromeOptions();
+//			options.setHeadless(true);
+			driver = new ChromeDriver();
 
 			logger.info("Chrome Browser has been initiated");
 
