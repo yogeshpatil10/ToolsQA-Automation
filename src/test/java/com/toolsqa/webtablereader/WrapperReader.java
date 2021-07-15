@@ -16,8 +16,6 @@ public class WrapperReader {
 
 	}
 
-//	"//*[@class='books-wrapper']/div[@class='profile-wrapper']/div[9]/div[@class='text-right fullButton']/button[text()='Add To Your Collection']"
-
 	public WebElement getWrapperReader(String classname, int item, String text) {
 		WebElement findElement = null;
 

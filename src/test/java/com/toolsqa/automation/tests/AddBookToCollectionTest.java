@@ -5,6 +5,8 @@ import static org.testng.Assert.assertTrue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,7 +37,7 @@ public class AddBookToCollectionTest extends LaunchBrowser {
 
 		BookStoreTableReader tablereader = new BookStoreTableReader(driver);
 		tablereader.getAllBooks("ReactTable -striped -highlight");
-		WebElement firstBook = tablereader.bookTableReader("ReactTable -striped -highlight", 1, 2);
+		WebElement firstBook = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 2);
 		sleep(2);
 
 		firstBook.click();
@@ -63,6 +65,32 @@ public class AddBookToCollectionTest extends LaunchBrowser {
 		alert.accept();
 		sleep(2);
 
+	}
+
+	@Test(priority = 4)
+	public void deleteBookFromProfile() {
+		test = extent.createTest("Add Book To Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
+				.assignCategory("Regression");
+		BookStorePageObjects bookpage1 = PageFactory.initElements(driver, BookStorePageObjects.class);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement profilemenuitem = bookpage1.getListOfMenusFromBookStoreApp("item-3");
+		js.executeScript("arguments[0].scrollIntoView();", profilemenuitem);
+		profilemenuitem.click();
+		sleep(2);
+
+		String firstbooktext = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 2).getText();
+		if (firstbooktext.equalsIgnoreCase("Git Pocket Guide")) {
+			WebElement deletebuttn = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 5);
+			deletebuttn.click();
+			sleep(2);
+		}
+
+		WebElement modalpopup = driver.switchTo().activeElement();
+		if (modalpopup.isDisplayed()) {
+			modalpopup.findElement(By.id("closeSmallModal-ok")).click();
+		}
+		logger.info("Book successfully deleted from your collection");
 	}
 
 }
