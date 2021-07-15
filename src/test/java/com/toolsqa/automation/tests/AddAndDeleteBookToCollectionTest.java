@@ -18,8 +18,8 @@ import com.toolsqa.automation.baseclass.LaunchBrowser;
 import com.toolsqa.webtablereader.BookStoreTableReader;
 import com.toolsqa.webtablereader.WrapperReader;
 
-public class AddBookToCollectionTest extends LaunchBrowser {
-	Logger logger = LogManager.getLogger(AddBookToCollectionTest.class);
+public class AddAndDeleteBookToCollectionTest extends LaunchBrowser {
+	Logger logger = LogManager.getLogger(AddAndDeleteBookToCollectionTest.class);
 	WebDriverWait wait;
 	Alert alert;
 
