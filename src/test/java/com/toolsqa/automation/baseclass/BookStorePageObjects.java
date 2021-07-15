@@ -1,5 +1,8 @@
 package com.toolsqa.automation.baseclass;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +31,27 @@ public class BookStorePageObjects {
 	public void clickGoTOStore() {
 		function = new FrameworkUtilFunctions(driver);
 		function.clickElementWithActions(gotoStore);
+	}
+
+//	"//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']"
+//	"//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']/li[@id='item-3']"
+
+	public WebElement getListOfMenusFromBookStoreApp(String id) {
+
+		List<WebElement> bookStoreAppMenuList = driver
+				.findElements(By.xpath("//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']"));
+
+		for (WebElement menu : bookStoreAppMenuList) {
+			String menutext = menu.getText();
+			System.out.println(menutext);
+		}
+
+		WebElement menulist = driver
+				.findElement(By.xpath("//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']"));
+		WebElement menuelement = menulist.findElement(By.xpath("li[@id='" + id + "']"));
+
+		return menuelement;
+
 	}
 
 //	public void clickAddToYourCollectionBtn() throws InterruptedException {

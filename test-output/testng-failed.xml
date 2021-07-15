@@ -6,8 +6,8 @@
       <class name="com.toolsqa.automation.tests.AddBookToCollectionTest">
         <methods>
           <include name="getResult"/>
-          <include name="addBook"/>
           <include name="afterTest"/>
+          <include name="deleteBookFromProfile"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
