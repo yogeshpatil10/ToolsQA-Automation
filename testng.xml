@@ -5,7 +5,7 @@
     <classes>
       <class name="com.toolsqa.automation.tests.AccessLoginPageTest"/>
       <class name="com.toolsqa.automation.baseclass.LaunchBrowser"/>
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookToCollectionTest"/>
+      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"/>
     </classes>
   </test> <!-- ToolsQATest -->
 </suite> <!-- Suite -->

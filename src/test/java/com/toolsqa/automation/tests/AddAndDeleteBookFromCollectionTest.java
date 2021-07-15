@@ -18,8 +18,8 @@ import com.toolsqa.automation.baseclass.LaunchBrowser;
 import com.toolsqa.webtablereader.BookStoreTableReader;
 import com.toolsqa.webtablereader.WrapperReader;
 
-public class AddAndDeleteBookToCollectionTest extends LaunchBrowser {
-	Logger logger = LogManager.getLogger(AddAndDeleteBookToCollectionTest.class);
+public class AddAndDeleteBookFromCollectionTest extends LaunchBrowser {
+	Logger logger = LogManager.getLogger(AddAndDeleteBookFromCollectionTest.class);
 	WebDriverWait wait;
 	Alert alert;
 
@@ -69,7 +69,7 @@ public class AddAndDeleteBookToCollectionTest extends LaunchBrowser {
 
 	@Test(priority = 4)
 	public void deleteBookFromProfile() {
-		test = extent.createTest("Add Book To Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
+		test = extent.createTest("Delete Book from Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
 		BookStorePageObjects bookpage1 = PageFactory.initElements(driver, BookStorePageObjects.class);
 
