@@ -435,3 +435,10 @@
 [INFO ] 2021-07-15 08:47:26.837 [main] AddBookToCollectionTest - User redirected to the Book Details Page
 [INFO ] 2021-07-15 08:47:27.967 [main] AddBookToCollectionTest - Book already present in the your collection!
 [INFO ] 2021-07-15 08:47:34.906 [main] AddBookToCollectionTest - Book successfully deleted from your collection
+[INFO ] 2021-07-18 00:04:18.440 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-18 00:04:22.643 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-18 00:04:25.087 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-18 00:04:29.977 [main] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-18 00:04:45.224 [main] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
+[INFO ] 2021-07-18 00:04:47.394 [main] AddAndDeleteBookFromCollectionTest - Book already present in the your collection!
+[INFO ] 2021-07-18 00:04:54.044 [main] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection

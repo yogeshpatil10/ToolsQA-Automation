@@ -3,16 +3,28 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ToolsQATest(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.AddBookToCollectionTest">
+      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
         <methods>
           <include name="getResult"/>
+          <include name="addBook"/>
           <include name="afterTest"/>
+          <include name="setup"/>
+          <include name="beforeTest"/>
           <include name="deleteBookFromProfile"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
+      <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="loginToBookStoreApplication"/>
+          <include name="afterTest"/>
+          <include name="goToBookStoreAppLoginPage"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.AddBookToCollectionTest -->
+      </class> <!-- com.toolsqa.automation.tests.AccessLoginPageTest -->
     </classes>
   </test> <!-- ToolsQATest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
