@@ -1,6 +1,5 @@
 package com.toolsqa.automation.tests;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
@@ -30,12 +29,11 @@ public class AccessLoginPageTest extends LaunchBrowser {
 
 		loginPage.clickLoginMenuOption();
 		logger.info("User clicked Login Menu Option from list");
-		assertEquals(driver.findElement(By.id("userForm")).getText().contains("Welcome,\n" + "Login"), true);
 
 	}
 
 	@Test(priority = 2)
-	public void loginToBookStoreApplication() {
+	public void loginToBookStoreApplication() throws InterruptedException {
 		test = extent.createTest("Login to Book Store Application").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
 
@@ -43,5 +41,6 @@ public class AccessLoginPageTest extends LaunchBrowser {
 		logger.info("User is successfully logged in to BookStore App");
 		sleep(2);
 		assertTrue(driver.findElement(By.xpath("//*[@id='userName-value']")).getText().contentEquals("joybutta"));
+		assertTrue(driver.findElement(By.xpath("//button[@id='submit']")).getText().contentEquals("Log out"));
 	}
 }

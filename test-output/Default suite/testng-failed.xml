@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.NewTest">
+      <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
         <methods>
           <include name="getResult"/>
-          <include name="f"/>
+          <include name="loginToBookStoreApplication"/>
           <include name="afterTest"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.NewTest -->
+      </class> <!-- com.toolsqa.automation.tests.AccessLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

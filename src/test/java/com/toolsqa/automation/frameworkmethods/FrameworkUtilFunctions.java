@@ -1,5 +1,10 @@
 package com.toolsqa.automation.frameworkmethods;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +21,23 @@ public class FrameworkUtilFunctions {
 	public FrameworkUtilFunctions(WebDriver driver) {
 		super();
 		this.driver = driver;
+	}
+
+	public static String getGlobalValue(String key) {
+		Properties prop = new Properties();
+
+		FileInputStream fis;
+		try {
+			fis = new FileInputStream(
+					"C:\\Users\\Lenovo\\eclipse-workspace\\ToolsQA-Automation-Testing\\src\\test\\resources\\config.properties");
+			prop.load(fis);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return prop.getProperty(key);
 	}
 
 	public void scrollPageDownAndClickElement(WebElement element) {
@@ -47,14 +69,14 @@ public class FrameworkUtilFunctions {
 	}
 
 	public void enterUserName(WebElement element, String username) {
-		element.clear();
-		element.sendKeys(username);
+		actions = new Actions(driver);
+		actions.sendKeys(element, username).perform();
 
 	}
 
 	public void enterPassword(WebElement element, String password) {
-		element.clear();
-		element.sendKeys(password);
+		actions = new Actions(driver);
+		actions.sendKeys(element, password).perform();
 	}
 
 	public void clickSubmitButton(WebElement element) {

@@ -1,5 +1,8 @@
 package com.toolsqa.automation.baseclass;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +19,13 @@ public class LoginPageAccessObjects {
 	private WebDriver driver;
 	Actions actions;
 
-	public LoginPageAccessObjects(WebDriver driver) {
+	public LoginPageAccessObjects(WebDriver driver) throws IOException {
 		super();
 		this.driver = driver;
 
-		driver.get("https://demoqa.com/");
+		driver.get(FrameworkUtilFunctions.getGlobalValue("url"));
 		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 		logger.info("Redirected to the ToolsQA Website");
 	}
@@ -35,10 +39,10 @@ public class LoginPageAccessObjects {
 	@FindBy(xpath = "//div[@class='element-list collapse show']/ul/li[@id='item-0']")
 	private WebElement loginmenu;
 
-	@FindBy(id = "userName")
+	@FindBy(xpath = "//input[@placeholder='UserName']")
 	private WebElement username;
 
-	@FindBy(id = "password")
+	@FindBy(xpath = "//input[@placeholder='Password']")
 	private WebElement password;
 
 	@FindBy(id = "login")
@@ -49,7 +53,6 @@ public class LoginPageAccessObjects {
 		function.scrollPageDownAndClickElement(bookStoreApp);
 		actions = new Actions(driver);
 		actions.moveToElement(bookStoreApp).click().perform();
-//		bookStoreApp.click();
 
 	}
 
@@ -58,14 +61,14 @@ public class LoginPageAccessObjects {
 		function.scrollPageDownAndClickElement(loginmenu);
 		actions = new Actions(driver);
 		actions.moveToElement(loginmenu).click().perform();
-//		loginmenu.click();
 
 	}
 
-	public void loginToBookStore() {
+	public void loginToBookStore() throws InterruptedException {
 		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
-		function.enterUserName(username, "joybutta");
-		function.enterPassword(password, "Joybutta@123");
+		function.enterUserName(username, FrameworkUtilFunctions.getGlobalValue("username"));
+		Thread.sleep(2);
+		function.enterPassword(password, FrameworkUtilFunctions.getGlobalValue("password"));
 		function.clickSubmitButton(loginbutton);
 	}
 
