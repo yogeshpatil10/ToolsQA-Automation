@@ -504,3 +504,47 @@
 [INFO ] 2021-07-18 17:19:07.342 [main] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
 [INFO ] 2021-07-18 17:19:08.340 [main] AddAndDeleteBookFromCollectionTest - Book already present in the your collection!
 [INFO ] 2021-07-18 17:19:15.335 [main] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection
+[INFO ] 2021-07-19 08:29:09.854 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:29:18.785 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:29:22.756 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 08:29:30.496 [main] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-19 08:32:06.119 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:32:14.223 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:32:27.781 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 08:34:14.465 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:34:20.992 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:34:27.137 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 08:43:02.068 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:43:08.937 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:43:21.769 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 08:45:31.810 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:45:46.738 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:47:13.202 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 08:47:22.047 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 08:47:33.953 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 08:47:40.250 [main] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-19 16:01:10.747 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 16:01:11.352 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 16:35:37.824 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 16:35:38.073 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 16:35:38.292 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 17:19:31.827 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 17:19:32.438 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 17:19:32.649 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 17:19:33.457 [main] ElementsTest - User entered current address
+[INFO ] 2021-07-19 17:19:36.169 [main] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 17:20:43.977 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 17:20:44.254 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 17:20:44.476 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 17:20:44.861 [main] ElementsTest - User entered current address
+[INFO ] 2021-07-19 17:20:46.656 [main] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 17:23:12.304 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 17:23:12.752 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 17:23:12.949 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 17:23:13.291 [main] ElementsTest - User entered current address
+[INFO ] 2021-07-19 17:23:15.499 [main] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 17:24:04.616 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 17:24:04.866 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 17:24:05.073 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 17:24:05.468 [main] ElementsTest - User entered current address
+[INFO ] 2021-07-19 17:24:05.844 [main] ElementsTest - User enetered permanent address

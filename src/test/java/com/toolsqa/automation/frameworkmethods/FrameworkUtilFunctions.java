@@ -97,4 +97,8 @@ public class FrameworkUtilFunctions {
 
 	}
 
+	public static void sendkeys(WebElement element, String msg) {
+		element.sendKeys(msg);
+	}
+
 }

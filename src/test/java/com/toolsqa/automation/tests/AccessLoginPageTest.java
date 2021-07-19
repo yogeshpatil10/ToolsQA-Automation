@@ -33,13 +33,14 @@ public class AccessLoginPageTest extends LaunchBrowser {
 	}
 
 	@Test(priority = 2)
+
 	public void loginToBookStoreApplication() throws InterruptedException {
 		test = extent.createTest("Login to Book Store Application").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
 
 		loginPage.loginToBookStore();
 		logger.info("User is successfully logged in to BookStore App");
-		sleep(2);
+		sleep(5);
 		assertTrue(driver.findElement(By.xpath("//*[@id='userName-value']")).getText().contentEquals("joybutta"));
 		assertTrue(driver.findElement(By.xpath("//button[@id='submit']")).getText().contentEquals("Log out"));
 	}

@@ -14,17 +14,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
-      <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
-        <methods>
-          <include name="getResult"/>
-          <include name="loginToBookStoreApplication"/>
-          <include name="afterTest"/>
-          <include name="goToBookStoreAppLoginPage"/>
-          <include name="setup"/>
-          <include name="beforeTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.toolsqa.automation.tests.AccessLoginPageTest -->
     </classes>
   </test> <!-- ToolsQATest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

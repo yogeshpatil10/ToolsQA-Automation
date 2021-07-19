@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-18T11:48:22Z" name="Suite" finished-at="2021-07-18T11:49:16Z" duration-ms="54567">
+  <suite started-at="2021-07-19T11:53:43Z" name="Default suite" finished-at="2021-07-19T11:54:07Z" duration-ms="23698">
     <groups>
     </groups>
-    <test started-at="2021-07-18T11:48:22Z" name="ToolsQATest" finished-at="2021-07-18T11:49:16Z" duration-ms="54567">
-      <class name="com.toolsqa.automation.tests.AccessLoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:22Z" name="setup" finished-at="2021-07-18T11:48:22Z" duration-ms="204" status="PASS">
+    <test started-at="2021-07-19T11:53:43Z" name="Default test" finished-at="2021-07-19T11:54:07Z" duration-ms="23698">
+      <class name="com.toolsqa.automation.tests.ElementsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:53:43Z" name="setup" finished-at="2021-07-19T11:53:43Z" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:22Z" name="beforeTest" finished-at="2021-07-18T11:48:31Z" duration-ms="9031" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:53:43Z" name="beforeTest" finished-at="2021-07-19T11:53:49Z" duration-ms="6138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,77 +22,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:31Z" name="goToBookStoreAppLoginPage" finished-at="2021-07-18T11:48:49Z" duration-ms="17984" status="PASS">
+        <test-method signature="getToElementsPage()[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:53:49Z" name="getToElementsPage" finished-at="2021-07-19T11:54:06Z" duration-ms="16163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToBookStoreAppLoginPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:49Z" name="getResult" finished-at="2021-07-18T11:48:49Z" duration-ms="29" status="PASS">
+        </test-method> <!-- getToElementsPage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:54:06Z" name="getResult" finished-at="2021-07-19T11:54:06Z" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToBookStoreAppLoginPage status=SUCCESS method=AccessLoginPageTest.goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7] output={null}]]]>
+                <![CDATA[[TestResult name=getToElementsPage status=SUCCESS method=ElementsTest.getToElementsPage()[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:49Z" name="loginToBookStoreApplication" finished-at="2021-07-18T11:48:53Z" duration-ms="4369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToBookStoreApplication -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:48:53Z" name="getResult" finished-at="2021-07-18T11:48:53Z" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToBookStoreApplication status=SUCCESS method=AccessLoginPageTest.loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:49:15Z" name="afterTest" finished-at="2021-07-18T11:49:16Z" duration-ms="1473" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:54:06Z" name="afterTest" finished-at="2021-07-19T11:54:07Z" duration-ms="1345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.AccessLoginPageTest@30c31dd7]" started-at="2021-07-18T11:49:17Z" name="tearDown" finished-at="2021-07-18T11:49:18Z" duration-ms="1389" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.ElementsTest@57f791c6]" started-at="2021-07-19T11:54:07Z" name="tearDown" finished-at="2021-07-19T11:54:08Z" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.toolsqa.automation.tests.AccessLoginPageTest -->
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
-        <test-method signature="addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c]" started-at="2021-07-18T11:48:53Z" name="addBook" finished-at="2021-07-18T11:49:10Z" duration-ms="16656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addBook -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c]" started-at="2021-07-18T11:49:10Z" name="getResult" finished-at="2021-07-18T11:49:10Z" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addBook status=SUCCESS method=AddAndDeleteBookFromCollectionTest.addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c]" started-at="2021-07-18T11:49:10Z" name="deleteBookFromProfile" finished-at="2021-07-18T11:49:15Z" duration-ms="4973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteBookFromProfile -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c]" started-at="2021-07-18T11:49:15Z" name="getResult" finished-at="2021-07-18T11:49:15Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteBookFromProfile status=SUCCESS method=AddAndDeleteBookFromCollectionTest.deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@499b2a5c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
-    </test> <!-- ToolsQATest -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.toolsqa.automation.tests.ElementsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
