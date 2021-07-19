@@ -70,7 +70,7 @@ public class FrameworkUtilFunctions {
 
 	public void enterUserName(WebElement element, String username) {
 		element.clear();
-		element.sendKeys(username);
+		element.sendKeys(username); // changes done here
 	}
 
 	public void enterPassword(WebElement element, String password) {
