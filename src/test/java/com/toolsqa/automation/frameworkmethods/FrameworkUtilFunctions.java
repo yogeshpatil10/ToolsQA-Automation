@@ -48,7 +48,7 @@ public class FrameworkUtilFunctions {
 
 	}
 
-	public WebElement waitUntilElementIsVisible(WebElement element) throws InterruptedException {
+	public static WebElement waitUntilElementIsVisible(WebElement element) throws InterruptedException {
 		while (!isDisplayed(element)) {
 			Thread.sleep(5000);
 			System.out.println("Element is not visible yet");
@@ -69,14 +69,13 @@ public class FrameworkUtilFunctions {
 	}
 
 	public void enterUserName(WebElement element, String username) {
-		actions = new Actions(driver);
-		actions.sendKeys(element, username).perform();
-
+		element.clear();
+		element.sendKeys(username);
 	}
 
 	public void enterPassword(WebElement element, String password) {
-		actions = new Actions(driver);
-		actions.sendKeys(element, password).perform();
+		element.clear();
+		element.sendKeys(password);
 	}
 
 	public void clickSubmitButton(WebElement element) {

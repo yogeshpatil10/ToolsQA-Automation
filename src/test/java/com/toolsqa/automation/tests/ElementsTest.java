@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.toolsqa.automation.baseclass.ElementsObjectsPage;
@@ -17,6 +19,7 @@ import com.toolsqa.automation.frameworkmethods.FrameworkUtilFunctions;
 public class ElementsTest extends LaunchBrowser {
 
 	Logger logger = LogManager.getLogger(ElementsTest.class);
+	WebDriverWait wait;
 
 	@Test
 	public void getToElementsPage() {
@@ -37,6 +40,8 @@ public class ElementsTest extends LaunchBrowser {
 		logger.info("User enetered permanent address");
 
 		WebElement submit = driver.findElement(By.id("submit"));
+		wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(submit));
 
 		assertTrue(FrameworkUtilFunctions.isDisplayed(submit));
 		assertEquals(submit.getText(), "Submit");

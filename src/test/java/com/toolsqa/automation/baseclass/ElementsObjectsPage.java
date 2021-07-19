@@ -14,6 +14,7 @@ public class ElementsObjectsPage {
 
 	WebDriver driver;
 	FrameworkUtilFunctions function;
+	Actions actions;
 
 	public ElementsObjectsPage(WebDriver driver) {
 		super();
@@ -42,7 +43,7 @@ public class ElementsObjectsPage {
 	private WebElement permanentAddress;
 
 	public void enterPermanentAddress() {
-		Actions actions = new Actions(driver);
+		actions = new Actions(driver);
 		actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
 		actions.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
 		actions.click(permanentAddress).keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();

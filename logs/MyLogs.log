@@ -548,3 +548,47 @@
 [INFO ] 2021-07-19 17:24:05.073 [main] ElementsTest - User entered full name
 [INFO ] 2021-07-19 17:24:05.468 [main] ElementsTest - User entered current address
 [INFO ] 2021-07-19 17:24:05.844 [main] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:05:11.319 [main] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 18:05:12.209 [main] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 18:05:12.986 [main] ElementsTest - User entered full name
+[INFO ] 2021-07-19 18:05:13.314 [main] ElementsTest - User entered current address
+[INFO ] 2021-07-19 18:05:16.109 [main] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:06:19.881 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 18:06:20.240 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 18:06:20.415 [TestNG-test=ToolsQATest-1] ElementsTest - User entered full name
+[INFO ] 2021-07-19 18:06:20.778 [TestNG-test=ToolsQATest-1] ElementsTest - User entered current address
+[INFO ] 2021-07-19 18:06:22.802 [TestNG-test=ToolsQATest-1] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:06:25.583 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:06:25.951 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:09:49.867 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 18:09:50.226 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 18:09:50.467 [TestNG-test=ToolsQATest-1] ElementsTest - User entered full name
+[INFO ] 2021-07-19 18:09:50.827 [TestNG-test=ToolsQATest-1] ElementsTest - User entered current address
+[INFO ] 2021-07-19 18:09:51.221 [TestNG-test=ToolsQATest-1] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:09:56.210 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:09:56.655 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:13:22.483 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:13:25.065 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:13:26.096 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 18:15:39.502 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:15:39.944 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:17:49.267 [main] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:17:49.669 [main] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:17:50.694 [main] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 18:18:31.999 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 18:18:32.271 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 18:18:32.469 [TestNG-test=ToolsQATest-1] ElementsTest - User entered full name
+[INFO ] 2021-07-19 18:18:32.827 [TestNG-test=ToolsQATest-1] ElementsTest - User entered current address
+[INFO ] 2021-07-19 18:18:37.716 [TestNG-test=ToolsQATest-1] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:20:18.805 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on Main Elements on Home Page
+[INFO ] 2021-07-19 18:20:19.110 [TestNG-test=ToolsQATest-1] ElementsTest - User clicked on TextBox element
+[INFO ] 2021-07-19 18:20:19.459 [TestNG-test=ToolsQATest-1] ElementsTest - User entered full name
+[INFO ] 2021-07-19 18:20:19.915 [TestNG-test=ToolsQATest-1] ElementsTest - User entered current address
+[INFO ] 2021-07-19 18:20:23.375 [TestNG-test=ToolsQATest-1] ElementsTest - User enetered permanent address
+[INFO ] 2021-07-19 18:20:31.705 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-19 18:20:33.517 [TestNG-test=ToolsQATest-2] AccessLoginPageTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-19 18:20:34.513 [TestNG-test=ToolsQATest-3] AccessLoginPageTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-19 18:20:40.031 [TestNG-test=ToolsQATest-4] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-19 18:20:58.542 [TestNG-test=ToolsQATest-4] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
+[INFO ] 2021-07-19 18:21:00.166 [TestNG-test=ToolsQATest-4] AddAndDeleteBookFromCollectionTest - Book added to your collection
+[INFO ] 2021-07-19 18:21:07.383 [TestNG-test=ToolsQATest-5] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection

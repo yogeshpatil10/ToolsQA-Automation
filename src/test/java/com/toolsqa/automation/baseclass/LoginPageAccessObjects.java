@@ -39,10 +39,10 @@ public class LoginPageAccessObjects {
 	@FindBy(xpath = "//div[@class='element-list collapse show']/ul/li[@id='item-0']")
 	private WebElement loginmenu;
 
-	@FindBy(xpath = "//input[@placeholder='UserName']")
+	@FindBy(id = "userName")
 	private WebElement username;
 
-	@FindBy(xpath = "//input[@placeholder='Password']")
+	@FindBy(id = "password")
 	private WebElement password;
 
 	@FindBy(id = "login")
@@ -67,7 +67,6 @@ public class LoginPageAccessObjects {
 	public void loginToBookStore() throws InterruptedException {
 		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
 		function.enterUserName(username, FrameworkUtilFunctions.getGlobalValue("username"));
-		Thread.sleep(2);
 		function.enterPassword(password, FrameworkUtilFunctions.getGlobalValue("password"));
 		function.clickSubmitButton(loginbutton);
 	}
