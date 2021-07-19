@@ -1,4 +1,4 @@
-package com.toolsqa.automation.baseclass;
+package pageObjects;
 
 import java.util.List;
 
@@ -7,12 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.toolsqa.automation.frameworkmethods.FrameworkUtilFunctions;
+import utility.ElementActionsUtility;
 
 public class BookStorePageObjects {
 
 	private WebDriver driver;
-	FrameworkUtilFunctions function;
+	ElementActionsUtility function;
 
 	public BookStorePageObjects(WebDriver driver) {
 		super();
@@ -29,12 +29,9 @@ public class BookStorePageObjects {
 	private WebElement profile;
 
 	public void clickGoTOStore() {
-		function = new FrameworkUtilFunctions(driver);
+		function = new ElementActionsUtility(driver);
 		function.clickElementWithActions(gotoStore);
 	}
-
-//	"//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']"
-//	"//*[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']/li[@id='item-3']"
 
 	public WebElement getListOfMenusFromBookStoreApp(String id) {
 
@@ -53,15 +50,5 @@ public class BookStorePageObjects {
 		return menuelement;
 
 	}
-
-//	public void clickAddToYourCollectionBtn() throws InterruptedException {
-//		function.scrollPageDownAndClickElement(addToYourCollectionButton);
-//		addToYourCollectionButton.click();
-//	}
-//
-//	public void clickProfile() {
-//		function.clickElement(profile);
-//
-//	}
 
 }

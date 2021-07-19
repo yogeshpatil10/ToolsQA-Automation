@@ -13,12 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.toolsqa.automation.baseclass.BookStorePageObjects;
-import com.toolsqa.automation.baseclass.LaunchBrowser;
-import com.toolsqa.webtablereader.BookStoreTableReader;
-import com.toolsqa.webtablereader.WrapperReader;
+import appModules.SignIn_Action;
+import pageObjects.BookStorePageObjects;
+import utility.BookStoreTableReaderUtility;
+import utility.WrapperReaderUtility;
 
-public class AddAndDeleteBookFromCollectionTest extends LaunchBrowser {
+public class AddAndDeleteBookFromCollectionTest extends SignIn_Action {
 	Logger logger = LogManager.getLogger(AddAndDeleteBookFromCollectionTest.class);
 	WebDriverWait wait;
 	Alert alert;
@@ -35,16 +35,16 @@ public class AddAndDeleteBookFromCollectionTest extends LaunchBrowser {
 
 		sleep(3);
 
-		BookStoreTableReader tablereader = new BookStoreTableReader(driver);
+		BookStoreTableReaderUtility tablereader = new BookStoreTableReaderUtility(driver);
 		tablereader.getAllBooks("ReactTable -striped -highlight");
-		WebElement firstBook = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 2);
+		WebElement firstBook = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1, 2);
 		sleep(2);
 
 		firstBook.click();
 		sleep(3);
 		logger.info("User redirected to the Book Details Page");
 
-		WrapperReader wrapper = new WrapperReader(driver);
+		WrapperReaderUtility wrapper = new WrapperReaderUtility(driver);
 		WebElement wrapper92 = wrapper.getWrapperReader("books-wrapper", 9, "Add To Your Collection");
 
 		wait.until(ExpectedConditions.visibilityOf(wrapper92));
@@ -79,9 +79,11 @@ public class AddAndDeleteBookFromCollectionTest extends LaunchBrowser {
 		profilemenuitem.click();
 		sleep(2);
 
-		String firstbooktext = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 2).getText();
+		String firstbooktext = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1, 2)
+				.getText();
 		if (firstbooktext.equalsIgnoreCase("Git Pocket Guide")) {
-			WebElement deletebuttn = BookStoreTableReader.bookTableReader("ReactTable -striped -highlight", 1, 5);
+			WebElement deletebuttn = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1,
+					5);
 			deletebuttn.click();
 			sleep(2);
 		}

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="ToolsQATest" parallel="true">
+  <test thread-count="5" name="ToolsQAAutomationTest" parallel="true">
     <classes>
-      <class name="com.toolsqa.automation.tests.AccessLoginPageTest"/>
-      <class name="com.toolsqa.automation.baseclass.LaunchBrowser"/>
       <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"/>
-      <class name="com.toolsqa.automation.tests.ElementsTest"></class>
+      <class name="com.toolsqa.automation.tests.AccessLoginPageTest"/>
+      <class name="com.toolsqa.automation.tests.ElementsTest"/>
+      <class name="appModules.SignIn_Action"/>
     </classes>
-  </test> <!-- ToolsQATest -->
+  </test> <!-- ToolsQAAutomationTest -->
 </suite> <!-- Suite -->
-	

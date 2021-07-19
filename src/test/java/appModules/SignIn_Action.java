@@ -1,4 +1,4 @@
-package com.toolsqa.automation.baseclass;
+package appModules;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,7 +25,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public abstract class LaunchBrowser {
+public abstract class SignIn_Action {
 
 	protected static WebDriver driver;
 
@@ -37,7 +37,7 @@ public abstract class LaunchBrowser {
 	@BeforeTest
 	public void beforeTest(@org.testng.annotations.Optional("chrome") String browser) {
 
-		Logger logger = LogManager.getLogger(LaunchBrowser.class);
+		Logger logger = LogManager.getLogger(SignIn_Action.class);
 
 		if (browser.equalsIgnoreCase("chrome")) {
 

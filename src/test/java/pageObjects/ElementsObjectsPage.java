@@ -1,4 +1,4 @@
-package com.toolsqa.automation.baseclass;
+package pageObjects;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,18 +8,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import com.toolsqa.automation.frameworkmethods.FrameworkUtilFunctions;
+import utility.ElementActionsUtility;
+import utility.ReadPropertiesFileUtility;
 
 public class ElementsObjectsPage {
 
 	WebDriver driver;
-	FrameworkUtilFunctions function;
+	ElementActionsUtility function;
 	Actions actions;
 
 	public ElementsObjectsPage(WebDriver driver) {
 		super();
 		this.driver = driver;
-		driver.get(FrameworkUtilFunctions.getGlobalValue("url"));
+		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 	}
@@ -50,26 +51,26 @@ public class ElementsObjectsPage {
 	}
 
 	public void enterCurrentAddress() {
-		FrameworkUtilFunctions.sendkeys(currentAddress, "123, Red Hat Corner, California 956201 USA");
+		ElementActionsUtility.sendkeys(currentAddress, "123, Red Hat Corner, California 956201 USA");
 
 	}
 
 	public void enterEmail() {
-		FrameworkUtilFunctions.sendkeys(useremail, "joy.butta@toolsqa.com");
+		ElementActionsUtility.sendkeys(useremail, "joy.butta@toolsqa.com");
 	}
 
 	public void enterFullName() {
-		FrameworkUtilFunctions.sendkeys(fullname, "Joy Butta");
+		ElementActionsUtility.sendkeys(fullname, "Joy Butta");
 
 	}
 
 	public void clickElements() {
-		function = new FrameworkUtilFunctions(driver);
+		function = new ElementActionsUtility(driver);
 		function.clickElementWithActions(mainElements);
 	}
 
 	public void clickTextBoxElement() {
-		function = new FrameworkUtilFunctions(driver);
+		function = new ElementActionsUtility(driver);
 		function.clickElement(textbox);
 	}
 

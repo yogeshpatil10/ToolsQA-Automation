@@ -1,4 +1,4 @@
-package com.toolsqa.webtablereader;
+package utility;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BookStoreTableReader {
+public class BookStoreTableReaderUtility {
 	private static WebDriver driver;
 
-	public BookStoreTableReader(WebDriver driver) {
+	public BookStoreTableReaderUtility(WebDriver driver) {
 		this.driver = driver;
 
 	}

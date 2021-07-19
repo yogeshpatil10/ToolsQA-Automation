@@ -8,10 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.toolsqa.automation.baseclass.LaunchBrowser;
-import com.toolsqa.automation.baseclass.LoginPageAccessObjects;
+import appModules.SignIn_Action;
+import pageObjects.LoginPageAccessObjects;
 
-public class AccessLoginPageTest extends LaunchBrowser {
+public class AccessLoginPageTest extends SignIn_Action {
 
 	Logger logger = LogManager.getLogger(AccessLoginPageTest.class);
 	LoginPageAccessObjects loginPage;

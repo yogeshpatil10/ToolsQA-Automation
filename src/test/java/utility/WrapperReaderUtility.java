@@ -1,4 +1,4 @@
-package com.toolsqa.webtablereader;
+package utility;
 
 import java.util.List;
 
@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class WrapperReader {
+public class WrapperReaderUtility {
 
 	WebDriver driver;
 
-	public WrapperReader(WebDriver driver) {
+	public WrapperReaderUtility(WebDriver driver) {
 		super();
 		this.driver = driver;
 

@@ -12,11 +12,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.toolsqa.automation.baseclass.ElementsObjectsPage;
-import com.toolsqa.automation.baseclass.LaunchBrowser;
-import com.toolsqa.automation.frameworkmethods.FrameworkUtilFunctions;
+import appModules.SignIn_Action;
+import pageObjects.ElementsObjectsPage;
+import utility.WaitUtility;
 
-public class ElementsTest extends LaunchBrowser {
+public class ElementsTest extends SignIn_Action {
 
 	Logger logger = LogManager.getLogger(ElementsTest.class);
 	WebDriverWait wait;
@@ -43,7 +43,7 @@ public class ElementsTest extends LaunchBrowser {
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(submit));
 
-		assertTrue(FrameworkUtilFunctions.isDisplayed(submit));
+		assertTrue(WaitUtility.isDisplayed(submit));
 		assertEquals(submit.getText(), "Submit");
 		String currentAddress = driver.findElement(By.id("currentAddress")).getText();
 		String permanentAddress = driver.findElement(By.id("permanentAddress")).getText();

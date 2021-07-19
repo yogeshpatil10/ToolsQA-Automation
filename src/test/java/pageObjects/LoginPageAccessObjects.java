@@ -1,4 +1,4 @@
-package com.toolsqa.automation.baseclass;
+package pageObjects;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -10,7 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import com.toolsqa.automation.frameworkmethods.FrameworkUtilFunctions;
+import utility.ElementActionsUtility;
+import utility.ReadPropertiesFileUtility;
 
 public class LoginPageAccessObjects {
 
@@ -23,7 +24,7 @@ public class LoginPageAccessObjects {
 		super();
 		this.driver = driver;
 
-		driver.get(FrameworkUtilFunctions.getGlobalValue("url"));
+		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
@@ -49,26 +50,26 @@ public class LoginPageAccessObjects {
 	private WebElement loginbutton;
 
 	public void clickBookStoreApp() {
-		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
-		function.scrollPageDownAndClickElement(bookStoreApp);
+		ElementActionsUtility function = new ElementActionsUtility(driver);
+		function.scrollPageDownToGetElement(bookStoreApp);
 		actions = new Actions(driver);
 		actions.moveToElement(bookStoreApp).click().perform();
 
 	}
 
 	public void clickLoginMenuOption() {
-		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
-		function.scrollPageDownAndClickElement(loginmenu);
+		ElementActionsUtility function = new ElementActionsUtility(driver);
+		function.scrollPageDownToGetElement(loginmenu);
 		actions = new Actions(driver);
 		actions.moveToElement(loginmenu).click().perform();
 
 	}
 
 	public void loginToBookStore() throws InterruptedException {
-		FrameworkUtilFunctions function = new FrameworkUtilFunctions(driver);
-		function.enterUserName(username, FrameworkUtilFunctions.getGlobalValue("username"));
-		function.enterPassword(password, FrameworkUtilFunctions.getGlobalValue("password"));
-		function.clickSubmitButton(loginbutton);
+		ElementActionsUtility function = new ElementActionsUtility(driver);
+		function.enterUserName(username, ReadPropertiesFileUtility.getGlobalValue("username"));
+		function.enterPassword(password, ReadPropertiesFileUtility.getGlobalValue("password"));
+		function.scrollDownAndClickSubmitButton(loginbutton);
 	}
 
 }
