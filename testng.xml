@@ -6,12 +6,12 @@
       <class name="com.toolsqa.automation.tests.TextBoxTest"/>
       <class name="com.toolsqa.automation.tests.CheckBoxTest"/>
     </classes>
-  </test> <!-- ToolsQAAutomationTest -->
+  </test> <!-- SmokeTest -->
   
   <test thread-count="5" name="RegressionTest" parallel="true" >
  	 <classes>
   		<class name="com.toolsqa.automation.tests.BookStoreLoginTest"></class>
   		<class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"></class>
   	</classes>
-  </test>
+  </test> <!-- Regression -->
 </suite> <!-- Suite -->
