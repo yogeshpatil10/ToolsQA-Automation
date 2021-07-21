@@ -13,30 +13,35 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import appModules.SignIn_Action;
-import pageObjects.ElementsObjectsPage;
+import pageObjects.HomePageObjects;
+import pageObjects.TextBoxPageObjects;
 import utility.WaitUtility;
 
-public class ElementsTest extends SignIn_Action {
+public class TextBoxTest extends SignIn_Action {
 
-	Logger logger = LogManager.getLogger(ElementsTest.class);
+	Logger logger = LogManager.getLogger(TextBoxTest.class);
 	WebDriverWait wait;
 
-	@Test
-	public void getToElementsPage() {
+	@Test(groups = { "smoke" })
+	public void getTextBoxPage() {
 
 		test = extent.createTest("TextBox Test").assignAuthor("Yogesh").assignCategory("Smoke");
 
-		ElementsObjectsPage elementobjects = PageFactory.initElements(driver, ElementsObjectsPage.class);
+		TextBoxPageObjects textboxobject = PageFactory.initElements(driver, TextBoxPageObjects.class);
 
-		elementobjects.clickElements();
-		logger.info("User clicked on Main Elements on Home Page");
-		elementobjects.clickTextBoxElement();
+		HomePageObjects homepage = PageFactory.initElements(driver, HomePageObjects.class);
+		homepage.clickElements();
+
+		textboxobject.clickTextBoxElement();
 		logger.info("User clicked on TextBox element");
-		elementobjects.enterFullName();
+
+		textboxobject.enterFullName();
 		logger.info("User entered full name");
-		elementobjects.enterCurrentAddress();
+		textboxobject.enterEmail();
+		logger.info("User entered an email address");
+		textboxobject.enterCurrentAddress();
 		logger.info("User entered current address");
-		elementobjects.enterPermanentAddress();
+		textboxobject.enterPermanentAddress();
 		logger.info("User enetered permanent address");
 
 		WebElement submit = driver.findElement(By.id("submit"));

@@ -49,8 +49,7 @@ public class ElementActionsUtility {
 	}
 
 	public void clickElementWithActions(WebElement element) {
-		actions = new Actions(driver);
-		actions.moveToElement(element).click().perform();
+		element.click();
 
 	}
 

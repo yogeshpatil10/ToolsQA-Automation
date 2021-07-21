@@ -17,6 +17,7 @@ public class BookStorePageObjects {
 	public BookStorePageObjects(WebDriver driver) {
 		super();
 		this.driver = driver;
+
 	}
 
 	@FindBy(css = ".profile-wrapper>div.mt-2.buttonWrap.row>div.text-left button")

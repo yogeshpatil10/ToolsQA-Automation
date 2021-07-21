@@ -9,12 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import appModules.SignIn_Action;
-import pageObjects.LoginPageAccessObjects;
+import pageObjects.BookStoreLoginPageObjects;
 
-public class AccessLoginPageTest extends SignIn_Action {
+public class BookStoreLoginTest extends SignIn_Action {
 
-	Logger logger = LogManager.getLogger(AccessLoginPageTest.class);
-	LoginPageAccessObjects loginPage;
+	Logger logger = LogManager.getLogger(BookStoreLoginTest.class);
+	BookStoreLoginPageObjects loginPage;
 
 	@Test(priority = 1)
 	public void goToBookStoreAppLoginPage() throws InterruptedException {
@@ -22,7 +22,7 @@ public class AccessLoginPageTest extends SignIn_Action {
 		test = extent.createTest("Click on Book Store Application for login").assignAuthor("Yogesh")
 				.assignCategory("Smoke").assignCategory("Regression");
 
-		loginPage = PageFactory.initElements(driver, LoginPageAccessObjects.class);
+		loginPage = PageFactory.initElements(driver, BookStoreLoginPageObjects.class);
 
 		loginPage.clickBookStoreApp();
 		logger.info("Element Book Store Application has been clicked and user is redirected to the Book Store Page");

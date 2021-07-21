@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="ToolsQAAutomationTest(failed)">
+  <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.ElementsTest">
+      <class name="com.toolsqa.automation.tests.CheckBoxTest">
         <methods>
-          <include name="getToElementsPage"/>
+          <include name="getToCheckBoxPage"/>
           <include name="tearDown"/>
           <include name="getResult"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.ElementsTest -->
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
+      </class> <!-- com.toolsqa.automation.tests.CheckBoxTest -->
+      <class name="com.toolsqa.automation.tests.TextBoxTest">
         <methods>
-          <include name="addBook"/>
           <include name="tearDown"/>
           <include name="getResult"/>
+          <include name="getTextBoxPage"/>
           <include name="setup"/>
           <include name="beforeTest"/>
-          <include name="deleteBookFromProfile"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
+      </class> <!-- com.toolsqa.automation.tests.TextBoxTest -->
     </classes>
-  </test> <!-- ToolsQAAutomationTest(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

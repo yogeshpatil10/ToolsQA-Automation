@@ -13,29 +13,24 @@ import org.openqa.selenium.support.FindBy;
 import utility.ElementActionsUtility;
 import utility.ReadPropertiesFileUtility;
 
-public class LoginPageAccessObjects {
+public class BookStoreLoginPageObjects {
 
-	Logger logger = LogManager.getLogger(LoginPageAccessObjects.class);
+	Logger logger = LogManager.getLogger(BookStoreLoginPageObjects.class);
 
 	private WebDriver driver;
 	Actions actions;
 
-	public LoginPageAccessObjects(WebDriver driver) throws IOException {
+	public BookStoreLoginPageObjects(WebDriver driver) throws IOException {
 		super();
 		this.driver = driver;
 
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-
-		logger.info("Redirected to the ToolsQA Website");
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 	}
 
 	@FindBy(css = ".category-cards>div:nth-child(6)")
 	private WebElement bookStoreApp;
-
-	@FindBy(className = "main-header")
-	private WebElement mainheader;
 
 	@FindBy(xpath = "//div[@class='element-list collapse show']/ul/li[@id='item-0']")
 	private WebElement loginmenu;
@@ -48,14 +43,6 @@ public class LoginPageAccessObjects {
 
 	@FindBy(id = "login")
 	private WebElement loginbutton;
-
-	public void clickBookStoreApp() {
-		ElementActionsUtility function = new ElementActionsUtility(driver);
-		function.scrollPageDownToGetElement(bookStoreApp);
-		actions = new Actions(driver);
-		actions.moveToElement(bookStoreApp).click().perform();
-
-	}
 
 	public void clickLoginMenuOption() {
 		ElementActionsUtility function = new ElementActionsUtility(driver);
@@ -70,6 +57,14 @@ public class LoginPageAccessObjects {
 		function.enterUserName(username, ReadPropertiesFileUtility.getGlobalValue("username"));
 		function.enterPassword(password, ReadPropertiesFileUtility.getGlobalValue("password"));
 		function.scrollDownAndClickSubmitButton(loginbutton);
+	}
+
+	public void clickBookStoreApp() {
+		ElementActionsUtility function = new ElementActionsUtility(driver);
+		function.scrollPageDownToGetElement(bookStoreApp);
+		actions = new Actions(driver);
+		actions.moveToElement(bookStoreApp).click().perform();
+
 	}
 
 }

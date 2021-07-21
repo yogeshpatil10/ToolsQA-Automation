@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="ToolsQAAutomationTest" parallel="true">
-    <classes>
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"/>
-      <class name="com.toolsqa.automation.tests.AccessLoginPageTest"/>
-      <class name="com.toolsqa.automation.tests.ElementsTest"/>
-      <class name="appModules.SignIn_Action"/>
+  <test thread-count="5" name="SmokeTest" parallel="false">
+    <classes>          
+      <class name="com.toolsqa.automation.tests.TextBoxTest"/>
+      <class name="com.toolsqa.automation.tests.CheckBoxTest"/>
     </classes>
   </test> <!-- ToolsQAAutomationTest -->
+  
+  <test thread-count="5" name="RegressionTest" parallel="true" >
+ 	 <classes>
+  		<class name="com.toolsqa.automation.tests.BookStoreLoginTest"></class>
+  		<class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"></class>
+  	</classes>
+  </test>
 </suite> <!-- Suite -->

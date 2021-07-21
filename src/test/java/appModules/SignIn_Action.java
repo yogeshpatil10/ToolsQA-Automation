@@ -1,5 +1,8 @@
 package appModules;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +27,8 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.CaptureScreenshot;
+import utility.Constant;
 
 public abstract class SignIn_Action {
 
@@ -45,6 +50,7 @@ public abstract class SignIn_Action {
 //			ChromeOptions options = new ChromeOptions();
 //			options.setHeadless(true);
 			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 			logger.info("Chrome Browser has been initiated");
 
@@ -71,7 +77,7 @@ public abstract class SignIn_Action {
 	@BeforeSuite
 	public void setup() {
 
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "./test-output/MyExtentReport.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + Constant.myExtentReport);
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 
@@ -99,6 +105,13 @@ public abstract class SignIn_Action {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + "Test case FAILED.", ExtentColor.RED));
 			test.fail(result.getThrowable());
+			try {
+				CaptureScreenshot screen = new CaptureScreenshot(driver);
+				screen.takesScreenshot(Constant.screenshots);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + "Test case PASSED.", ExtentColor.GREEN));
 		} else {

@@ -7,34 +7,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
+import utility.ElementListUtility;
 import utility.ReadPropertiesFileUtility;
 
-public class ElementsObjectsPage {
+public class TextBoxPageObjects {
 
-	WebDriver driver;
+	private static WebDriver driver;
 	ElementActionsUtility function;
 	Actions actions;
+	WebDriverWait wait;
 
-	public ElementsObjectsPage(WebDriver driver) {
+	public TextBoxPageObjects(WebDriver driver) {
 		super();
-		this.driver = driver;
+		TextBoxPageObjects.driver = driver;
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 	}
 
-	@FindBy(css = "div.home-content>div.home-body>div.category-cards>div:nth-child(1)")
-	private WebElement mainElements;
-
-	@FindBy(css = "div.left-pannel>div>div:nth-child(1)>div>ul>li#item-0")
-	private WebElement textbox;
-
-	@FindBy(css = "input#userName")
+	@FindBy(id = "userName")
 	private WebElement fullname;
 
-	@FindBy(css = "input#userEmail")
+	@FindBy(id = "userEmail")
 	private WebElement useremail;
 
 	@FindBy(css = "textarea#currentAddress")
@@ -64,14 +61,10 @@ public class ElementsObjectsPage {
 
 	}
 
-	public void clickElements() {
-		function = new ElementActionsUtility(driver);
-		function.clickElementWithActions(mainElements);
-	}
-
 	public void clickTextBoxElement() {
-		function = new ElementActionsUtility(driver);
-		function.clickElement(textbox);
+		WebElement textboxelement = ElementListUtility.getElementFromList(driver, "item-0");
+		textboxelement.click();
+
 	}
 
 }
