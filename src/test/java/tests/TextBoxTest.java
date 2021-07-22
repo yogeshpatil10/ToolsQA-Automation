@@ -1,4 +1,4 @@
-package com.toolsqa.automation.tests;
+package tests;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -12,12 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import appModules.SignIn_Action;
+import base.BaseClass;
 import pageObjects.HomePageObjects;
 import pageObjects.TextBoxPageObjects;
 import utility.WaitUtility;
 
-public class TextBoxTest extends SignIn_Action {
+public class TextBoxTest extends BaseClass {
 
 	Logger logger = LogManager.getLogger(TextBoxTest.class);
 	WebDriverWait wait;
@@ -29,7 +29,7 @@ public class TextBoxTest extends SignIn_Action {
 
 		TextBoxPageObjects textboxobject = PageFactory.initElements(driver, TextBoxPageObjects.class);
 
-		HomePageObjects homepage = PageFactory.initElements(driver, HomePageObjects.class);
+		HomePageObjects homepage = new HomePageObjects(driver);
 		homepage.clickElements();
 
 		textboxobject.clickTextBoxElement();

@@ -1,7 +1,6 @@
-package appModules;
+package base;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,7 +29,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.CaptureScreenshot;
 import utility.Constant;
 
-public abstract class SignIn_Action {
+public abstract class BaseClass {
 
 	protected static WebDriver driver;
 
@@ -42,7 +41,7 @@ public abstract class SignIn_Action {
 	@BeforeTest
 	public void beforeTest(@org.testng.annotations.Optional("chrome") String browser) {
 
-		Logger logger = LogManager.getLogger(SignIn_Action.class);
+		Logger logger = LogManager.getLogger(BaseClass.class);
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
@@ -50,8 +49,6 @@ public abstract class SignIn_Action {
 //			ChromeOptions options = new ChromeOptions();
 //			options.setHeadless(true);
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
 			logger.info("Chrome Browser has been initiated");
 
 		} else if (browser.equalsIgnoreCase("firefox")) {

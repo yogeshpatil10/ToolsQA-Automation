@@ -1,4 +1,4 @@
-package com.toolsqa.automation.tests;
+package tests;
 
 import static org.testng.Assert.assertTrue;
 
@@ -8,10 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import appModules.SignIn_Action;
+import base.BaseClass;
 import pageObjects.BookStoreLoginPageObjects;
 
-public class BookStoreLoginTest extends SignIn_Action {
+public class BookStoreLoginTest extends BaseClass {
 
 	Logger logger = LogManager.getLogger(BookStoreLoginTest.class);
 	BookStoreLoginPageObjects loginPage;

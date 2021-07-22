@@ -19,9 +19,12 @@ public class ElementActionsUtility {
 
 	public void scrollPageDownToGetElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
-		js.executeScript("arguments[0].scrollIntoView();", element);
+		element.click();
+
+//		js.executeScript("arguments[0].scrollIntoView();", element);
 
 	}
 
@@ -50,6 +53,8 @@ public class ElementActionsUtility {
 	}
 
 	public void clickElementWithActions(WebElement element) {
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 
 	}

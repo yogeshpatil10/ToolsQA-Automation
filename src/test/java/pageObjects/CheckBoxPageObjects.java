@@ -9,7 +9,7 @@ import utility.ElementListUtility;
 
 public class CheckBoxPageObjects {
 
-	WebDriver driver;
+	private WebDriver driver;
 	ElementActionsUtility function;
 	WebDriverWait wait;
 

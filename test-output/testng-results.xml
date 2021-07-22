@@ -2,33 +2,16 @@
 <testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-22T01:10:32Z" name="Suite" finished-at="2021-07-22T01:11:30Z" duration-ms="58888">
+  <suite started-at="2021-07-22T04:17:19Z" name="Suite" finished-at="2021-07-22T04:18:56Z" duration-ms="97851">
     <groups>
       <group name="smoke">
-        <method signature="CheckBoxTest.getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" name="getToCheckBoxPage" class="com.toolsqa.automation.tests.CheckBoxTest"/>
-        <method signature="TextBoxTest.getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" name="getTextBoxPage" class="com.toolsqa.automation.tests.TextBoxTest"/>
+        <method signature="CheckBoxTest.getToCheckBoxPage()[pri:0, instance:tests.CheckBoxTest@5bd1ceca]" name="getToCheckBoxPage" class="tests.CheckBoxTest"/>
+        <method signature="TextBoxTest.getTextBoxPage()[pri:0, instance:tests.TextBoxTest@6c4f9535]" name="getTextBoxPage" class="tests.TextBoxTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-07-22T01:10:32Z" name="SmokeTest" finished-at="2021-07-22T01:10:58Z" duration-ms="26660">
-      <class name="com.toolsqa.automation.tests.CheckBoxTest">
-        <test-method signature="getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T01:10:54Z" name="getToCheckBoxPage" finished-at="2021-07-22T01:10:57Z" duration-ms="2874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getToCheckBoxPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T01:10:57Z" name="getResult" finished-at="2021-07-22T01:10:57Z" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getToCheckBoxPage status=SUCCESS method=CheckBoxTest.getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- com.toolsqa.automation.tests.CheckBoxTest -->
-      <class name="com.toolsqa.automation.tests.TextBoxTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:32Z" name="beforeTest" finished-at="2021-07-22T01:10:39Z" duration-ms="6917" status="PASS">
+    <test started-at="2021-07-22T04:17:19Z" name="SmokeTest" finished-at="2021-07-22T04:18:04Z" duration-ms="45105">
+      <class name="tests.TextBoxTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T04:17:19Z" name="beforeTest" finished-at="2021-07-22T04:17:28Z" duration-ms="9729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,34 +22,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:39Z" name="getTextBoxPage" finished-at="2021-07-22T01:10:54Z" duration-ms="15734" status="PASS">
+        <test-method signature="getTextBoxPage()[pri:0, instance:tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T04:17:28Z" name="getTextBoxPage" finished-at="2021-07-22T04:18:00Z" duration-ms="31289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTextBoxPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:54Z" name="getResult" finished-at="2021-07-22T01:10:54Z" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T04:18:00Z" name="getResult" finished-at="2021-07-22T04:18:00Z" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getTextBoxPage status=SUCCESS method=TextBoxTest.getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535] output={null}]]]>
+                <![CDATA[[TestResult name=getTextBoxPage status=SUCCESS method=TextBoxTest.getTextBoxPage()[pri:0, instance:tests.TextBoxTest@6c4f9535] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:57Z" name="afterTest" finished-at="2021-07-22T01:10:58Z" duration-ms="1052" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T04:18:03Z" name="afterTest" finished-at="2021-07-22T04:18:04Z" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.toolsqa.automation.tests.TextBoxTest -->
+      </class> <!-- tests.TextBoxTest -->
+      <class name="tests.CheckBoxTest">
+        <test-method signature="getToCheckBoxPage()[pri:0, instance:tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T04:18:00Z" name="getToCheckBoxPage" finished-at="2021-07-22T04:18:03Z" duration-ms="2938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToCheckBoxPage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T04:18:03Z" name="getResult" finished-at="2021-07-22T04:18:03Z" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getToCheckBoxPage status=SUCCESS method=CheckBoxTest.getToCheckBoxPage()[pri:0, instance:tests.CheckBoxTest@5bd1ceca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- tests.CheckBoxTest -->
     </test> <!-- SmokeTest -->
-    <test started-at="2021-07-22T01:10:58Z" name="RegressionTest" finished-at="2021-07-22T01:11:30Z" duration-ms="32046">
-      <class name="com.toolsqa.automation.tests.BookStoreLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:10:31Z" name="setup" finished-at="2021-07-22T01:10:32Z" duration-ms="220" status="PASS">
+    <test started-at="2021-07-22T04:18:04Z" name="RegressionTest" finished-at="2021-07-22T04:18:56Z" duration-ms="52599">
+      <class name="tests.BookStoreLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:17:18Z" name="setup" finished-at="2021-07-22T04:17:19Z" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:10:58Z" name="beforeTest" finished-at="2021-07-22T01:11:02Z" duration-ms="3726" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:04Z" name="beforeTest" finished-at="2021-07-22T04:18:09Z" duration-ms="4929" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,77 +77,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:02Z" name="goToBookStoreAppLoginPage" finished-at="2021-07-22T01:11:11Z" duration-ms="8671" status="PASS">
+        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:09Z" name="goToBookStoreAppLoginPage" finished-at="2021-07-22T04:18:33Z" duration-ms="24132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToBookStoreAppLoginPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:11Z" name="getResult" finished-at="2021-07-22T01:11:11Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:33Z" name="getResult" finished-at="2021-07-22T04:18:33Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToBookStoreAppLoginPage status=SUCCESS method=BookStoreLoginTest.goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601] output={null}]]]>
+                <![CDATA[[TestResult name=goToBookStoreAppLoginPage status=SUCCESS method=BookStoreLoginTest.goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@6ce1f601] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:11Z" name="loginToBookStoreApplication" finished-at="2021-07-22T01:11:13Z" duration-ms="1809" status="PASS">
+        <test-method signature="loginToBookStoreApplication()[pri:2, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:33Z" name="loginToBookStoreApplication" finished-at="2021-07-22T04:18:35Z" duration-ms="2117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToBookStoreApplication -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:13Z" name="getResult" finished-at="2021-07-22T01:11:13Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:35Z" name="getResult" finished-at="2021-07-22T04:18:35Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToBookStoreApplication status=SUCCESS method=BookStoreLoginTest.loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601] output={null}]]]>
+                <![CDATA[[TestResult name=loginToBookStoreApplication status=SUCCESS method=BookStoreLoginTest.loginToBookStoreApplication()[pri:2, instance:tests.BookStoreLoginTest@6ce1f601] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:29Z" name="afterTest" finished-at="2021-07-22T01:11:30Z" duration-ms="1535" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:55Z" name="afterTest" finished-at="2021-07-22T04:18:56Z" duration-ms="1485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:30Z" name="tearDown" finished-at="2021-07-22T01:11:31Z" duration-ms="943" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T04:18:56Z" name="tearDown" finished-at="2021-07-22T04:18:58Z" duration-ms="1162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.toolsqa.automation.tests.BookStoreLoginTest -->
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
-        <test-method signature="addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:13Z" name="addBook" finished-at="2021-07-22T01:11:24Z" duration-ms="11537" status="PASS">
+      </class> <!-- tests.BookStoreLoginTest -->
+      <class name="tests.AddAndDeleteBookFromCollectionTest">
+        <test-method signature="addBook()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T04:18:35Z" name="addBook" finished-at="2021-07-22T04:18:50Z" duration-ms="14708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBook -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:24Z" name="getResult" finished-at="2021-07-22T01:11:24Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T04:18:50Z" name="getResult" finished-at="2021-07-22T04:18:50Z" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addBook status=SUCCESS method=AddAndDeleteBookFromCollectionTest.addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d] output={null}]]]>
+                <![CDATA[[TestResult name=addBook status=SUCCESS method=AddAndDeleteBookFromCollectionTest.addBook()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:24Z" name="deleteBookFromProfile" finished-at="2021-07-22T01:11:29Z" duration-ms="4724" status="PASS">
+        <test-method signature="deleteBookFromProfile()[pri:4, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T04:18:50Z" name="deleteBookFromProfile" finished-at="2021-07-22T04:18:55Z" duration-ms="5125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBookFromProfile -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:29Z" name="getResult" finished-at="2021-07-22T01:11:29Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T04:18:55Z" name="getResult" finished-at="2021-07-22T04:18:55Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteBookFromProfile status=SUCCESS method=AddAndDeleteBookFromCollectionTest.deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d] output={null}]]]>
+                <![CDATA[[TestResult name=deleteBookFromProfile status=SUCCESS method=AddAndDeleteBookFromCollectionTest.deleteBookFromProfile()[pri:4, instance:tests.AddAndDeleteBookFromCollectionTest@38875e7d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
+      </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
     </test> <!-- RegressionTest -->
   </suite> <!-- Suite -->
 </testng-results>

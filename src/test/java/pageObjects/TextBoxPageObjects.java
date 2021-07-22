@@ -1,7 +1,5 @@
 package pageObjects;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,20 +9,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
 import utility.ElementListUtility;
-import utility.ReadPropertiesFileUtility;
 
 public class TextBoxPageObjects {
 
-	private static WebDriver driver;
+	private WebDriver driver;
 	ElementActionsUtility function;
 	Actions actions;
 	WebDriverWait wait;
 
 	public TextBoxPageObjects(WebDriver driver) {
-		TextBoxPageObjects.driver = driver;
-		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		this.driver = driver;
 	}
 
 	@FindBy(id = "userName")

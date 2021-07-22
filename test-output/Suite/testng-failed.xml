@@ -3,16 +3,28 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="RegressionTest(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
+      <class name="tests.AddAndDeleteBookFromCollectionTest">
         <methods>
           <include name="addBook"/>
+          <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="afterTest"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="deleteBookFromProfile"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
+      </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
+      <class name="tests.BookStoreLoginTest">
+        <methods>
+          <include name="goToBookStoreAppLoginPage"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="loginToBookStoreApplication"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.BookStoreLoginTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

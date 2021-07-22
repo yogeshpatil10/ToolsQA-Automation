@@ -1,4 +1,4 @@
-package com.toolsqa.automation.tests;
+package tests;
 
 import static org.testng.Assert.assertTrue;
 
@@ -13,12 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import appModules.SignIn_Action;
+import base.BaseClass;
 import pageObjects.BookStorePageObjects;
 import utility.BookStoreTableReaderUtility;
 import utility.WrapperReaderUtility;
 
-public class AddAndDeleteBookFromCollectionTest extends SignIn_Action {
+public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 	Logger logger = LogManager.getLogger(AddAndDeleteBookFromCollectionTest.class);
 	WebDriverWait wait;
 	Alert alert;

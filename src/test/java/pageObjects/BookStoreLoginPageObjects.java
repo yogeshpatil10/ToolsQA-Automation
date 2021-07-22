@@ -25,13 +25,13 @@ public class BookStoreLoginPageObjects {
 
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	@FindBy(css = ".category-cards>div:nth-child(6)")
+	@FindBy(css = "div.home-content>div.home-body>div.category-cards>div:nth-child(6)")
 	private WebElement bookStoreApp;
 
-	@FindBy(xpath = "//div[@class='element-list collapse show']/ul/li[@id='item-0']")
+	@FindBy(xpath = "//div[@class='left-pannel']/div/div[6]/div/ul[@class='menu-list']/li[@id='item-0']")
 	private WebElement loginmenu;
 
 	@FindBy(id = "userName")
@@ -43,13 +43,6 @@ public class BookStoreLoginPageObjects {
 	@FindBy(id = "login")
 	private WebElement loginbutton;
 
-	public void clickLoginMenuOption() {
-		ElementActionsUtility function = new ElementActionsUtility(driver);
-		function.scrollPageDownToGetElement(loginmenu);
-		loginmenu.click();
-
-	}
-
 	public void loginToBookStore() throws InterruptedException {
 		ElementActionsUtility function = new ElementActionsUtility(driver);
 		function.enterUserName(username, ReadPropertiesFileUtility.getGlobalValue("username"));
@@ -57,11 +50,15 @@ public class BookStoreLoginPageObjects {
 		function.scrollDownAndClickSubmitButton(loginbutton);
 	}
 
+	public void clickLoginMenuOption() {
+		ElementActionsUtility function = new ElementActionsUtility(driver);
+		function.scrollPageDownToGetElement(loginmenu);
+
+	}
+
 	public void clickBookStoreApp() {
 		ElementActionsUtility function = new ElementActionsUtility(driver);
 		function.scrollPageDownToGetElement(bookStoreApp);
-		actions = new Actions(driver);
-		actions.moveToElement(bookStoreApp).click().perform();
 
 	}
 
