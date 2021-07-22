@@ -21,7 +21,6 @@ public class BookStoreLoginPageObjects {
 	Actions actions;
 
 	public BookStoreLoginPageObjects(WebDriver driver) throws IOException {
-		super();
 		this.driver = driver;
 
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
@@ -47,8 +46,7 @@ public class BookStoreLoginPageObjects {
 	public void clickLoginMenuOption() {
 		ElementActionsUtility function = new ElementActionsUtility(driver);
 		function.scrollPageDownToGetElement(loginmenu);
-		actions = new Actions(driver);
-		actions.moveToElement(loginmenu).click().perform();
+		loginmenu.click();
 
 	}
 

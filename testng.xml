@@ -13,5 +13,5 @@
   		<class name="com.toolsqa.automation.tests.BookStoreLoginTest"></class>
   		<class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest"></class>
   	</classes>
-  </test> <!-- Regression      --> 
+  </test> <!-- Regression --> 
 </suite> <!-- Suite -->

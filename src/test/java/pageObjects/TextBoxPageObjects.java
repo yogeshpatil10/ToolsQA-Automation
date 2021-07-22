@@ -21,7 +21,6 @@ public class TextBoxPageObjects {
 	WebDriverWait wait;
 
 	public TextBoxPageObjects(WebDriver driver) {
-		super();
 		TextBoxPageObjects.driver = driver;
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();

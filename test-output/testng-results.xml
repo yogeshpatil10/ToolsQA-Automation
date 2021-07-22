@@ -2,20 +2,20 @@
 <testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-21T08:56:27Z" name="Suite" finished-at="2021-07-21T08:58:24Z" duration-ms="116432">
+  <suite started-at="2021-07-22T01:10:32Z" name="Suite" finished-at="2021-07-22T01:11:30Z" duration-ms="58888">
     <groups>
       <group name="smoke">
         <method signature="CheckBoxTest.getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" name="getToCheckBoxPage" class="com.toolsqa.automation.tests.CheckBoxTest"/>
         <method signature="TextBoxTest.getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" name="getTextBoxPage" class="com.toolsqa.automation.tests.TextBoxTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-07-21T08:56:27Z" name="SmokeTest" finished-at="2021-07-21T08:57:13Z" duration-ms="46048">
+    <test started-at="2021-07-22T01:10:32Z" name="SmokeTest" finished-at="2021-07-22T01:10:58Z" duration-ms="26660">
       <class name="com.toolsqa.automation.tests.CheckBoxTest">
-        <test-method signature="getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-21T08:57:07Z" name="getToCheckBoxPage" finished-at="2021-07-21T08:57:12Z" duration-ms="4528" status="PASS">
+        <test-method signature="getToCheckBoxPage()[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T01:10:54Z" name="getToCheckBoxPage" finished-at="2021-07-22T01:10:57Z" duration-ms="2874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getToCheckBoxPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-21T08:57:12Z" name="getResult" finished-at="2021-07-21T08:57:12Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.CheckBoxTest@5bd1ceca]" started-at="2021-07-22T01:10:57Z" name="getResult" finished-at="2021-07-22T01:10:57Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.toolsqa.automation.tests.CheckBoxTest -->
       <class name="com.toolsqa.automation.tests.TextBoxTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-21T08:56:27Z" name="beforeTest" finished-at="2021-07-21T08:56:40Z" duration-ms="12794" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:32Z" name="beforeTest" finished-at="2021-07-22T01:10:39Z" duration-ms="6917" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-21T08:56:40Z" name="getTextBoxPage" finished-at="2021-07-21T08:57:07Z" duration-ms="27208" status="PASS">
+        <test-method signature="getTextBoxPage()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:39Z" name="getTextBoxPage" finished-at="2021-07-22T01:10:54Z" duration-ms="15734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTextBoxPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-21T08:57:07Z" name="getResult" finished-at="2021-07-21T08:57:07Z" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:54Z" name="getResult" finished-at="2021-07-22T01:10:54Z" duration-ms="46" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,19 +54,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-21T08:57:12Z" name="afterTest" finished-at="2021-07-21T08:57:13Z" duration-ms="1424" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.TextBoxTest@6c4f9535]" started-at="2021-07-22T01:10:57Z" name="afterTest" finished-at="2021-07-22T01:10:58Z" duration-ms="1052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.toolsqa.automation.tests.TextBoxTest -->
     </test> <!-- SmokeTest -->
-    <test started-at="2021-07-21T08:57:13Z" name="RegressionTest" finished-at="2021-07-21T08:58:24Z" duration-ms="70281">
+    <test started-at="2021-07-22T01:10:58Z" name="RegressionTest" finished-at="2021-07-22T01:11:30Z" duration-ms="32046">
       <class name="com.toolsqa.automation.tests.BookStoreLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:56:27Z" name="setup" finished-at="2021-07-21T08:56:27Z" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:10:31Z" name="setup" finished-at="2021-07-22T01:10:32Z" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:57:13Z" name="beforeTest" finished-at="2021-07-21T08:57:17Z" duration-ms="3759" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:10:58Z" name="beforeTest" finished-at="2021-07-22T01:11:02Z" duration-ms="3726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,11 +77,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:57:17Z" name="goToBookStoreAppLoginPage" finished-at="2021-07-21T08:57:57Z" duration-ms="39471" status="PASS">
+        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:02Z" name="goToBookStoreAppLoginPage" finished-at="2021-07-22T01:11:11Z" duration-ms="8671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToBookStoreAppLoginPage -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:57:57Z" name="getResult" finished-at="2021-07-21T08:57:57Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:11Z" name="getResult" finished-at="2021-07-22T01:11:11Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,11 +92,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:57:57Z" name="loginToBookStoreApplication" finished-at="2021-07-21T08:58:03Z" duration-ms="6440" status="PASS">
+        <test-method signature="loginToBookStoreApplication()[pri:2, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:11Z" name="loginToBookStoreApplication" finished-at="2021-07-22T01:11:13Z" duration-ms="1809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToBookStoreApplication -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:58:03Z" name="getResult" finished-at="2021-07-21T08:58:03Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:13Z" name="getResult" finished-at="2021-07-22T01:11:13Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,21 +107,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:58:22Z" name="afterTest" finished-at="2021-07-21T08:58:24Z" duration-ms="1259" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:29Z" name="afterTest" finished-at="2021-07-22T01:11:30Z" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-21T08:58:24Z" name="tearDown" finished-at="2021-07-21T08:58:24Z" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.toolsqa.automation.tests.BookStoreLoginTest@6ce1f601]" started-at="2021-07-22T01:11:30Z" name="tearDown" finished-at="2021-07-22T01:11:31Z" duration-ms="943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.toolsqa.automation.tests.BookStoreLoginTest -->
       <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
-        <test-method signature="addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-21T08:58:03Z" name="addBook" finished-at="2021-07-21T08:58:18Z" duration-ms="14735" status="PASS">
+        <test-method signature="addBook()[pri:3, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:13Z" name="addBook" finished-at="2021-07-22T01:11:24Z" duration-ms="11537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBook -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-21T08:58:18Z" name="getResult" finished-at="2021-07-21T08:58:18Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:24Z" name="getResult" finished-at="2021-07-22T01:11:24Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,11 +132,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-21T08:58:18Z" name="deleteBookFromProfile" finished-at="2021-07-21T08:58:22Z" duration-ms="4587" status="PASS">
+        <test-method signature="deleteBookFromProfile()[pri:4, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:24Z" name="deleteBookFromProfile" finished-at="2021-07-22T01:11:29Z" duration-ms="4724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBookFromProfile -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-21T08:58:22Z" name="getResult" finished-at="2021-07-21T08:58:22Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest@38875e7d]" started-at="2021-07-22T01:11:29Z" name="getResult" finished-at="2021-07-22T01:11:29Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>

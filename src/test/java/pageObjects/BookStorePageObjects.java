@@ -15,7 +15,6 @@ public class BookStorePageObjects {
 	ElementActionsUtility function;
 
 	public BookStorePageObjects(WebDriver driver) {
-		super();
 		this.driver = driver;
 
 	}

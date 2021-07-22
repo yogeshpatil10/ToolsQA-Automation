@@ -1027,3 +1027,100 @@
 [INFO ] 2021-07-21 14:28:15.134 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
 [INFO ] 2021-07-21 14:28:16.219 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - Book already present in the your collection!
 [INFO ] 2021-07-21 14:28:22.826 [TestNG-test=RegressionTest-4] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection
+[INFO ] 2021-07-21 19:13:14.263 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-21 19:13:30.546 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-21 19:13:32.128 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-21 19:13:32.471 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-21 19:13:32.859 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-21 19:13:35.151 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-21 19:13:39.512 [main] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-21 19:13:43.094 [main] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:22:35.430 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:22:35.904 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:22:36.085 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:22:36.390 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:22:36.783 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:22:40.824 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:22:56.340 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:22:57.494 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:22:58.210 [TestNG-test=RegressionTest-2] BookStoreLoginTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-22 06:23:03.621 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-22 06:23:16.243 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
+[INFO ] 2021-07-22 06:23:17.136 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - Book already present in the your collection!
+[INFO ] 2021-07-22 06:25:04.673 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:25:06.423 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:25:06.744 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:25:07.134 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:25:08.482 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:25:11.953 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:25:25.013 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:25:25.712 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:30:24.431 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:30:24.858 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:30:25.108 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:30:25.509 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:30:25.859 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:30:28.848 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:30:40.829 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:30:41.523 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:31:16.021 [TestNG-test=RegressionTest-2] BookStoreLoginTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-22 06:38:26.423 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:38:26.800 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:38:27.050 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:38:27.489 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:38:28.345 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:38:32.992 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:38:48.389 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:38:48.604 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:38:49.489 [TestNG-test=RegressionTest-2] BookStoreLoginTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-22 06:38:50.616 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-22 06:39:07.142 [TestNG-test=RegressionTest-4] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection
+[INFO ] 2021-07-22 06:40:52.451 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:40:52.808 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:40:53.097 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:40:53.454 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:40:53.970 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:40:57.698 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:41:10.842 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:41:11.340 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:41:12.177 [TestNG-test=RegressionTest-2] BookStoreLoginTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-22 06:41:13.301 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-22 06:41:21.692 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
+[INFO ] 2021-07-22 06:41:22.690 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - Book added to your collection
+[INFO ] 2021-07-22 06:41:29.440 [TestNG-test=RegressionTest-4] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection
+[INFO ] 2021-07-22 06:45:24.967 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:45:34.289 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:45:35.482 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:45:35.798 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:45:36.141 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:45:36.957 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:45:39.187 [main] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:45:56.619 [main] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 06:47:39.990 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 06:47:48.196 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 06:47:48.597 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 06:47:48.830 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 06:47:49.172 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 06:47:49.555 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 06:47:52.486 [main] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 06:47:52.966 [main] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 07:00:36.469 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 07:00:37.409 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 07:00:37.643 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 07:00:37.992 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 07:00:41.999 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 07:00:49.088 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 07:01:11.723 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 07:04:50.655 [main] TextBoxTest - User clicked on TextBox element
+[INFO ] 2021-07-22 07:04:51.157 [main] TextBoxTest - User entered full name
+[INFO ] 2021-07-22 07:04:51.418 [main] TextBoxTest - User entered an email address
+[INFO ] 2021-07-22 07:04:51.842 [main] TextBoxTest - User entered current address
+[INFO ] 2021-07-22 07:04:52.354 [main] TextBoxTest - User enetered permanent address
+[INFO ] 2021-07-22 07:04:56.552 [main] CheckBoxTest - User clicked on CheckBox element
+[INFO ] 2021-07-22 07:05:10.980 [TestNG-test=RegressionTest-1] BookStoreLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+[INFO ] 2021-07-22 07:05:11.286 [TestNG-test=RegressionTest-1] BookStoreLoginTest - User clicked Login Menu Option from list
+[INFO ] 2021-07-22 07:05:12.180 [TestNG-test=RegressionTest-2] BookStoreLoginTest - User is successfully logged in to BookStore App
+[INFO ] 2021-07-22 07:05:13.839 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User is redirected to the Book Store
+[INFO ] 2021-07-22 07:05:21.908 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - User redirected to the Book Details Page
+[INFO ] 2021-07-22 07:05:22.870 [TestNG-test=RegressionTest-3] AddAndDeleteBookFromCollectionTest - Book already present in the your collection!
+[INFO ] 2021-07-22 07:05:29.567 [TestNG-test=RegressionTest-4] AddAndDeleteBookFromCollectionTest - Book successfully deleted from your collection

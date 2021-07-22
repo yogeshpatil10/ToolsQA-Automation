@@ -25,11 +25,12 @@ public class AddAndDeleteBookFromCollectionTest extends SignIn_Action {
 
 	@Test(priority = 3)
 	public void addBook() throws InterruptedException {
+
+		wait = new WebDriverWait(driver, 30);
 		test = extent.createTest("Add Book To Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
-		BookStorePageObjects bookpage = PageFactory.initElements(driver, BookStorePageObjects.class);
-		wait = new WebDriverWait(driver, 10);
 
+		BookStorePageObjects bookpage = PageFactory.initElements(driver, BookStorePageObjects.class);
 		bookpage.clickGoTOStore();
 		logger.info("User is redirected to the Book Store");
 
@@ -38,7 +39,7 @@ public class AddAndDeleteBookFromCollectionTest extends SignIn_Action {
 		BookStoreTableReaderUtility tablereader = new BookStoreTableReaderUtility(driver);
 		tablereader.getAllBooks("ReactTable -striped -highlight");
 		WebElement firstBook = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1, 2);
-		sleep(2);
+		wait.until(ExpectedConditions.visibilityOf(firstBook));
 
 		firstBook.click();
 		sleep(3);

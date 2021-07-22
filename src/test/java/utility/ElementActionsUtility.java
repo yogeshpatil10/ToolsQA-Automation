@@ -14,19 +14,20 @@ public class ElementActionsUtility {
 	Actions actions;
 
 	public ElementActionsUtility(WebDriver driver) {
-		super();
 		this.driver = driver;
 	}
 
 	public void scrollPageDownToGetElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		wait = new WebDriverWait(driver, 20);
+		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].scrollIntoView();", element);
 
 	}
 
 	public void enterUserName(WebElement element, String username) {
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(element));
 		element.clear();
 		element.sendKeys(username);
 	}

@@ -13,7 +13,6 @@ public class HomePageObjects {
 	static WebDriver driver;
 
 	public HomePageObjects(WebDriver driver) {
-		super();
 		HomePageObjects.driver = driver;
 
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));

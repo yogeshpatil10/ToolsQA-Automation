@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="SmokeTest(failed)">
+  <test thread-count="5" parallel="methods" name="RegressionTest(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.CheckBoxTest">
+      <class name="com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest">
         <methods>
-          <include name="getToCheckBoxPage"/>
+          <include name="addBook"/>
           <include name="tearDown"/>
           <include name="getResult"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.CheckBoxTest -->
-      <class name="com.toolsqa.automation.tests.TextBoxTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="getResult"/>
-          <include name="getTextBoxPage"/>
-          <include name="setup"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- com.toolsqa.automation.tests.TextBoxTest -->
+      </class> <!-- com.toolsqa.automation.tests.AddAndDeleteBookFromCollectionTest -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
+  </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

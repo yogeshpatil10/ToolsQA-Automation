@@ -14,7 +14,6 @@ public class CheckBoxPageObjects {
 	WebDriverWait wait;
 
 	public CheckBoxPageObjects(WebDriver driver) {
-		super();
 		this.driver = driver;
 
 	}
