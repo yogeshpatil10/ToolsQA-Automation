@@ -16,7 +16,6 @@
       </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
       <class name="tests.BookStoreLoginTest">
         <methods>
-          <include name="goToBookStoreAppLoginPage"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
