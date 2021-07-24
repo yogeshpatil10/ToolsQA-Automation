@@ -23,7 +23,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 	WebDriverWait wait;
 	Alert alert;
 
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void addBook() throws InterruptedException {
 
 		wait = new WebDriverWait(driver, 30);
@@ -34,15 +34,12 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		bookpage.clickGoTOStore();
 		logger.info("User is redirected to the Book Store");
 
-		sleep(3);
-
 		BookStoreTableReaderUtility tablereader = new BookStoreTableReaderUtility(driver);
 		tablereader.getAllBooks("ReactTable -striped -highlight");
 		WebElement firstBook = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1, 2);
 		wait.until(ExpectedConditions.visibilityOf(firstBook));
 
 		firstBook.click();
-		sleep(3);
 		logger.info("User redirected to the Book Details Page");
 
 		WrapperReaderUtility wrapper = new WrapperReaderUtility(driver);
@@ -68,7 +65,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void deleteBookFromProfile() {
 		test = extent.createTest("Delete Book from Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
@@ -78,7 +75,6 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		WebElement profilemenuitem = bookpage1.getListOfMenusFromBookStoreApp("item-3");
 		js.executeScript("arguments[0].scrollIntoView();", profilemenuitem);
 		profilemenuitem.click();
-		sleep(2);
 
 		String firstbooktext = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1, 2)
 				.getText();
@@ -86,7 +82,6 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 			WebElement deletebuttn = BookStoreTableReaderUtility.bookTableReader("ReactTable -striped -highlight", 1,
 					5);
 			deletebuttn.click();
-			sleep(2);
 		}
 
 		WebElement modalpopup = driver.switchTo().activeElement();

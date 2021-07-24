@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.automation.tests.TextBoxTest">
+      <class name="tests.CheckBoxTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="getResult"/>
-          <include name="getTextBoxPage"/>
-          <include name="setup"/>
           <include name="beforeTest"/>
+          <include name="tearDown"/>
           <include name="afterTest"/>
+          <include name="getToCheckBoxPage"/>
+          <include name="getResult"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.toolsqa.automation.tests.TextBoxTest -->
+      </class> <!-- tests.CheckBoxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

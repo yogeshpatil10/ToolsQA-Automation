@@ -34,7 +34,7 @@ public class BookStoreTableReaderUtility {
 
 		System.out.println("Books available in store are: ");
 		for (WebElement row : rows) {
-			WebDriverWait wait = new WebDriverWait(driver, 15);
+			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(row));
 			System.out.println(row.getText());
 		}

@@ -14,16 +14,6 @@
           <include name="deleteBookFromProfile"/>
         </methods>
       </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
-      <class name="tests.BookStoreLoginTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="tearDown"/>
-          <include name="afterTest"/>
-          <include name="loginToBookStoreApplication"/>
-          <include name="getResult"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.BookStoreLoginTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

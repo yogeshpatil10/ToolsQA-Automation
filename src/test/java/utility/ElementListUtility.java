@@ -12,7 +12,6 @@ public class ElementListUtility {
 	private static WebElement findelement;
 
 	public ElementListUtility(WebDriver driver) {
-		super();
 		ElementListUtility.driver = driver;
 
 	}

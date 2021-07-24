@@ -18,8 +18,9 @@ public class ElementActionsUtility {
 	}
 
 	public void scrollPageDownToGetElement(WebElement element) {
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,350)", "");
+		js.executeScript("window.scrollBy(0,250)", "");
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
@@ -36,6 +37,8 @@ public class ElementActionsUtility {
 	}
 
 	public void enterPassword(WebElement element, String password) {
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(element));
 		element.clear();
 		element.sendKeys(password);
 	}
@@ -54,6 +57,8 @@ public class ElementActionsUtility {
 
 	public void clickElementWithActions(WebElement element) {
 		wait = new WebDriverWait(driver, 30);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 
