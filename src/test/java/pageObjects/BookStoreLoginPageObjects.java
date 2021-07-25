@@ -54,10 +54,11 @@ public class BookStoreLoginPageObjects {
 
 	public void clickLeftLoginOption() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		actions = new Actions(driver);
 
 		WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
 		js.executeScript("arguments[0].scrollIntoView();", loginLeftElement);
-		loginLeftElement.click();
+		actions.moveToElement(loginLeftElement).click().build().perform();
 	}
 
 	public void clickBookStoreApp() {
