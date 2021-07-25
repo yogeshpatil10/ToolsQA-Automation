@@ -7,11 +7,11 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
@@ -53,12 +53,11 @@ public class BookStoreLoginPageObjects {
 	}
 
 	public void clickLeftLoginOption() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		WebElement loginLeftElement = getElementFromBookstoreApp(1);
-		wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
+		WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
+		js.executeScript("arguments[0].scrollIntoView();", loginLeftElement);
 		loginLeftElement.click();
-
 	}
 
 	public void clickBookStoreApp() {
@@ -67,7 +66,7 @@ public class BookStoreLoginPageObjects {
 
 	}
 
-	public WebElement getElementFromBookstoreApp(int index) {
+	public WebElement getElementFromBookstoreApp(String id) {
 		WebElement findelement = null;
 
 		List<WebElement> bookStoreAppElements = driver
@@ -75,7 +74,7 @@ public class BookStoreLoginPageObjects {
 
 		for (WebElement element : bookStoreAppElements) {
 			findelement = element
-					.findElement(By.xpath("//div[@class='left-pannel']/div/div[6]/div/ul/li[" + index + "]"));
+					.findElement(By.xpath("//div[@class='left-pannel']/div/div[6]/div/ul/li[@id='" + id + "']"));
 		}
 
 		return findelement;
