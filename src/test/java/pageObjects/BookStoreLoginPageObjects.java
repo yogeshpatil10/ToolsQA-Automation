@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
@@ -55,9 +56,11 @@ public class BookStoreLoginPageObjects {
 	public void clickLeftLoginOption() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		actions = new Actions(driver);
+		wait = new WebDriverWait(driver, 30);
 
 		WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
 		js.executeScript("arguments[0].scrollIntoView();", loginLeftElement);
+		wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
 		actions.moveToElement(loginLeftElement).click().build().perform();
 	}
 
@@ -71,11 +74,11 @@ public class BookStoreLoginPageObjects {
 		WebElement findelement = null;
 
 		List<WebElement> bookStoreAppElements = driver
-				.findElements(By.xpath("//div[@class='left-pannel']/div/div[6]/div/ul/li"));
+				.findElements(By.xpath("//div[@class='element-list collapse show']/ul/li"));
 
 		for (WebElement element : bookStoreAppElements) {
 			findelement = element
-					.findElement(By.xpath("//div[@class='left-pannel']/div/div[6]/div/ul/li[@id='" + id + "']"));
+					.findElement(By.xpath("//div[@class='element-list collapse show']/ul/li[@id='" + id + "']"));
 		}
 
 		return findelement;
