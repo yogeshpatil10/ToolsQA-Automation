@@ -35,6 +35,7 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 25, 2021 08:51:55 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 25, 2021 09:55:42 AM</span>
 				</a>
 			</li>
 			<li>
@@ -74,6 +75,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -135,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>4</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,14 +173,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>TextBox Test</span>
-						<span class='test-time'>Jul 25, 2021 08:52:08 AM</span>
+						<span class='test-time'>Jul 25, 2021 09:56:14 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 25, 2021 08:52:08 AM</span>
-	<span class='label end-time'>Jul 25, 2021 08:52:31 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+432ms</span>
+	<span class='label start-time'>Jul 25, 2021 09:56:14 AM</span>
+	<span class='label end-time'>Jul 25, 2021 09:56:47 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+135ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -200,7 +202,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:52:31 AM</td>
+					<td class='timestamp'>9:56:47 AM</td>
 					<td class='step-details'><span class='label white-text green'>getTextBoxPageTest case PASSED.</span></td>
 				</tr>
 			</tbody>
@@ -213,14 +215,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>CheckBox Test</span>
-						<span class='test-time'>Jul 25, 2021 08:52:31 AM</span>
+						<span class='test-time'>Jul 25, 2021 09:56:47 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 25, 2021 08:52:31 AM</span>
-	<span class='label end-time'>Jul 25, 2021 08:52:39 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+54ms</span>
+	<span class='label start-time'>Jul 25, 2021 09:56:47 AM</span>
+	<span class='label end-time'>Jul 25, 2021 09:56:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+973ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -242,7 +244,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:52:39 AM</td>
+					<td class='timestamp'>9:56:56 AM</td>
 					<td class='step-details'><span class='label white-text green'>getToCheckBoxPageTest case PASSED.</span></td>
 				</tr>
 			</tbody>
@@ -255,14 +257,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Login to Book Store Application</span>
-						<span class='test-time'>Jul 25, 2021 08:52:49 AM</span>
+						<span class='test-time'>Jul 25, 2021 09:57:12 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 25, 2021 08:52:49 AM</span>
-	<span class='label end-time'>Jul 25, 2021 08:53:05 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+556ms</span>
+	<span class='label start-time'>Jul 25, 2021 09:57:12 AM</span>
+	<span class='label end-time'>Jul 25, 2021 09:57:43 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+669ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -285,7 +287,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:53:05 AM</td>
+					<td class='timestamp'>9:57:43 AM</td>
 					<td class='step-details'><span class='label white-text green'>goToBookStoreAppLoginPageTest case PASSED.</span></td>
 				</tr>
 			</tbody>
@@ -295,17 +297,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>Add Book To Your Collection</span>
-						<span class='test-time'>Jul 25, 2021 08:53:05 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 25, 2021 09:57:43 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 25, 2021 08:53:05 AM</span>
-	<span class='label end-time'>Jul 25, 2021 08:53:17 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+183ms</span>
+	<span class='label start-time'>Jul 25, 2021 09:57:43 AM</span>
+	<span class='label end-time'>Jul 25, 2021 09:57:52 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+893ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -326,10 +328,49 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:53:17 AM</td>
-					<td class='step-details'><span class='label white-text green'>addBookTest case PASSED.</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:57:52 AM</td>
+					<td class='step-details'><span class='label white-text red'>addBookTest case FAILED.</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:57:52 AM</td>
+					<td class='step-details'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: No dialog is showing
+  (Session info: chrome=92.0.4515.107)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.43.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 911d31f24217c2da805d451082ba203d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteAlert.accept(RemoteWebDriver.java:943)
+	at tests.AddAndDeleteBookFromCollectionTest.addBook(AddAndDeleteBookFromCollectionTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -341,14 +382,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>Delete Book from Your Collection</span>
-						<span class='test-time'>Jul 25, 2021 08:53:17 AM</span>
+						<span class='test-time'>Jul 25, 2021 09:57:55 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 25, 2021 08:53:17 AM</span>
-	<span class='label end-time'>Jul 25, 2021 08:53:18 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+584ms</span>
+	<span class='label start-time'>Jul 25, 2021 09:57:55 AM</span>
+	<span class='label end-time'>Jul 25, 2021 09:57:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+2ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -371,7 +412,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:53:18 AM</td>
+					<td class='timestamp'>9:57:56 AM</td>
 					<td class='step-details'><span class='label white-text green'>deleteBookFromProfileTest case PASSED.</span></td>
 				</tr>
 			</tbody>
@@ -433,13 +474,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>Smoke</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label pass'>4</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -454,27 +496,27 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2021 08:52:08 AM</td>
+										<td>Jul 25, 2021 09:56:14 AM</td>
 										<td class='linked' test-id='1'>TextBox Test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:52:31 AM</td>
+										<td>Jul 25, 2021 09:56:47 AM</td>
 										<td class='linked' test-id='2'>CheckBox Test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:52:49 AM</td>
+										<td>Jul 25, 2021 09:57:12 AM</td>
 										<td class='linked' test-id='3'>Login to Book Store Application</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:53:05 AM</td>
+										<td>Jul 25, 2021 09:57:43 AM</td>
 										<td class='linked' test-id='4'>Add Book To Your Collection</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:53:17 AM</td>
+										<td>Jul 25, 2021 09:57:55 AM</td>
 										<td class='linked' test-id='5'>Delete Book from Your Collection</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -487,13 +529,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>Regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -508,17 +551,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2021 08:52:49 AM</td>
+										<td>Jul 25, 2021 09:57:12 AM</td>
 										<td class='linked' test-id='3'>Login to Book Store Application</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:53:05 AM</td>
+										<td>Jul 25, 2021 09:57:43 AM</td>
 										<td class='linked' test-id='4'>Add Book To Your Collection</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 25, 2021 08:53:17 AM</td>
+										<td>Jul 25, 2021 09:57:55 AM</td>
 										<td class='linked' test-id='5'>Delete Book from Your Collection</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -567,13 +610,14 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Yogesh</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>5</span>
+                                        <span class='label pass'>4</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 5</span>
-                                    
+                                    <span class='label green accent-4 white-text'>Passed: 4</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -588,27 +632,27 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 25, 2021 08:52:08 AM</td>
+                                                <td>Jul 25, 2021 09:56:14 AM</td>
                                                 <td class='linked' test-id='1'>TextBox Test</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 25, 2021 08:52:31 AM</td>
+                                                <td>Jul 25, 2021 09:56:47 AM</td>
                                                 <td class='linked' test-id='2'>CheckBox Test</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 25, 2021 08:52:49 AM</td>
+                                                <td>Jul 25, 2021 09:57:12 AM</td>
                                                 <td class='linked' test-id='3'>Login to Book Store Application</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 25, 2021 08:53:05 AM</td>
+                                                <td>Jul 25, 2021 09:57:43 AM</td>
                                                 <td class='linked' test-id='4'>Add Book To Your Collection</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 25, 2021 08:53:17 AM</td>
+                                                <td>Jul 25, 2021 09:57:55 AM</td>
                                                 <td class='linked' test-id='5'>Delete Book from Your Collection</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
@@ -628,6 +672,101 @@
         </div>
     </div>
 </div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.InvalidArgumentException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 25, 2021 09:57:43 AM</td>
+                                                        <td class='linked' test-id='4'>Add Book To Your Collection</td>
+                                                        <td><pre><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: No dialog is showing
+  (Session info: chrome=92.0.4515.107)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.43.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 911d31f24217c2da805d451082ba203d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteAlert.accept(RemoteWebDriver.java:943)
+	at tests.AddAndDeleteBookFromCollectionTest.addBook(AddAndDeleteBookFromCollectionTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -643,25 +782,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 25, 2021 08:51:55 AM</div>
+					<div class='panel-lead'>Jul 25, 2021 09:55:42 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 25, 2021 08:53:20 AM</div>
+			 		<div class='panel-lead'>Jul 25, 2021 09:57:57 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 25s+80ms</div>
+					<div class='panel-lead'>0h 2m 15s+532ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -706,20 +845,20 @@
 						</tr>
 						<tr>
 							<td>Smoke</td>
-							<td>5</td>
-							<td>0</td>
+							<td>4</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									80%
 							</td>
 						</tr>
 						<tr>
 							<td>Regression</td>
-							<td>3</td>
-							<td>0</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									66.667%
 							</td>
 						</tr>
 					</table>
@@ -735,22 +874,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 0,
+				passParent: 4,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 5,
-				failChild: 0,
+				passChild: 4,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

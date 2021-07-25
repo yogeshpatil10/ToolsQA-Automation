@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddAndDeleteBookFromCollectionTest" class="method navigator-link" hash-for-method="addBook">addBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.AddAndDeleteBookFromCollectionTest" class="method navigator-link" hash-for-method="addBook">addBook</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.AddAndDeleteBookFromCollectionTest" class="method navigator-link" hash-for-method="deleteBookFromProfile">deleteBookFromProfile</a> <!-- method navigator-link -->
@@ -137,6 +146,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AddAndDeleteBookFromCollectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBook">
+                  </a> <!-- addBook -->
+                  <span class="method-name">addBook</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: No dialog is showing
+  (Session info: chrome=92.0.4515.107)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.43.198&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 911d31f24217c2da805d451082ba203d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteAlert.accept(RemoteWebDriver.java:943)
+	at tests.AddAndDeleteBookFromCollectionTest.addBook(AddAndDeleteBookFromCollectionTest.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -158,13 +203,6 @@
               <span class="class-name">tests.AddAndDeleteBookFromCollectionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addBook">
-                  </a> <!-- addBook -->
-                  <span class="method-name">addBook</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="deleteBookFromProfile">
@@ -282,23 +320,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTextBoxPage')
 data.setCell(0, 2, 'tests.TextBoxTest')
-data.setCell(0, 3, 21185);
+data.setCell(0, 3, 33211);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'goToBookStoreAppLoginPage')
 data.setCell(1, 2, 'tests.BookStoreLoginTest')
-data.setCell(1, 3, 19211);
+data.setCell(1, 3, 31666);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addBook')
-data.setCell(2, 2, 'tests.AddAndDeleteBookFromCollectionTest')
-data.setCell(2, 3, 11333);
+data.setCell(2, 1, 'getToCheckBoxPage')
+data.setCell(2, 2, 'tests.CheckBoxTest')
+data.setCell(2, 3, 8979);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getToCheckBoxPage')
-data.setCell(3, 2, 'tests.CheckBoxTest')
-data.setCell(3, 3, 8145);
+data.setCell(3, 1, 'addBook')
+data.setCell(3, 2, 'tests.AddAndDeleteBookFromCollectionTest')
+data.setCell(3, 3, 8879);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'deleteBookFromProfile')
 data.setCell(4, 2, 'tests.AddAndDeleteBookFromCollectionTest')
-data.setCell(4, 3, 2351);
+data.setCell(4, 3, 1003);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -365,78 +403,80 @@ return data;
               <div class="chronological-class-name">tests.TextBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">814 ms</span>
+                <span class="method-start">202 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getTextBoxPage</span>
-                <span class="method-start">18601 ms</span>
+                <span class="method-start">32417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getTextBoxPage status=SUCCESS method=TextBoxTest.getTextBoxPage()[pri:0, instance:t...)</span>
-                <span class="method-start">39791 ms</span>
+                <span class="method-start">65631 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getToCheckBoxPage</span>
-                <span class="method-start">39854 ms</span>
+                <span class="method-start">65685 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getToCheckBoxPage status=SUCCESS method=CheckBoxTest.getToCheckBoxPage()[pri:0, ins...)</span>
-                <span class="method-start">48001 ms</span>
+                <span class="method-start">74665 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TextBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">48005 ms</span>
+                <span class="method-start">74670 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.BookStoreLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">50279 ms</span>
+                <span class="method-start">76855 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">goToBookStoreAppLoginPage</span>
-                <span class="method-start">61458 ms</span>
+                <span class="method-start">90030 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=goToBookStoreAppLoginPage status=SUCCESS method=BookStoreLoginTest.goToBookStoreApp...)</span>
-                <span class="method-start">80673 ms</span>
+                <span class="method-start">121699 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddAndDeleteBookFromCollectionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addBook</span>
-                <span class="method-start">80676 ms</span>
+                <span class="method-start">121701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=addBook status=SUCCESS method=AddAndDeleteBookFromCollectionTest.addBook()[pri:2, i...)</span>
-                <span class="method-start">92012 ms</span>
+                <span class="method-name">getResult([TestResult name=addBook status=FAILURE method=AddAndDeleteBookFromCollectionTest.addBook()[pri:2, i...)</span>
+                <span class="method-start">130587 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">deleteBookFromProfile</span>
-                <span class="method-start">92016 ms</span>
+                <span class="method-start">132802 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=deleteBookFromProfile status=SUCCESS method=AddAndDeleteBookFromCollectionTest.dele...)</span>
-                <span class="method-start">94368 ms</span>
+                <span class="method-start">133806 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.BookStoreLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">94372 ms</span>
+                <span class="method-start">133809 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">96390 ms</span>
+                <span class="method-start">135575 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -58,6 +58,13 @@ public class BookStoreLoginPageObjects {
 		actions = new Actions(driver);
 		wait = new WebDriverWait(driver, 30);
 
+		driver.findElement(
+				By.xpath("//div[@class='left-pannel']/div/div[6]/span/div/div[text()='Book Store Application']"))
+				.click();
+		driver.findElement(
+				By.xpath("//div[@class='left-pannel']/div/div[6]/span/div/div[text()='Book Store Application']"))
+				.click();
+
 		WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
 		js.executeScript("arguments[0].scrollIntoView();", loginLeftElement);
 		wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
