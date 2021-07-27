@@ -12,6 +12,7 @@
  	 <classes>
   		<class name="tests.BookStoreLoginTest"></class>
   		<class name="tests.AddAndDeleteBookFromCollectionTest"></class>
+  		<class name="tests.VerifyLoginTest"></class>
   	</classes>
   </test> <!-- Regression --> 
 </suite> <!-- Suite -->

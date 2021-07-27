@@ -26,7 +26,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 	@Test(priority = 2)
 	public void addBook() throws InterruptedException {
 
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 40);
 		test = extent.createTest("Add Book To Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
 				.assignCategory("Regression");
 
@@ -61,7 +61,6 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		}
 
 		alert.accept();
-		sleep(2);
 
 	}
 
