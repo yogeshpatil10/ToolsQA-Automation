@@ -11,7 +11,7 @@ public class LocalDateTimeRunner {
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println(now);
 
-		DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("yyyyMMddHHmmss a'.png'");
 		String format = now.format(ofPattern);
 		System.out.println(format);
 

@@ -8,7 +8,7 @@
           <include name="beforeTest"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
-          <include name="verifyLoginWithNoOfUsers" invocation-numbers="0"/>
+          <include name="verifyLoginWithNoOfUsers"/>
           <include name="getResult"/>
           <include name="setup"/>
         </methods>

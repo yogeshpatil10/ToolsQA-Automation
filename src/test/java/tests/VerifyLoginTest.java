@@ -10,6 +10,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -19,7 +21,7 @@ import utility.Constant;
 import utility.ReadCSVFileUtility;
 
 public class VerifyLoginTest extends BaseClass {
-
+	WebDriverWait wait;
 	Logger logger = LogManager.getLogger(VerifyLoginTest.class);
 
 	@DataProvider(name = "logindata-fromcsv")
@@ -33,6 +35,7 @@ public class VerifyLoginTest extends BaseClass {
 
 		test = extent.createTest("Verify Login Functionality With Different Users").assignAuthor("Yogesh")
 				.assignCategory("Regression");
+		wait = new WebDriverWait(driver, 40);
 
 		BookStoreLoginPageObjects loginpage = PageFactory.initElements(driver, BookStoreLoginPageObjects.class);
 		boolean isLoginSuccessful = Boolean.valueOf(isLoginSuccess);
@@ -55,7 +58,7 @@ public class VerifyLoginTest extends BaseClass {
 
 		if (isLoginSuccessful) {
 			WebElement bookSearchBox = driver.findElement(By.id("searchBox"));
-
+			wait.until(ExpectedConditions.visibilityOf(bookSearchBox));
 			assertTrue(bookSearchBox.isDisplayed());
 			logger.info("Login successful");
 			WebElement logoutbutton = driver.findElement(By.id("submit"));
