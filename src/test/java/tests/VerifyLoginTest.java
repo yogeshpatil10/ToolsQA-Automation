@@ -3,13 +3,11 @@ package tests;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
 import java.util.Iterator;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
@@ -22,7 +20,6 @@ import utility.ReadCSVFileUtility;
 
 public class VerifyLoginTest extends BaseClass {
 	WebDriverWait wait;
-	Logger logger = LogManager.getLogger(VerifyLoginTest.class);
 
 	@DataProvider(name = "logindata-fromcsv")
 	public static Iterator<String[]> provideDataFromCSV() {
@@ -31,20 +28,18 @@ public class VerifyLoginTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "logindata-fromcsv")
-	public void verifyLoginWithNoOfUsers(String username, String password, String isLoginSuccess) {
+	public void verifyLoginWithNoOfUsers(String username, String password, String isLoginSuccess) throws IOException {
 
-		test = extent.createTest("Verify Login Functionality With Different Users").assignAuthor("Yogesh")
-				.assignCategory("Regression");
 		wait = new WebDriverWait(driver, 40);
 
-		BookStoreLoginPageObjects loginpage = PageFactory.initElements(driver, BookStoreLoginPageObjects.class);
+		BookStoreLoginPageObjects loginpage = new BookStoreLoginPageObjects(driver);
 		boolean isLoginSuccessful = Boolean.valueOf(isLoginSuccess);
 
 		loginpage.clickBookStoreApp();
-		logger.info("User clicked BookStore App on Home Page");
+		Log.info("User clicked BookStore App on Home Page");
 
 		loginpage.clickLeftLoginOption();
-		logger.info("User clicked Login option from left panel");
+		Log.info("User clicked Login option from left panel");
 
 		WebElement userid = driver.findElement(By.id("userName"));
 
@@ -60,13 +55,13 @@ public class VerifyLoginTest extends BaseClass {
 			WebElement bookSearchBox = driver.findElement(By.id("searchBox"));
 			wait.until(ExpectedConditions.visibilityOf(bookSearchBox));
 			assertTrue(bookSearchBox.isDisplayed());
-			logger.info("Login successful");
+			Log.info("Login successful");
 			WebElement logoutbutton = driver.findElement(By.id("submit"));
 			logoutbutton.click();
 		} else {
 			String errormsg = driver.findElement(By.id("name")).getText();
 			assertEquals(errormsg, "Invalid username or password!");
-			logger.info("Invalid user name and password");
+			Log.info("Invalid user name and password");
 		}
 	}
 

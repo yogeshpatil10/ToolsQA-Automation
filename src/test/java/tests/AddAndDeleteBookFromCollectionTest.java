@@ -2,13 +2,10 @@ package tests;
 
 import static org.testng.Assert.assertTrue;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -19,20 +16,18 @@ import utility.BookStoreTableReaderUtility;
 import utility.WrapperReaderUtility;
 
 public class AddAndDeleteBookFromCollectionTest extends BaseClass {
-	Logger logger = LogManager.getLogger(AddAndDeleteBookFromCollectionTest.class);
+	BookStorePageObjects bookpage;
 	WebDriverWait wait;
 	Alert alert;
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "Regression" })
 	public void addBook() throws InterruptedException {
 
 		wait = new WebDriverWait(driver, 40);
-		test = extent.createTest("Add Book To Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
-				.assignCategory("Regression");
 
-		BookStorePageObjects bookpage = PageFactory.initElements(driver, BookStorePageObjects.class);
+		BookStorePageObjects bookpage = new BookStorePageObjects(driver);
 		bookpage.clickGoTOStore();
-		logger.info("User is redirected to the Book Store");
+		Log.info("User is redirected to the Book Store");
 
 		BookStoreTableReaderUtility tablereader = new BookStoreTableReaderUtility(driver);
 		tablereader.getAllBooks("ReactTable -striped -highlight");
@@ -40,7 +35,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		wait.until(ExpectedConditions.visibilityOf(firstBook));
 
 		firstBook.click();
-		logger.info("User redirected to the Book Details Page");
+		Log.info("User redirected to the Book Details Page");
 
 		WrapperReaderUtility wrapper = new WrapperReaderUtility(driver);
 		WebElement wrapper92 = wrapper.getWrapperReader("books-wrapper", 9, "Add To Your Collection");
@@ -54,22 +49,19 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 
 		if (alerttext.equals("Book added to your collection.")) {
 			assertTrue(alerttext.contentEquals("Book added to your collection."));
-			logger.info("Book added to your collection");
+			Log.info("Book added to your collection");
 		} else {
 			assertTrue(alerttext.contentEquals("Book already present in the your collection!"));
-			logger.info("Book already present in the your collection!");
+			Log.info("Book already present in the your collection!");
 		}
 
 		alert.accept();
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = { "Regression" })
 	public void deleteBookFromProfile() {
-		test = extent.createTest("Delete Book from Your Collection").assignAuthor("Yogesh").assignCategory("Smoke")
-				.assignCategory("Regression");
-		BookStorePageObjects bookpage1 = PageFactory.initElements(driver, BookStorePageObjects.class);
-
+		BookStorePageObjects bookpage1 = new BookStorePageObjects(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement profilemenuitem = bookpage1.getListOfMenusFromBookStoreApp("item-3");
 		js.executeScript("arguments[0].scrollIntoView();", profilemenuitem);
@@ -87,7 +79,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		if (modalpopup.isDisplayed()) {
 			modalpopup.findElement(By.id("closeSmallModal-ok")).click();
 		}
-		logger.info("Book successfully deleted from your collection");
+		Log.info("Book successfully deleted from your collection");
 	}
 
 }

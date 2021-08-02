@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ToolsQA Test Automation Smoke Test">
+<parameter name="component" value="${component.name}"/>
+<parameter name="version" value="${component.version}"/>
+
+	<listeners>
+		<listener class-name="base.ExtentReportListener"></listener>
+	</listeners>
+
+	<test thread-count="5" name="SmokeTest" parallel="false">
+		<classes>
+			<class name="tests.TextBoxTest" />
+			<class name="tests.CheckBoxTest" />
+		</classes>
+	</test> <!-- SmokeTest -->
+
+</suite> <!-- Suite -->

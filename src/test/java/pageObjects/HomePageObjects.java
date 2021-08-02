@@ -11,7 +11,7 @@ import utility.ReadPropertiesFileUtility;
 
 public class HomePageObjects {
 
-	static WebDriver driver;
+	protected static WebDriver driver;
 
 	public HomePageObjects(WebDriver driver) {
 		HomePageObjects.driver = driver;

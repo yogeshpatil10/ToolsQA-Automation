@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ToolsQA Test Automation Regression Test">
+
+	<listeners>
+		<listener class-name="base.ExtentReportListener"></listener>
+	</listeners>
+	
+	<test thread-count="5" name="RegressionTest" >
+		<classes>
+			<class name="tests.BookStoreLoginTest" />
+			<class name="tests.AddAndDeleteBookFromCollectionTest" />
+			<class name="tests.VerifyLoginTest" />
+		</classes>
+	</test> <!-- RegressionTest -->
+</suite> <!-- Suite -->

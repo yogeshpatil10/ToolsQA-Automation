@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="RegressionTest(failed)">
+  <listeners>
+    <listener class-name="base.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="tests.AddAndDeleteBookFromCollectionTest">
+      <class name="tests.TextBoxTest">
         <methods>
-          <include name="addBook"/>
           <include name="beforeTest"/>
-          <include name="tearDown"/>
+          <include name="getTextBoxPage"/>
           <include name="afterTest"/>
-          <include name="getResult"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
+      </class> <!-- tests.TextBoxTest -->
     </classes>
-  </test> <!-- RegressionTest(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
