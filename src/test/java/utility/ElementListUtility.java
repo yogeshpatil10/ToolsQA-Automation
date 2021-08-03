@@ -28,4 +28,15 @@ public class ElementListUtility {
 
 	}
 
+	public static WebElement getRadioFromListOptions(WebDriver driver, String id) {
+		WebElement findElement = null;
+		List<WebElement> radioButtons = driver
+				.findElements(By.xpath("//div[@class='col-12 mt-4 col-md-6']/div[1]/div/input"));
+		for (WebElement element : radioButtons) {
+			findElement = element
+					.findElement(By.xpath("//div[@class='col-12 mt-4 col-md-6']/div[1]/div/input[@id='" + id + "']"));
+		}
+		return findElement;
+	}
+
 }

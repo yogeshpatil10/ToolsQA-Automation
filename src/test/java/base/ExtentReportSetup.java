@@ -18,7 +18,7 @@ public class ExtentReportSetup extends BaseClass {
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + Constant.ExtentReport);
 		sparkReporter.config().setDocumentTitle("ToolsQA Automation Test");
 		sparkReporter.config().setReportName("Automation Run Extent Report");
-		sparkReporter.config().setTheme(Theme.DARK);
+		sparkReporter.config().setTheme(Theme.STANDARD);
 
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);

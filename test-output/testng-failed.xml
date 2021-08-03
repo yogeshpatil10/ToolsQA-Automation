@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ToolsQA Test Automation Smoke Test]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="base.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" name="SmokeTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TextBoxTest">
+      <class name="tests.RadioButtonTest">
         <methods>
+          <include name="selectRadioButtons"/>
           <include name="beforeTest"/>
-          <include name="getTextBoxPage"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- tests.TextBoxTest -->
+      </class> <!-- tests.RadioButtonTest -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
-</suite> <!-- Failed suite [ToolsQA Test Automation Smoke Test] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

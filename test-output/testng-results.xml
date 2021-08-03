@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="14" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-02T17:50:07Z" name="ToolsQA Test Automation Smoke Test" finished-at="2021-08-02T17:51:31Z" duration-ms="84107">
+  <suite started-at="2021-08-03T12:31:38Z" name="Default suite" finished-at="2021-08-03T12:31:57Z" duration-ms="19302">
     <groups>
-      <group name="smoke">
-        <method signature="CheckBoxTest.getToCheckBoxPage()[pri:0, instance:tests.CheckBoxTest@14bb2297]" name="getToCheckBoxPage" class="tests.CheckBoxTest"/>
-        <method signature="TextBoxTest.getTextBoxPage()[pri:0, instance:tests.TextBoxTest@649f2009]" name="getTextBoxPage" class="tests.TextBoxTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-08-02T17:50:07Z" name="SmokeTest" finished-at="2021-08-02T17:51:31Z" duration-ms="84107">
-      <class name="tests.TextBoxTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.TextBoxTest@649f2009]" started-at="2021-08-02T17:50:08Z" name="beforeTest" finished-at="2021-08-02T17:50:19Z" duration-ms="11078" status="PASS">
+    <test started-at="2021-08-03T12:31:38Z" name="Default test" finished-at="2021-08-03T12:31:57Z" duration-ms="19302">
+      <class name="tests.RadioButtonTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.RadioButtonTest@15bcf458]" started-at="2021-08-03T12:31:38Z" name="beforeTest" finished-at="2021-08-03T12:31:45Z" duration-ms="6724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,199 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="getTextBoxPage()[pri:0, instance:tests.TextBoxTest@649f2009]" started-at="2021-08-02T17:50:19Z" name="getTextBoxPage" finished-at="2021-08-02T17:51:20Z" duration-ms="61596" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-"}
-  (Session info: chrome=93.0.4577.18)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.18, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ae44ce3e2d23d37fc614e2e57b7bec
-*** Element info: {Using=id, value=submit-}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-"}
-  (Session info: chrome=93.0.4577.18)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.18, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b5ae44ce3e2d23d37fc614e2e57b7bec
-*** Element info: {Using=id, value=submit-}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at tests.TextBoxTest.getTextBoxPage(TextBoxTest.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="selectRadioButtons()[pri:0, instance:tests.RadioButtonTest@15bcf458]" started-at="2021-08-03T12:31:45Z" name="selectRadioButtons" finished-at="2021-08-03T12:31:56Z" duration-ms="11389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTextBoxPage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.TextBoxTest@649f2009]" started-at="2021-08-02T17:51:27Z" name="afterTest" finished-at="2021-08-02T17:51:31Z" duration-ms="4106" status="PASS">
+        </test-method> <!-- selectRadioButtons -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.RadioButtonTest@15bcf458]" started-at="2021-08-03T12:31:56Z" name="afterTest" finished-at="2021-08-03T12:31:57Z" duration-ms="1126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- tests.TextBoxTest -->
-      <class name="tests.CheckBoxTest">
-        <test-method signature="getToCheckBoxPage()[pri:0, instance:tests.CheckBoxTest@14bb2297]" started-at="2021-08-02T17:51:21Z" name="getToCheckBoxPage" finished-at="2021-08-02T17:51:27Z" duration-ms="6128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getToCheckBoxPage -->
-      </class> <!-- tests.CheckBoxTest -->
-    </test> <!-- SmokeTest -->
-  </suite> <!-- ToolsQA Test Automation Smoke Test -->
-  <suite started-at="2021-08-02T17:51:33Z" name="ToolsQA Test Automation Regression Test" finished-at="2021-08-02T17:52:20Z" duration-ms="47581">
-    <groups>
-      <group name="Regression">
-        <method signature="AddAndDeleteBookFromCollectionTest.addBook()[pri:2, instance:tests.AddAndDeleteBookFromCollectionTest@6ce1f601]" name="addBook" class="tests.AddAndDeleteBookFromCollectionTest"/>
-        <method signature="AddAndDeleteBookFromCollectionTest.deleteBookFromProfile()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@6ce1f601]" name="deleteBookFromProfile" class="tests.AddAndDeleteBookFromCollectionTest"/>
-        <method signature="BookStoreLoginTest.goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@51684e4a]" name="goToBookStoreAppLoginPage" class="tests.BookStoreLoginTest"/>
-      </group> <!-- Regression -->
-    </groups>
-    <test started-at="2021-08-02T17:51:33Z" name="RegressionTest" finished-at="2021-08-02T17:52:20Z" duration-ms="47581">
-      <class name="tests.BookStoreLoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BookStoreLoginTest@51684e4a]" started-at="2021-08-02T17:51:33Z" name="beforeTest" finished-at="2021-08-02T17:51:45Z" duration-ms="12055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@51684e4a]" started-at="2021-08-02T17:52:09Z" name="goToBookStoreAppLoginPage" finished-at="2021-08-02T17:52:14Z" duration-ms="4883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToBookStoreAppLoginPage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.BookStoreLoginTest@51684e4a]" started-at="2021-08-02T17:52:19Z" name="afterTest" finished-at="2021-08-02T17:52:20Z" duration-ms="1437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- tests.BookStoreLoginTest -->
-      <class name="tests.AddAndDeleteBookFromCollectionTest">
-        <test-method signature="addBook()[pri:2, instance:tests.AddAndDeleteBookFromCollectionTest@6ce1f601]" started-at="2021-08-02T17:52:14Z" name="addBook" finished-at="2021-08-02T17:52:18Z" duration-ms="3989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addBook -->
-        <test-method signature="deleteBookFromProfile()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@6ce1f601]" started-at="2021-08-02T17:52:18Z" name="deleteBookFromProfile" finished-at="2021-08-02T17:52:19Z" duration-ms="1056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteBookFromProfile -->
-      </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
-      <class name="tests.VerifyLoginTest">
-        <test-method signature="verifyLoginWithNoOfUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@38875e7d]" started-at="2021-08-02T17:51:45Z" name="verifyLoginWithNoOfUsers" data-provider="logindata-fromcsv" finished-at="2021-08-02T17:52:00Z" duration-ms="15530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[joybutta]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Joybutta@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNoOfUsers -->
-        <test-method signature="verifyLoginWithNoOfUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@38875e7d]" started-at="2021-08-02T17:52:00Z" name="verifyLoginWithNoOfUsers" data-provider="logindata-fromcsv" finished-at="2021-08-02T17:52:04Z" duration-ms="3653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sam]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sam@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNoOfUsers -->
-        <test-method signature="verifyLoginWithNoOfUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@38875e7d]" started-at="2021-08-02T17:52:04Z" name="verifyLoginWithNoOfUsers" data-provider="logindata-fromcsv" finished-at="2021-08-02T17:52:09Z" duration-ms="4899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ritu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ritu@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNoOfUsers -->
-      </class> <!-- tests.VerifyLoginTest -->
-    </test> <!-- RegressionTest -->
-  </suite> <!-- ToolsQA Test Automation Regression Test -->
-  <suite started-at="2021-08-02T17:52:21Z" name="MultipleSuite" finished-at="2021-08-02T17:52:21Z" duration-ms="0">
-    <groups>
-    </groups>
-  </suite> <!-- MultipleSuite -->
+      </class> <!-- tests.RadioButtonTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

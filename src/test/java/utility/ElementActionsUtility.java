@@ -50,7 +50,7 @@ public class ElementActionsUtility {
 	}
 
 	public void clickElement(WebElement element) {
-		wait = new WebDriverWait(driver, 15);
+		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
@@ -66,6 +66,15 @@ public class ElementActionsUtility {
 
 	public static void sendkeys(WebElement element, String msg) {
 		element.sendKeys(msg);
+	}
+
+	// To Select Radio Button.
+	public void selectRadioButton(WebElement element, String value) {
+		wait = new WebDriverWait(driver, 30);
+		if (element.getText().equalsIgnoreCase(value)) {
+			element.click();
+		}
+
 	}
 
 }

@@ -28,7 +28,8 @@ public class VerifyLoginTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "logindata-fromcsv")
-	public void verifyLoginWithNoOfUsers(String username, String password, String isLoginSuccess) throws IOException {
+	public void verifyLoginWithMultipleUsers(String username, String password, String isLoginSuccess)
+			throws IOException {
 
 		wait = new WebDriverWait(driver, 40);
 
