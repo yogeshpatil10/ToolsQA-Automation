@@ -8,16 +8,10 @@ import org.openqa.selenium.WebElement;
 
 public class ElementListUtility {
 
-	private static WebDriver driver;
+	protected static WebDriver driver;
 	private static WebElement findelement;
 
-	public ElementListUtility(WebDriver driver) {
-		ElementListUtility.driver = driver;
-
-	}
-
 	public static WebElement getElementFromList(WebDriver driver, String id) {
-		// #item-0
 		List<WebElement> elementFromListOfElements = driver
 				.findElements(By.xpath("//div[@class='element-list collapse show']/ul/li"));
 		for (WebElement element : elementFromListOfElements) {

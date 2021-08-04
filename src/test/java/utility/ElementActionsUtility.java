@@ -1,6 +1,5 @@
 package utility;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,18 +16,17 @@ public class ElementActionsUtility {
 		this.driver = driver;
 	}
 
+	// To Scroll Browser Window using JavaScriptExecutor and ExpectedConditions.
 	public void scrollPageDownToGetElement(WebElement element) {
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,250)", "");
+		JavaScriptUtility.scrollWindowByJavaScript(driver);
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 
-//		js.executeScript("arguments[0].scrollIntoView();", element);
-
 	}
 
+	// To Enter UserName.
 	public void enterUserName(WebElement element, String username) {
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -36,6 +34,7 @@ public class ElementActionsUtility {
 		element.sendKeys(username);
 	}
 
+	// To Enter Password.
 	public void enterPassword(WebElement element, String password) {
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -43,27 +42,30 @@ public class ElementActionsUtility {
 		element.sendKeys(password);
 	}
 
+	// To Scroll Browser Window using JavaScript.
 	public void scrollDownAndClickSubmitButton(WebElement element) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", element);
+		JavaScriptUtility.scrollWindowByJavaScript(driver, element);
+
 		element.click();
 	}
 
+	// To Click WebElement using ExpectedConditions.
 	public void clickElement(WebElement element) {
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
 
+	// To Click WebElement using JavaScript.
 	public void clickElementWithActions(WebElement element) {
 		wait = new WebDriverWait(driver, 30);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", element);
+		JavaScriptUtility.scrollWindowByJavaScript(driver, element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 
 	}
 
+	// To Send Message using SendKeys.
 	public static void sendkeys(WebElement element, String msg) {
 		element.sendKeys(msg);
 	}

@@ -83,11 +83,6 @@ public class CheckBoxPageObjects {
 					+ "]/span/label/span[@class='rct-checkbox']"));
 		}
 
-//		if (!subnodecheckbox.isSelected()) {
-//			subnodecheckbox.click();
-//		} else {
-//			subnodecheckbox.click();
-//		}
 		return subnodecheckbox;
 
 	}

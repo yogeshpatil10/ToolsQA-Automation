@@ -33,7 +33,6 @@ public class RadioButtonTest extends BaseClass {
 
 		radiobuttonobject.clickRadioButton();
 		Log.info("User clicked YES radio button");
-		Thread.sleep(3000);
 
 		WebElement textsuccess = driver
 				.findElement(By.xpath("//div[@class='col-12 mt-4 col-md-6']/div[1]/p/span[@class='text-success']"));

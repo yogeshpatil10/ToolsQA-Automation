@@ -21,10 +21,8 @@ public class RadioButtonPageObjects {
 	}
 
 	public void clickRadioButton() {
-		WebElement yesRadioOptio = ElementListUtility.getRadioFromListOptions(driver, "yesRadio");
-//		wait = new WebDriverWait(driver, 30);
-//		wait.until(ExpectedConditions.elementToBeClickable(yesRadioOptio));
-		JavaScriptUtility.clickElementByJavaScript(yesRadioOptio, driver);
+		WebElement yesRadioOption = ElementListUtility.getRadioFromListOptions(driver, "yesRadio");
+		JavaScriptUtility.clickElementByJavaScript(yesRadioOption, driver);
 
 	}
 
