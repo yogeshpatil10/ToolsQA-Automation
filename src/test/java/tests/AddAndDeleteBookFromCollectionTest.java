@@ -38,7 +38,7 @@ public class AddAndDeleteBookFromCollectionTest extends BaseClass {
 		Log.info("User redirected to the Book Details Page");
 
 		WrapperReaderUtility wrapper = new WrapperReaderUtility(driver);
-		WebElement wrapper92 = wrapper.getWrapperReader("books-wrapper", 9, "Add To Your Collection");
+		WebElement wrapper92 = wrapper.getWrapperReader(driver, "books-wrapper", 9, "Add To Your Collection");
 
 		wait.until(ExpectedConditions.visibilityOf(wrapper92));
 		wrapper92.click();

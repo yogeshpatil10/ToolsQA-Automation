@@ -12,7 +12,8 @@
 		<classes>
 			<class name="tests.TextBoxTest" />
 			<class name="tests.CheckBoxTest" />
-			<class name="tests.RadioButtonTest"></class>
+			<class name="tests.RadioButtonTest"/>
+			<class name="tests.WebTablesTest"/>
 		</classes>
 	</test> <!-- SmokeTest -->
 

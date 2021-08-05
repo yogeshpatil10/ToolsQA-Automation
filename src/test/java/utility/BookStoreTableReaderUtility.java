@@ -12,7 +12,7 @@ public class BookStoreTableReaderUtility {
 	private static WebDriver driver;
 
 	public BookStoreTableReaderUtility(WebDriver driver) {
-		this.driver = driver;
+		BookStoreTableReaderUtility.driver = driver;
 
 	}
 
