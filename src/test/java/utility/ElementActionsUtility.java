@@ -4,12 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementActionsUtility {
 
-	WebDriver driver;
+	private WebDriver driver;
 	WebDriverWait wait;
+	FluentWait<WebDriver> fluentwait;
 	Actions actions;
 
 	public ElementActionsUtility(WebDriver driver) {
@@ -77,6 +79,22 @@ public class ElementActionsUtility {
 			element.click();
 		}
 
+	}
+
+	// To Double Click on Element.
+	public void doubleClick(WebElement element) {
+		actions = new Actions(driver);
+		wait = new WebDriverWait(driver, 40);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		actions.doubleClick(element).build().perform();
+	}
+
+	// To Right Click on Element.
+	public void rightClick(WebElement element) {
+		actions = new Actions(driver);
+		wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		actions.contextClick(element).build().perform();
 	}
 
 }

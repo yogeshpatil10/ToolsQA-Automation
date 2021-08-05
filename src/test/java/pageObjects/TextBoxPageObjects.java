@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
-import utility.ElementListUtility;
+import utility.LeftPanelElementsListUtility;
 
 public class TextBoxPageObjects {
 
@@ -57,7 +57,7 @@ public class TextBoxPageObjects {
 	}
 
 	public void clickTextBoxElement() {
-		WebElement textboxelement = ElementListUtility.getElementFromList(driver, "item-0");
+		WebElement textboxelement = LeftPanelElementsListUtility.getElementFromList(driver, "item-0");
 		textboxelement.click();
 
 	}

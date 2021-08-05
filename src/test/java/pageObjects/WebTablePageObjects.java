@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utility.ElementListUtility;
 import utility.JavaScriptUtility;
+import utility.LeftPanelElementsListUtility;
 import utility.WrapperReaderUtility;
 
 public class WebTablePageObjects {
@@ -30,7 +30,7 @@ public class WebTablePageObjects {
 	private WebElement search;
 
 	public void clickWebTablesElement() {
-		WebElement textboxelement = ElementListUtility.getElementFromList(driver, "item-3");
+		WebElement textboxelement = LeftPanelElementsListUtility.getElementFromList(driver, "item-3");
 		textboxelement.click();
 
 	}

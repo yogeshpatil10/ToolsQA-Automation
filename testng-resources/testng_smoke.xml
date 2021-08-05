@@ -14,6 +14,7 @@
 			<class name="tests.CheckBoxTest" />
 			<class name="tests.RadioButtonTest"/>
 			<class name="tests.WebTablesTest"/>
+			<class name="tests.ButtonsTest"/>
 		</classes>
 	</test> <!-- SmokeTest -->
 

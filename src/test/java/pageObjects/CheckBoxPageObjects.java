@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
-import utility.ElementListUtility;
+import utility.LeftPanelElementsListUtility;
 
 public class CheckBoxPageObjects {
 
@@ -35,7 +35,7 @@ public class CheckBoxPageObjects {
 	private WebElement homecollapse;
 
 	public void clickCheckBoxElement() {
-		WebElement checkBoxElement = ElementListUtility.getElementFromList(driver, "item-1");
+		WebElement checkBoxElement = LeftPanelElementsListUtility.getElementFromList(driver, "item-1");
 		checkBoxElement.click();
 	}
 

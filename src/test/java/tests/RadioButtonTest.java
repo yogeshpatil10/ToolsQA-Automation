@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import base.BaseClass;
 import pageObjects.HomePageObjects;
 import pageObjects.RadioButtonPageObjects;
-import utility.ElementListUtility;
+import utility.LeftPanelElementsListUtility;
 
 public class RadioButtonTest extends BaseClass {
 
@@ -38,7 +38,7 @@ public class RadioButtonTest extends BaseClass {
 				.findElement(By.xpath("//div[@class='col-12 mt-4 col-md-6']/div[1]/p/span[@class='text-success']"));
 		String youHaveSelected = textsuccess.getText();
 
-		WebElement noRadio = ElementListUtility.getRadioFromListOptions(driver, "noRadio");
+		WebElement noRadio = LeftPanelElementsListUtility.getRadioFromListOptions(driver, "noRadio");
 
 		assertEquals(youHaveSelected, "Yes");
 		assertTrue(!noRadio.isEnabled());

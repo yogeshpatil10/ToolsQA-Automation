@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ElementListUtility {
+public class LeftPanelElementsListUtility {
 
 	protected static WebDriver driver;
 	private static WebElement findelement;

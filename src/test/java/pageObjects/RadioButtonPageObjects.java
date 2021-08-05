@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ElementActionsUtility;
-import utility.ElementListUtility;
 import utility.JavaScriptUtility;
+import utility.LeftPanelElementsListUtility;
 
 public class RadioButtonPageObjects {
 
@@ -21,13 +21,13 @@ public class RadioButtonPageObjects {
 	}
 
 	public void clickRadioButton() {
-		WebElement yesRadioOption = ElementListUtility.getRadioFromListOptions(driver, "yesRadio");
+		WebElement yesRadioOption = LeftPanelElementsListUtility.getRadioFromListOptions(driver, "yesRadio");
 		JavaScriptUtility.clickElementByJavaScript(yesRadioOption, driver);
 
 	}
 
 	public void clickRadioButtonElement() {
-		WebElement textboxelement = ElementListUtility.getElementFromList(driver, "item-2");
+		WebElement textboxelement = LeftPanelElementsListUtility.getElementFromList(driver, "item-2");
 		textboxelement.click();
 
 	}
