@@ -20,6 +20,7 @@ import utility.ReadCSVFileUtility;
 
 public class VerifyLoginTest extends BaseClass {
 	WebDriverWait wait;
+	BookStoreLoginPageObjects loginpage;
 
 	@DataProvider(name = "logindata-fromcsv")
 	public static Iterator<String[]> provideDataFromCSV() {
@@ -33,7 +34,7 @@ public class VerifyLoginTest extends BaseClass {
 
 		wait = new WebDriverWait(driver, 40);
 
-		BookStoreLoginPageObjects loginpage = new BookStoreLoginPageObjects(driver);
+		loginpage = new BookStoreLoginPageObjects(driver);
 		boolean isLoginSuccessful = Boolean.valueOf(isLoginSuccess);
 
 		loginpage.clickBookStoreApp();

@@ -8,6 +8,13 @@
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)">
     <classes>
+      <class name="tests.CheckBoxTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="getToCheckBoxPage"/>
+        </methods>
+      </class> <!-- tests.CheckBoxTest -->
       <class name="tests.TextBoxTest">
         <methods>
           <include name="beforeTest"/>

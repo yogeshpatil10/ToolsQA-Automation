@@ -7,7 +7,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import utility.Constant;
 
-public class ExtentReportSetup extends BaseClass {
+public class ExtentReport extends BaseClass {
 
 	public static ExtentSparkReporter sparkReporter;
 	public static ExtentReports extent;
@@ -16,12 +16,13 @@ public class ExtentReportSetup extends BaseClass {
 	public static ExtentReports extentReportSetup() {
 
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + Constant.ExtentReport);
-		sparkReporter.config().setDocumentTitle("ToolsQA Automation Test");
-		sparkReporter.config().setReportName("Automation Run Extent Report");
-		sparkReporter.config().setTheme(Theme.STANDARD);
 
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
+
+		sparkReporter.config().setDocumentTitle("ToolsQA Automation Test");
+		sparkReporter.config().setReportName("Automation Run Extent Report");
+		sparkReporter.config().setTheme(Theme.STANDARD);
 
 		extent.setSystemInfo("OS", "Windows 10");
 		extent.setSystemInfo("Environment", "QA");

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utility.ElementActionsUtility;
+import utility.TestUtility;
 import utility.JavaScriptUtility;
 import utility.LeftPanelElementsListUtility;
 
@@ -13,7 +13,7 @@ public class RadioButtonPageObjects {
 
 	private WebDriver driver;
 	WebDriverWait wait;
-	ElementActionsUtility function;
+	TestUtility function;
 
 	public RadioButtonPageObjects(WebDriver driver) {
 		this.driver = driver;

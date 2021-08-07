@@ -2,10 +2,10 @@ package pageObjects;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,7 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utility.ElementActionsUtility;
+import utility.TestUtility;
+import utility.JavaScriptUtility;
 import utility.ReadPropertiesFileUtility;
 
 public class BookStoreLoginPageObjects {
@@ -22,14 +23,12 @@ public class BookStoreLoginPageObjects {
 	private WebDriver driver;
 	Actions actions;
 	WebDriverWait wait;
-	ElementActionsUtility function;
+	TestUtility function;
 
 	public BookStoreLoginPageObjects(WebDriver driver) throws IOException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@FindBy(css = "div.home-content>div.home-body>div.category-cards>div:nth-child(6)")
@@ -45,33 +44,56 @@ public class BookStoreLoginPageObjects {
 	private WebElement loginbutton;
 
 	public void loginToBookStore() throws InterruptedException {
-		ElementActionsUtility function = new ElementActionsUtility(driver);
+		TestUtility function = new TestUtility(driver);
 		function.enterUserName(username, ReadPropertiesFileUtility.getGlobalValue("username"));
 		function.enterPassword(password, ReadPropertiesFileUtility.getGlobalValue("password"));
 		function.scrollDownAndClickSubmitButton(loginbutton);
 	}
 
 	public void clickLeftLoginOption() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		actions = new Actions(driver);
 		wait = new WebDriverWait(driver, 30);
 
-		driver.findElement(
-				By.xpath("//div[@class='left-pannel']/div/div[6]/span/div/div[text()='Book Store Application']"))
-				.click();
-		driver.findElement(
-				By.xpath("//div[@class='left-pannel']/div/div[6]/span/div/div[text()='Book Store Application']"))
-				.click();
+		int count = 0;
+		int maxTries = 5;
 
-		WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
-		js.executeScript("arguments[0].scrollIntoView();", loginLeftElement);
-		wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
-		actions.moveToElement(loginLeftElement).click().build().perform();
+//		WebElement bookstoreMenu = driver.findElement(
+//				By.xpath("//div[@class='left-pannel']/div/div[6]/span/div/div[text()='Book Store Application']"));
+
+		while (true) {
+			try {
+//				bookstoreMenu.click();
+//				bookstoreMenu.click();
+
+				WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
+				JavaScriptUtility.scrollWindowByJavaScript(driver, loginLeftElement);
+				wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
+				actions.moveToElement(loginLeftElement).click().build().perform();
+				break;
+			} catch (ElementClickInterceptedException e) {
+				if (++count == maxTries) {
+					throw e;
+				}
+			}
+		}
+
 	}
 
 	public void clickBookStoreApp() {
-		function = new ElementActionsUtility(driver);
-		function.scrollPageDownToGetElement(bookStoreApp);
+		int count = 0;
+		int maxTries = 5;
+		while (true) {
+			try {
+
+				function = new TestUtility(driver);
+				function.scrollDownAndClickSubmitButton(bookStoreApp);
+				break;
+			} catch (NoSuchElementException | ElementClickInterceptedException e) {
+				if (++count == maxTries) {
+					throw e;
+				}
+			}
+		}
 
 	}
 

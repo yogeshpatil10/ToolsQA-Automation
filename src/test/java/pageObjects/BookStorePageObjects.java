@@ -8,12 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utility.ElementActionsUtility;
+import utility.TestUtility;
 
 public class BookStorePageObjects {
 
 	private WebDriver driver;
-	ElementActionsUtility function;
+	TestUtility function;
 
 	public BookStorePageObjects(WebDriver driver) {
 		this.driver = driver;
@@ -31,7 +31,7 @@ public class BookStorePageObjects {
 	private WebElement profile;
 
 	public void clickGoTOStore() {
-		function = new ElementActionsUtility(driver);
+		function = new TestUtility(driver);
 		function.clickElementWithActions(gotoStore);
 	}
 

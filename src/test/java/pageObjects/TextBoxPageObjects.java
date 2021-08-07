@@ -8,13 +8,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utility.ElementActionsUtility;
+import utility.TestUtility;
 import utility.LeftPanelElementsListUtility;
 
 public class TextBoxPageObjects {
 
 	private WebDriver driver;
-	ElementActionsUtility function;
+	TestUtility function;
 	Actions actions;
 	WebDriverWait wait;
 
@@ -43,16 +43,16 @@ public class TextBoxPageObjects {
 	}
 
 	public void enterCurrentAddress() {
-		ElementActionsUtility.sendkeys(currentAddress, "123, Red Hat Corner, California 956201 USA");
+		TestUtility.sendkeys(currentAddress, "123, Red Hat Corner, California 956201 USA");
 
 	}
 
 	public void enterEmail() {
-		ElementActionsUtility.sendkeys(useremail, "joy.butta@toolsqa.com");
+		TestUtility.sendkeys(useremail, "joy.butta@toolsqa.com");
 	}
 
 	public void enterFullName() {
-		ElementActionsUtility.sendkeys(fullname, "Joy Butta");
+		TestUtility.sendkeys(fullname, "Joy Butta");
 
 	}
 

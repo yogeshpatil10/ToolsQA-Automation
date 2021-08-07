@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 import utility.CaptureScreenshot;
 import utility.Constant;
 
-public class ExtentReportListener extends ExtentReportSetup implements ITestListener {
+public class ExtentReportListener extends ExtentReport implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -25,7 +25,7 @@ public class ExtentReportListener extends ExtentReportSetup implements ITestList
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.FAIL, "Test case FAILED: " + result.getMethod().getMethodName());
+		test.log(Status.FAIL, "Test Case Failed is: " + result.getMethod().getMethodName());
 		test.fail(result.getThrowable());
 
 		try {
@@ -49,7 +49,7 @@ public class ExtentReportListener extends ExtentReportSetup implements ITestList
 
 	@Override
 	public void onStart(ITestContext context) {
-		extent = ExtentReportSetup.extentReportSetup();
+		extent = ExtentReport.extentReportSetup();
 	}
 
 	@Override

@@ -21,6 +21,7 @@ public class HomePageObjects {
 		driver.get(ReadPropertiesFileUtility.getGlobalValue("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 
 	@FindBy(css = "div.home-content>div.home-body>div.category-cards>div:nth-child(1)")

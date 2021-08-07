@@ -30,8 +30,8 @@ public class WebTablePageObjects {
 	private WebElement search;
 
 	public void clickWebTablesElement() {
-		WebElement textboxelement = LeftPanelElementsListUtility.getElementFromList(driver, "item-3");
-		textboxelement.click();
+		WebElement webTablesElement = LeftPanelElementsListUtility.getElementFromList(driver, "item-3");
+		webTablesElement.click();
 
 	}
 

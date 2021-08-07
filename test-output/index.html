@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,6 +125,11 @@
                         <a href="#" panel-name="suite-ToolsQA_Test_Automation_Smoke_Test" title="tests.RadioButtonTest" class="method navigator-link" hash-for-method="selectRadioButtons">selectRadioButtons</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ToolsQA_Test_Automation_Smoke_Test" title="tests.LinksTest" class="method navigator-link" hash-for-method="verifyLinks">verifyLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-ToolsQA_Test_Automation_Smoke_Test -->
                   </li>
                 </ul>
@@ -137,21 +142,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ToolsQA_Test_Automation_Smoke_Test" class="panel ToolsQA_Test_Automation_Smoke_Test">
-          <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.WebTablesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getWebTablesRecords">
-                  </a> <!-- getWebTablesRecords -->
-                  <span class="method-name">getWebTablesRecords</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_Test_Automation_Smoke_Test-class-passed -->
           <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -170,14 +160,29 @@
           <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.TextBoxTest</span>
+              <span class="class-name">tests.LinksTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getTextBoxPage">
-                  </a> <!-- getTextBoxPage -->
-                  <span class="method-name">getTextBoxPage</span>
+                  <a name="verifyLinks">
+                  </a> <!-- verifyLinks -->
+                  <span class="method-name">verifyLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ToolsQA_Test_Automation_Smoke_Test-class-passed -->
+          <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RadioButtonTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectRadioButtons">
+                  </a> <!-- selectRadioButtons -->
+                  <span class="method-name">selectRadioButtons</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,14 +205,29 @@
           <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.RadioButtonTest</span>
+              <span class="class-name">tests.TextBoxTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectRadioButtons">
-                  </a> <!-- selectRadioButtons -->
-                  <span class="method-name">selectRadioButtons</span>
+                  <a name="getTextBoxPage">
+                  </a> <!-- getTextBoxPage -->
+                  <span class="method-name">getTextBoxPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ToolsQA_Test_Automation_Smoke_Test-class-passed -->
+          <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.WebTablesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWebTablesRecords">
+                  </a> <!-- getWebTablesRecords -->
+                  <span class="method-name">getWebTablesRecords</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,13 +247,14 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;base.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTest&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; name=&quot;SmokeTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.TextBoxTest&quot;/&gt;
       &lt;class name=&quot;tests.CheckBoxTest&quot;/&gt;
       &lt;class name=&quot;tests.RadioButtonTest&quot;/&gt;
       &lt;class name=&quot;tests.WebTablesTest&quot;/&gt;
       &lt;class name=&quot;tests.ButtonsTest&quot;/&gt;
+      &lt;class name=&quot;tests.LinksTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SmokeTest --&gt;
 &lt;/suite&gt; &lt;!-- ToolsQA Test Automation Smoke Test --&gt;
@@ -247,7 +268,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SmokeTest (5 classes)</span>
+                <span class="test-name">SmokeTest (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,32 +306,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTextBoxPage')
 data.setCell(0, 2, 'tests.TextBoxTest')
-data.setCell(0, 3, 8289);
+data.setCell(0, 3, 10559);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getToCheckBoxPage')
-data.setCell(1, 2, 'tests.CheckBoxTest')
-data.setCell(1, 3, 3822);
+data.setCell(1, 1, 'getWebTablesRecords')
+data.setCell(1, 2, 'tests.WebTablesTest')
+data.setCell(1, 3, 7681);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'actionsOnButtons')
-data.setCell(2, 2, 'tests.ButtonsTest')
-data.setCell(2, 3, 3058);
+data.setCell(2, 1, 'verifyLinks')
+data.setCell(2, 2, 'tests.LinksTest')
+data.setCell(2, 3, 7248);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectRadioButtons')
-data.setCell(3, 2, 'tests.RadioButtonTest')
-data.setCell(3, 3, 2543);
+data.setCell(3, 1, 'getToCheckBoxPage')
+data.setCell(3, 2, 'tests.CheckBoxTest')
+data.setCell(3, 3, 7207);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getWebTablesRecords')
-data.setCell(4, 2, 'tests.WebTablesTest')
-data.setCell(4, 3, 2529);
+data.setCell(4, 1, 'selectRadioButtons')
+data.setCell(4, 2, 'tests.RadioButtonTest')
+data.setCell(4, 3, 6926);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'actionsOnButtons')
+data.setCell(5, 2, 'tests.ButtonsTest')
+data.setCell(5, 3, 4250);
 window.suiteTableData['ToolsQA_Test_Automation_Smoke_Test']= { tableData: data, tableDiv: 'times-div-ToolsQA_Test_Automation_Smoke_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-ToolsQA_Test_Automation_Smoke_Test">
               </div> <!-- times-div-ToolsQA_Test_Automation_Smoke_Test -->
             </div> <!-- times-div -->
@@ -325,11 +350,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ToolsQA_Test_Automation_Smoke_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.WebTablesTest</span>
+              <span class="ignored-class-name">tests.ButtonsTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -338,7 +363,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.ButtonsTest</span>
+              <span class="ignored-class-name">tests.LinksTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.RadioButtonTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -356,7 +390,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.RadioButtonTest</span>
+              <span class="ignored-class-name">tests.WebTablesTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -379,42 +413,49 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">getTextBoxPage</span>
-                <span class="method-start">8707 ms</span>
+                <span class="method-start">6935 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getToCheckBoxPage</span>
-                <span class="method-start">17014 ms</span>
+                <span class="method-start">17513 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.RadioButtonTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectRadioButtons</span>
-                <span class="method-start">20840 ms</span>
+                <span class="method-start">24722 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.WebTablesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getWebTablesRecords</span>
-                <span class="method-start">23385 ms</span>
+                <span class="method-start">31651 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ButtonsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">actionsOnButtons</span>
-                <span class="method-start">25916 ms</span>
+                <span class="method-start">39335 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LinksTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLinks</span>
+                <span class="method-start">43586 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TextBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">28977 ms</span>
+                <span class="method-start">50836 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

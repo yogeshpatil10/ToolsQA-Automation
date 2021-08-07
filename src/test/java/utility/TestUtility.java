@@ -1,5 +1,7 @@
 package utility;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,14 +9,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ElementActionsUtility {
+public class TestUtility {
 
 	private WebDriver driver;
 	WebDriverWait wait;
 	FluentWait<WebDriver> fluentwait;
 	Actions actions;
 
-	public ElementActionsUtility(WebDriver driver) {
+	public TestUtility(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -53,14 +55,14 @@ public class ElementActionsUtility {
 
 	// To Click WebElement using ExpectedConditions.
 	public void clickElement(WebElement element) {
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 40);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
 
 	// To Click WebElement using JavaScript.
 	public void clickElementWithActions(WebElement element) {
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 40);
 		JavaScriptUtility.scrollWindowByJavaScript(driver, element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
@@ -95,6 +97,32 @@ public class ElementActionsUtility {
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		actions.contextClick(element).build().perform();
+	}
+
+	// To Handle Second Window OR Switch to Second Window and Get Title
+	public String getTitleOfSecondWinodw(String firstWindow) {
+		String title = "";
+		Set<String> windowHandles = driver.getWindowHandles();
+
+		for (String window : windowHandles) {
+			if (!window.equals(firstWindow)) {
+				driver.switchTo().window(window);
+				title = driver.getTitle();
+				return title;
+			}
+		}
+		return null;
+	}
+
+	// To Switch to Second Window
+	public void swithcToSecondWinodw(String firstWindow) {
+		Set<String> windowHandles = driver.getWindowHandles();
+
+		for (String window : windowHandles) {
+			if (!window.equals(firstWindow)) {
+				driver.switchTo().window(window);
+			}
+		}
 	}
 
 }

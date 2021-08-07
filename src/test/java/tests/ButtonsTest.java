@@ -38,7 +38,7 @@ public class ButtonsTest extends BaseClass {
 		assertEquals(rightClickMessage, "You have done a right click");
 
 		buttonsobject.singleClickOnButton();
-		Log.info("User perforemd Single click on a Button");
+		Log.info("User perforemd Single Click on a Button");
 
 		String dynamicClickMessage = driver.findElement(By.id("dynamicClickMessage")).getText();
 		assertEquals(dynamicClickMessage, "You have done a dynamic click");
