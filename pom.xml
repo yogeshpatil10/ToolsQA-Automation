@@ -23,7 +23,7 @@
 					<properties>
 						<property>
 							<name>surefire.testng.verbose</name>
-							<value>10</value> <!-- disabling default listeners is optional -->
+							<value>10</value> <!-- Verbose Level 10 to log-back on Console -->
 						</property>
 						<property>
 							<name>usedefaultlisteners</name>
