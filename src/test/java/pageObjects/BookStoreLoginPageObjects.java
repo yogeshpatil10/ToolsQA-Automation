@@ -11,12 +11,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utility.TestUtility;
 import utility.JavaScriptUtility;
 import utility.ReadPropertiesFileUtility;
+import utility.TestUtility;
 
 public class BookStoreLoginPageObjects {
 
@@ -52,7 +51,7 @@ public class BookStoreLoginPageObjects {
 
 	public void clickLeftLoginOption() {
 		actions = new Actions(driver);
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 45);
 
 		int count = 0;
 		int maxTries = 5;
@@ -62,13 +61,10 @@ public class BookStoreLoginPageObjects {
 
 		while (true) {
 			try {
-//				bookstoreMenu.click();
-//				bookstoreMenu.click();
 
 				WebElement loginLeftElement = getElementFromBookstoreApp("item-0");
-				JavaScriptUtility.scrollWindowByJavaScript(driver, loginLeftElement);
-				wait.until(ExpectedConditions.elementToBeClickable(loginLeftElement));
-				actions.moveToElement(loginLeftElement).click().build().perform();
+				JavaScriptUtility.scrollWindowByJavaScript(driver);
+				JavaScriptUtility.clickElementByJavaScript(loginLeftElement, driver);
 				break;
 			} catch (ElementClickInterceptedException e) {
 				if (++count == maxTries) {

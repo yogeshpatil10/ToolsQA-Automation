@@ -22,6 +22,10 @@
 				<configuration>
 					<properties>
 						<property>
+							<name>surefire.testng.verbose</name>
+							<value>10</value> <!-- disabling default listeners is optional -->
+						</property>
+						<property>
 							<name>usedefaultlisteners</name>
 							<value>false</value> <!-- disabling default listeners is optional -->
 						</property>
@@ -127,7 +131,7 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
 			<scope>test</scope>
-		</dependency>			
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
 		<dependency>

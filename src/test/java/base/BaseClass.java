@@ -1,5 +1,6 @@
 package base;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -59,7 +60,13 @@ public abstract class BaseClass {
 
 	@AfterTest
 	public void afterTest() {
-		driver.quit();
+//		driver.quit();
+
+		try {
+			Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

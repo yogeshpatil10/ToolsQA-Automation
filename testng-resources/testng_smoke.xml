@@ -8,7 +8,7 @@
 		<listener class-name="base.ExtentReportListener"></listener>
 	</listeners>
 
-	<test thread-count="10" name="SmokeTest" parallel="false">
+	<test thread-count="10" preserve-order="true" name="SmokeTest" parallel="false">
 		<classes>
 			<class name="tests.TextBoxTest" />
 			<class name="tests.CheckBoxTest" />
