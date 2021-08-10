@@ -17,7 +17,7 @@ public class LinksTest extends BaseClass {
 	private String seondWindowTitle;
 	TestUtility function;
 
-	@Test
+	@Test(groups = { "smoke" })
 	public void verifyLinks() throws InterruptedException {
 
 		linksobject = new LinksPageObjects(driver);

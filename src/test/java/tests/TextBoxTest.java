@@ -41,7 +41,7 @@ public class TextBoxTest extends BaseClass {
 		Log.info("User enetered permanent address");
 
 		WebElement submit = driver.findElement(By.id("submit"));
-		wait = new WebDriverWait(driver, 10);
+		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(submit));
 
 		assertTrue(WaitUtility.isDisplayed(submit));

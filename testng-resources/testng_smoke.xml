@@ -16,6 +16,7 @@
 			<class name="tests.WebTablesTest"/>
 			<class name="tests.ButtonsTest"/>
 			<class name="tests.LinksTest"/>
+			<class name="tests.BrokenLinksImagesTest"/>
 		</classes>
 	</test> <!-- SmokeTest -->
 

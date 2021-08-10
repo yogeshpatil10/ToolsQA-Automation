@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ToolsQA Test Automation Regression Test]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [ToolsQA Test Automation Smoke Test]" guice-stage="DEVELOPMENT">
+  <parameter name="component" value="${component.name}"/>
+  <parameter name="version" value="${component.version}"/>
   <listeners>
     <listener class-name="base.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="RegressionTest(failed)">
+  <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="tests.VerifyLoginTest">
+      <class name="tests.TextBoxTest">
         <methods>
           <include name="beforeTest"/>
+          <include name="getTextBoxPage"/>
           <include name="afterTest"/>
-          <include name="verifyLoginWithMultipleUsers" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.VerifyLoginTest -->
+      </class> <!-- tests.TextBoxTest -->
     </classes>
-  </test> <!-- RegressionTest(failed) -->
-</suite> <!-- Failed suite [ToolsQA Test Automation Regression Test] -->
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [ToolsQA Test Automation Smoke Test] -->

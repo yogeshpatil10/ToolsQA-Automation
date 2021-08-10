@@ -28,7 +28,7 @@ public class VerifyLoginTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "logindata-fromcsv")
+	@Test(dataProvider = "logindata-fromcsv", groups = { "Regression" })
 	public void verifyLoginWithMultipleUsers(String username, String password, String isLoginSuccess)
 			throws IOException {
 

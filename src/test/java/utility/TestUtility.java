@@ -1,7 +1,13 @@
 package utility;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Set;
 
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,6 +21,12 @@ public class TestUtility {
 	WebDriverWait wait;
 	FluentWait<WebDriver> fluentwait;
 	Actions actions;
+	private static URL link = null;
+	private static HttpURLConnection httpConn;
+	private static int invalidImageCount;
+	private static CloseableHttpClient client;
+	private static HttpGet request;
+	private static CloseableHttpResponse response;
 
 	public TestUtility(WebDriver driver) {
 		this.driver = driver;
@@ -125,4 +137,41 @@ public class TestUtility {
 		}
 	}
 
+	// To Verify Links Status present on Web Page
+	public static void verifyLinks(String linkUrl) {
+		try {
+			URL url = new URL(linkUrl);
+
+			// Now we will be creating url connection and getting the response code
+			HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+			httpURLConnect.setConnectTimeout(5000);
+			httpURLConnect.connect();
+			if (httpURLConnect.getResponseCode() >= 400) {
+				System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + "is a broken link");
+			}
+
+			// Fetching and Printing the response code obtained
+			else {
+				System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+			}
+		} catch (Exception e) {
+		}
+	}
+
+	// To Verify Image Status present on Web Page
+	public static void verifyimageActive(WebElement imgElement) {
+		try {
+			client = HttpClientBuilder.create().build();
+			request = new HttpGet(imgElement.getAttribute("src"));
+			response = client.execute(request);
+			// verifying response code he HttpStatus should be 200 if not,
+			// increment as invalid images count
+			if (response.getStatusLine().getStatusCode() != 200) {
+				invalidImageCount++;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 }
