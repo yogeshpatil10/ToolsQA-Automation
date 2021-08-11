@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Run Extent Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 10, 2021 05:32:13 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 11, 2021 07:22:26 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('author-view')">
@@ -77,7 +72,6 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -96,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyBrokenImages</p>
+            <p class="name">verifyLoginWithMultipleUsers</p>
             <p class="text-sm">
-              <span>5:32:34 PM</span> / <span>00:00:20:468</span>
+              <span>7:22:55 AM</span> / <span>00:00:20:817</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -106,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyBrokenImages</h5>
-<span class='badge badge-success'>08.10.2021 5:32:34 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:32:54 PM</span>
-<span class='badge badge-default'>00:00:20:468</span>
+<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
+<span class='badge badge-success'>08.11.2021 7:22:55 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:15 AM</span>
+<span class='badge badge-default'>00:00:20:817</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -122,9 +116,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:32:54 PM</td>
+        <td>7:23:15 AM</td>
         <td>
-          Test Case Passed is PASSED: verifyBrokenImages
+          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
         </td>
       </tr>
   </tbody>
@@ -132,25 +126,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author="Yogesh"
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">actionsOnButtons</p>
+            <p class="name">verifyLoginWithMultipleUsers</p>
             <p class="text-sm">
-              <span>5:32:54 PM</span> / <span>00:00:05:182</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>7:23:15 AM</span> / <span>00:00:11:533</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">actionsOnButtons</h5>
-<span class='badge badge-success'>08.10.2021 5:32:54 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:32:59 PM</span>
-<span class='badge badge-default'>00:00:05:182</span>
+<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
+<span class='badge badge-success'>08.11.2021 7:23:15 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:27 AM</span>
+<span class='badge badge-default'>00:00:11:533</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -162,69 +156,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:32:59 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:23:27 AM</td>
         <td>
-          Test Case Failed is: actionsOnButtons
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:32:59 PM</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=93.0.4577.25)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 53652d73c519071ed4a8ab580a0faf90
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at pageObjects.HomePageObjects.<init>(HomePageObjects.java:21)
-	at tests.ButtonsTest.actionsOnButtons(ButtonsTest.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-</textarea>
-          
+          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
         </td>
       </tr>
   </tbody>
@@ -237,9 +172,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">getToCheckBoxPage</p>
+            <p class="name">verifyLoginWithMultipleUsers</p>
             <p class="text-sm">
-              <span>5:33:00 PM</span> / <span>00:00:16:781</span>
+              <span>7:23:27 AM</span> / <span>00:00:04:648</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -247,10 +182,10 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">getToCheckBoxPage</h5>
-<span class='badge badge-success'>08.10.2021 5:33:00 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:33:17 PM</span>
-<span class='badge badge-default'>00:00:16:781</span>
+<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
+<span class='badge badge-success'>08.11.2021 7:23:27 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:32 AM</span>
+<span class='badge badge-default'>00:00:04:648</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -263,9 +198,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:17 PM</td>
+        <td>7:23:32 AM</td>
         <td>
-          Test Case Passed is PASSED: getToCheckBoxPage
+          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
         </td>
       </tr>
   </tbody>
@@ -278,9 +213,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLinks</p>
+            <p class="name">goToBookStoreAppLoginPage</p>
             <p class="text-sm">
-              <span>5:33:17 PM</span> / <span>00:00:13:209</span>
+              <span>7:23:32 AM</span> / <span>00:00:07:350</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -288,10 +223,10 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyLinks</h5>
-<span class='badge badge-success'>08.10.2021 5:33:17 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:33:30 PM</span>
-<span class='badge badge-default'>00:00:13:209</span>
+<h5 class="test-status text-pass">goToBookStoreAppLoginPage</h5>
+<span class='badge badge-success'>08.11.2021 7:23:32 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:39 AM</span>
+<span class='badge badge-default'>00:00:07:350</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -304,9 +239,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:30 PM</td>
+        <td>7:23:39 AM</td>
         <td>
-          Test Case Passed is PASSED: verifyLinks
+          Test Case Passed is PASSED: goToBookStoreAppLoginPage
         </td>
       </tr>
   </tbody>
@@ -319,9 +254,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">selectRadioButtons</p>
+            <p class="name">addBook</p>
             <p class="text-sm">
-              <span>5:33:30 PM</span> / <span>00:00:03:444</span>
+              <span>7:23:39 AM</span> / <span>00:00:06:430</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -329,10 +264,10 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">selectRadioButtons</h5>
-<span class='badge badge-success'>08.10.2021 5:33:30 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:33:34 PM</span>
-<span class='badge badge-default'>00:00:03:444</span>
+<h5 class="test-status text-pass">addBook</h5>
+<span class='badge badge-success'>08.11.2021 7:23:39 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:45 AM</span>
+<span class='badge badge-default'>00:00:06:430</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -345,9 +280,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:34 PM</td>
+        <td>7:23:45 AM</td>
         <td>
-          Test Case Passed is PASSED: selectRadioButtons
+          Test Case Passed is PASSED: addBook
         </td>
       </tr>
   </tbody>
@@ -360,9 +295,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">readFromExcel</p>
+            <p class="name">deleteBookFromProfile</p>
             <p class="text-sm">
-              <span>5:33:34 PM</span> / <span>00:00:06:437</span>
+              <span>7:23:45 AM</span> / <span>00:00:01:035</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -370,10 +305,10 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">readFromExcel</h5>
-<span class='badge badge-success'>08.10.2021 5:33:34 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:33:40 PM</span>
-<span class='badge badge-default'>00:00:06:437</span>
+<h5 class="test-status text-pass">deleteBookFromProfile</h5>
+<span class='badge badge-success'>08.11.2021 7:23:45 AM</span>
+<span class='badge badge-danger'>08.11.2021 7:23:46 AM</span>
+<span class='badge badge-default'>00:00:01:035</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -386,335 +321,7 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:40 PM</td>
-        <td>
-          Test Case Passed is PASSED: readFromExcel
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">getTextBoxPage</p>
-            <p class="text-sm">
-              <span>5:33:40 PM</span> / <span>00:00:11:078</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">getTextBoxPage</h5>
-<span class='badge badge-success'>08.10.2021 5:33:40 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:33:51 PM</span>
-<span class='badge badge-default'>00:00:11:078</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:33:51 PM</td>
-        <td>
-          Test Case Passed is PASSED: getTextBoxPage
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyLoginWithMultipleUsers</p>
-            <p class="text-sm">
-              <span>5:33:51 PM</span> / <span>00:00:09:121</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
-<span class='badge badge-success'>08.10.2021 5:33:51 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:00 PM</span>
-<span class='badge badge-default'>00:00:09:121</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:00 PM</td>
-        <td>
-          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyLoginWithMultipleUsers</p>
-            <p class="text-sm">
-              <span>5:34:00 PM</span> / <span>00:00:02:860</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
-<span class='badge badge-success'>08.10.2021 5:34:00 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:03 PM</span>
-<span class='badge badge-default'>00:00:02:860</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:03 PM</td>
-        <td>
-          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyLoginWithMultipleUsers</p>
-            <p class="text-sm">
-              <span>5:34:03 PM</span> / <span>00:00:05:738</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyLoginWithMultipleUsers</h5>
-<span class='badge badge-success'>08.10.2021 5:34:03 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:09 PM</span>
-<span class='badge badge-default'>00:00:05:738</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:09 PM</td>
-        <td>
-          Test Case Passed is PASSED: verifyLoginWithMultipleUsers
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">getWebTablesRecords</p>
-            <p class="text-sm">
-              <span>5:34:09 PM</span> / <span>00:00:02:487</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">getWebTablesRecords</h5>
-<span class='badge badge-success'>08.10.2021 5:34:09 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:12 PM</span>
-<span class='badge badge-default'>00:00:02:487</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:12 PM</td>
-        <td>
-          Test Case Passed is PASSED: getWebTablesRecords
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">goToBookStoreAppLoginPage</p>
-            <p class="text-sm">
-              <span>5:34:12 PM</span> / <span>00:00:03:512</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">goToBookStoreAppLoginPage</h5>
-<span class='badge badge-success'>08.10.2021 5:34:12 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:15 PM</span>
-<span class='badge badge-default'>00:00:03:512</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:15 PM</td>
-        <td>
-          Test Case Passed is PASSED: goToBookStoreAppLoginPage
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">addBook</p>
-            <p class="text-sm">
-              <span>5:34:15 PM</span> / <span>00:00:07:803</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">addBook</h5>
-<span class='badge badge-success'>08.10.2021 5:34:15 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:23 PM</span>
-<span class='badge badge-default'>00:00:07:803</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:23 PM</td>
-        <td>
-          Test Case Passed is PASSED: addBook
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author="Yogesh"
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">deleteBookFromProfile</p>
-            <p class="text-sm">
-              <span>5:34:23 PM</span> / <span>00:00:01:978</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">deleteBookFromProfile</h5>
-<span class='badge badge-success'>08.10.2021 5:34:23 PM</span>
-<span class='badge badge-danger'>08.10.2021 5:34:25 PM</span>
-<span class='badge badge-default'>00:00:01:978</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Yogesh</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:34:25 PM</td>
+        <td>7:23:46 AM</td>
         <td>
           Test Case Passed is PASSED: deleteBookFromProfile
         </td>
@@ -733,56 +340,7 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:54 PM</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>actionsOnButtons</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-wrapper row view author-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
@@ -793,17 +351,15 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>13</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>6</span>
 </span>
 <p class="name">Yogesh</p>
-<p class="duration text-sm">14 tests</p>
+<p class="duration text-sm">6 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Yogesh</h4>
-<span status="pass" class='badge log pass-bg'>13 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -816,100 +372,44 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:34 PM</td>
+<td>07:22:55 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>verifyBrokenImages</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:54 PM</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>actionsOnButtons</a>
+<a href="#" class="linked" test-id='1' id='1'>verifyLoginWithMultipleUsers</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:00 PM</td>
+<td>07:23:15 AM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>getToCheckBoxPage</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyLoginWithMultipleUsers</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:17 PM</td>
+<td>07:23:27 AM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>verifyLinks</a>
+<a href="#" class="linked" test-id='3' id='3'>verifyLoginWithMultipleUsers</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:30 PM</td>
+<td>07:23:32 AM</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>selectRadioButtons</a>
+<a href="#" class="linked" test-id='4' id='4'>goToBookStoreAppLoginPage</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:34 PM</td>
+<td>07:23:39 AM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>readFromExcel</a>
+<a href="#" class="linked" test-id='5' id='5'>addBook</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:40 PM</td>
+<td>07:23:45 AM</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>getTextBoxPage</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:33:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>verifyLoginWithMultipleUsers</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:00 PM</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>verifyLoginWithMultipleUsers</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>verifyLoginWithMultipleUsers</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:09 PM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>getWebTablesRecords</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:12 PM</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>goToBookStoreAppLoginPage</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>addBook</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:34:23 PM</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>deleteBookFromProfile</a>
+<a href="#" class="linked" test-id='6' id='6'>deleteBookFromProfile</a>
 </td>
 </tr>
 </tbody>
@@ -929,25 +429,25 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 10, 2021 05:32:13 PM</h3>
+<h3>Aug 11, 2021 07:22:26 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 10, 2021 05:34:26 PM</h3>
+<h3>Aug 11, 2021 07:23:48 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>13</h3>
+<h3>6</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -963,12 +463,12 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='92%'>
-<b>13</b> tests passed
+<div><small data-tooltip='100%'>
+<b>6</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='7%'><b>1</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -986,9 +486,9 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='86%'><b>13</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>6</b> events passed</small></div>
 <div>
-<small data-tooltip='13%'><b>2</b> events failed,
+<small data-tooltip='0%'><b>0</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1005,7 +505,7 @@ Session ID: 53652d73c519071ed4a8ab580a0faf90
 </div></div>
 <script>
 var timeline = {
-"verifyBrokenImages":20.468,"actionsOnButtons":5.182,"getToCheckBoxPage":16.781,"verifyLinks":13.209,"selectRadioButtons":3.444,"readFromExcel":6.437,"getTextBoxPage":11.078,"verifyLoginWithMultipleUsers":9.121,"verifyLoginWithMultipleUsers":2.86,"verifyLoginWithMultipleUsers":5.738,"getWebTablesRecords":2.487,"goToBookStoreAppLoginPage":3.512,"addBook":7.803,"deleteBookFromProfile":1.978
+"verifyLoginWithMultipleUsers":20.817,"verifyLoginWithMultipleUsers":11.533,"verifyLoginWithMultipleUsers":4.648,"goToBookStoreAppLoginPage":7.35,"addBook":6.43,"deleteBookFromProfile":1.035
 };
 </script>
 <div class="row">
@@ -1017,11 +517,11 @@ var timeline = {
 <tbody>
 <tr>
 <td>Yogesh</td>
-<td>13</td>
-<td>1</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
-<td>92.857%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1058,8 +558,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 13,
-failParent: 1,
+passParent: 6,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1075,8 +575,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 13,
-failEvents: 2,
+passEvents: 6,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
