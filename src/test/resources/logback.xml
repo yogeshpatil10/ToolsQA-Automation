@@ -22,7 +22,7 @@
             <pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
     </appender>
-    <root level="ALL">
+    <root level="debug">
         <appender-ref ref="consoleAppender" />
         <appender-ref ref="FILE"/>
     </root>
