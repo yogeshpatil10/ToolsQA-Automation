@@ -15,7 +15,7 @@ public class ButtonsTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test
-	public void actionsOnButtons() {
+	public void verifyButtons() {
 
 		buttonsobject = new ButtonsPageObjects(driver);
 		homepage = new HomePageObjects(driver);

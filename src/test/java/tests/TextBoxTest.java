@@ -21,7 +21,7 @@ public class TextBoxTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test(groups = { "smoke" })
-	public void getTextBoxPage() {
+	public void verifyTextBoxes() {
 
 		textboxobject = new TextBoxPageObjects(driver);
 		homepage = new HomePageObjects(driver);

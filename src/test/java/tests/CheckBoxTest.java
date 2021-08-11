@@ -16,7 +16,7 @@ public class CheckBoxTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test(groups = { "smoke" })
-	public void getToCheckBoxPage() {
+	public void verifyCheckBoxes() {
 
 		checkboxobject = new CheckBoxPageObjects(driver);
 

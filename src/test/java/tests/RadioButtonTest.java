@@ -20,7 +20,7 @@ public class RadioButtonTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test
-	public void selectRadioButtons() throws InterruptedException {
+	public void verifyRadioButtons() throws InterruptedException {
 
 		radiobuttonobject = new RadioButtonPageObjects(driver);
 		homepage = new HomePageObjects(driver);

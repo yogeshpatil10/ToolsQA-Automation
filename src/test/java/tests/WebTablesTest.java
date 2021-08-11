@@ -16,7 +16,7 @@ public class WebTablesTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test(groups = { "smoke" })
-	public void getWebTablesRecords() throws InterruptedException {
+	public void verifyWebTableRecords() throws InterruptedException {
 
 		webtableobjects = new WebTablePageObjects(driver);
 		homepage = new HomePageObjects(driver);

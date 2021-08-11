@@ -15,7 +15,7 @@ public class BookStoreLoginTest extends BaseClass {
 	BookStoreLoginPageObjects loginPage;
 
 	@Test(priority = 1, groups = { "Regression" })
-	public void goToBookStoreAppLoginPage() throws InterruptedException, IOException {
+	public void loginToBookStorePage() throws InterruptedException, IOException {
 
 		loginPage = new BookStoreLoginPageObjects(driver);
 

@@ -12,7 +12,7 @@ public class BrokenLinksImagesTest extends BaseClass {
 	HomePageObjects homepage;
 
 	@Test
-	public void verifyBrokenImages() throws InterruptedException {
+	public void verifyBrokenLinksAndImages() throws InterruptedException {
 		brokenimagesobject = new BrokenLinksImagesPageObjects(driver);
 		homepage = new HomePageObjects(driver);
 
