@@ -20,7 +20,7 @@ public class ExtentReportListener extends ExtentReport implements ITestListener 
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, "Test Case Passed is PASSED: " + result.getMethod().getMethodName());
+		test.log(Status.PASS, "Test Case Passed is: " + result.getMethod().getMethodName());
 	}
 
 	@Override

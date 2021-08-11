@@ -11,8 +11,8 @@
       <class name="tests.TextBoxTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="getTextBoxPage"/>
           <include name="afterTest"/>
+          <include name="verifyTextBoxes"/>
         </methods>
       </class> <!-- tests.TextBoxTest -->
     </classes>

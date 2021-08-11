@@ -1,0 +1,10 @@
+2021-08-11 10:35:58,327 1411 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-11 10:35:59,657 2741 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-11 10:35:59,692 2776 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-11 10:35:59,694 2778 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-08-11 10:36:10,369 13453 [main] INFO  tests.TextBoxTest - Chrome Browser has been initiated
+2021-08-11 10:36:19,344 22428 [main] INFO  tests.TextBoxTest - User clicked on TextBox element
+2021-08-11 10:36:19,510 22594 [main] INFO  tests.TextBoxTest - User entered full name
+2021-08-11 10:36:19,813 22897 [main] INFO  tests.TextBoxTest - User entered an email address
+2021-08-11 10:36:20,152 23236 [main] INFO  tests.TextBoxTest - User entered current address
+2021-08-11 10:36:20,246 23330 [main] INFO  tests.TextBoxTest - User enetered permanent address

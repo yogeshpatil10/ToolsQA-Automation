@@ -15,7 +15,6 @@ public class CaptureScreenshot {
 	WebDriver driver;
 
 	public CaptureScreenshot(WebDriver driver) {
-		super();
 		this.driver = driver;
 	}
 
@@ -28,7 +27,7 @@ public class CaptureScreenshot {
 		String dateTimeString = now.format(formatter);
 
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshot, new File(dest + dateTimeString));
+		FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + dest + dateTimeString));
 	}
 
 }
