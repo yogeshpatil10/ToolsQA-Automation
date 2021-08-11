@@ -2,18 +2,18 @@
 <testng-results ignored="4" total="10" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-11T01:52:25Z" name="ToolsQA Test Automation Regression Test" finished-at="2021-08-11T01:53:47Z" duration-ms="81503">
+  <suite started-at="2021-08-11T04:43:47Z" name="ToolsQA Test Automation Regression Test" finished-at="2021-08-11T04:45:27Z" duration-ms="99539">
     <groups>
       <group name="Regression">
         <method signature="AddAndDeleteBookFromCollectionTest.addBook()[pri:2, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" name="addBook" class="tests.AddAndDeleteBookFromCollectionTest"/>
         <method signature="AddAndDeleteBookFromCollectionTest.deleteBookFromProfile()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" name="deleteBookFromProfile" class="tests.AddAndDeleteBookFromCollectionTest"/>
-        <method signature="BookStoreLoginTest.goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@2f4205be]" name="goToBookStoreAppLoginPage" class="tests.BookStoreLoginTest"/>
+        <method signature="BookStoreLoginTest.loginToBookStorePage()[pri:1, instance:tests.BookStoreLoginTest@2f4205be]" name="loginToBookStorePage" class="tests.BookStoreLoginTest"/>
         <method signature="VerifyLoginTest.verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" name="verifyLoginWithMultipleUsers" class="tests.VerifyLoginTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2021-08-11T01:52:25Z" name="RegressionTest" finished-at="2021-08-11T01:53:47Z" duration-ms="81503">
+    <test started-at="2021-08-11T04:43:47Z" name="RegressionTest" finished-at="2021-08-11T04:45:27Z" duration-ms="99539">
       <class name="tests.BookStoreLoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T01:52:26Z" name="beforeTest" finished-at="2021-08-11T01:52:54Z" duration-ms="27991" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T04:43:49Z" name="beforeTest" finished-at="2021-08-11T04:44:25Z" duration-ms="36231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,27 +24,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="goToBookStoreAppLoginPage()[pri:1, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T01:53:32Z" name="goToBookStoreAppLoginPage" finished-at="2021-08-11T01:53:39Z" duration-ms="7351" status="PASS">
+        <test-method signature="loginToBookStorePage()[pri:1, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T04:45:10Z" name="loginToBookStorePage" finished-at="2021-08-11T04:45:18Z" duration-ms="8359" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToBookStoreAppLoginPage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T01:53:46Z" name="afterTest" finished-at="2021-08-11T01:53:47Z" duration-ms="487" status="PASS">
+        </test-method> <!-- loginToBookStorePage -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.BookStoreLoginTest@2f4205be]" started-at="2021-08-11T04:45:27Z" name="afterTest" finished-at="2021-08-11T04:45:27Z" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- tests.BookStoreLoginTest -->
       <class name="tests.AddAndDeleteBookFromCollectionTest">
-        <test-method signature="addBook()[pri:2, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" started-at="2021-08-11T01:53:39Z" name="addBook" finished-at="2021-08-11T01:53:45Z" duration-ms="6434" status="PASS">
+        <test-method signature="addBook()[pri:2, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" started-at="2021-08-11T04:45:18Z" name="addBook" finished-at="2021-08-11T04:45:25Z" duration-ms="6777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBook -->
-        <test-method signature="deleteBookFromProfile()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" started-at="2021-08-11T01:53:45Z" name="deleteBookFromProfile" finished-at="2021-08-11T01:53:46Z" duration-ms="1054" status="PASS">
+        <test-method signature="deleteBookFromProfile()[pri:3, instance:tests.AddAndDeleteBookFromCollectionTest@54e22bdd]" started-at="2021-08-11T04:45:25Z" name="deleteBookFromProfile" finished-at="2021-08-11T04:45:27Z" duration-ms="1476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBookFromProfile -->
       </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
       <class name="tests.VerifyLoginTest">
-        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T01:52:54Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T01:53:15Z" duration-ms="20967" status="PASS">
+        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T04:44:26Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T04:44:52Z" duration-ms="26850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithMultipleUsers -->
-        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T01:53:15Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T01:53:27Z" duration-ms="11533" status="PASS">
+        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T04:44:52Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T04:45:03Z" duration-ms="10884" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +86,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithMultipleUsers -->
-        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T01:53:27Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T01:53:32Z" duration-ms="4646" status="PASS">
+        <test-method signature="verifyLoginWithMultipleUsers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.VerifyLoginTest@3bd418e4]" started-at="2021-08-11T04:45:03Z" name="verifyLoginWithMultipleUsers" data-provider="logindata-fromcsv" finished-at="2021-08-11T04:45:10Z" duration-ms="6551" status="PASS">
           <params>
             <param index="0">
               <value>
