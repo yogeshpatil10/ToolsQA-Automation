@@ -1,0 +1,29 @@
+2021-08-11 11:32:54,760 9107 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-11 11:32:55,661 10008 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-11 11:32:55,687 10034 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-11 11:32:55,691 10038 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-08-11 11:33:13,507 27854 [main] INFO  tests.BrokenLinksImagesTest - Chrome Browser has been initiated
+2021-08-11 11:34:14,728 89075 [main] INFO  tests.BrokenLinksImagesTest - User clicked on CheckBox element
+2021-08-11 11:34:14,989 89336 [main] INFO  tests.BrokenLinksImagesTest - User clicked Home expand option to see sub-node checkboxes
+2021-08-11 11:34:15,202 89549 [main] INFO  tests.BrokenLinksImagesTest - User clicked Desktop expand option to see it's sub-node checkboxes
+2021-08-11 11:34:15,369 89716 [main] INFO  tests.BrokenLinksImagesTest - User selected Commands sub-node checkbox from Desktop
+2021-08-11 11:34:20,707 95054 [main] INFO  tests.BrokenLinksImagesTest - User clicked on Radio Buttons Element from Elements List
+2021-08-11 11:34:21,053 95400 [main] INFO  tests.BrokenLinksImagesTest - User clicked YES radio button
+2021-08-11 11:34:24,439 98786 [main] INFO  tests.BrokenLinksImagesTest - User clicked Web Tables element
+2021-08-11 11:34:24,583 98930 [main] INFO  tests.BrokenLinksImagesTest - User deleted second person details from Web Tables
+2021-08-11 11:34:26,530 100877 [main] INFO  tests.BrokenLinksImagesTest - User clicked Buttons Element Page present on Left Side
+2021-08-11 11:34:26,956 101303 [main] INFO  tests.BrokenLinksImagesTest - User performed Double Click on Button
+2021-08-11 11:34:27,285 101632 [main] INFO  tests.BrokenLinksImagesTest - User performed Right Click on Button
+2021-08-11 11:34:27,463 101810 [main] INFO  tests.BrokenLinksImagesTest - User perforemd Single Click on a Button
+2021-08-11 11:34:29,829 104176 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Links Element From Left Panel
+2021-08-11 11:34:30,035 104382 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Home Hyperlink on Page
+2021-08-11 11:34:32,585 106932 [main] INFO  tests.BrokenLinksImagesTest - User switched to the Second Window and got the title
+2021-08-11 11:34:32,622 106969 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-08-11 11:34:32,864 107211 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Dynamic Hyperlink on Page
+2021-08-11 11:34:32,976 107323 [main] INFO  tests.BrokenLinksImagesTest - Second Winodw is launched
+2021-08-11 11:34:33,035 107382 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-08-11 11:34:33,257 107604 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Created Hyperlink on Page
+2021-08-11 11:34:34,757 109104 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-08-11 11:34:36,449 110796 [main] INFO  tests.BrokenLinksImagesTest - User clicked Broken Links-Images Element Page present on Left Side
+2021-08-11 11:34:43,822 118169 [main] INFO  tests.BrokenLinksImagesTest - Invalid Images have been verified
+2021-08-11 11:34:48,294 122641 [main] INFO  tests.BrokenLinksImagesTest - Invalid Links have been verified

@@ -2,7 +2,7 @@
 <testng-results ignored="12" total="19" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-11T05:54:55Z" name="ToolsQA Test Automation Smoke Test" finished-at="2021-08-11T05:56:45Z" duration-ms="110022">
+  <suite started-at="2021-08-11T06:02:46Z" name="ToolsQA Test Automation Smoke Test" finished-at="2021-08-11T06:04:48Z" duration-ms="122020">
     <groups>
       <group name="smoke">
         <method signature="CheckBoxTest.verifyCheckBoxes()[pri:0, instance:tests.CheckBoxTest@54a67a45]" name="verifyCheckBoxes" class="tests.CheckBoxTest"/>
@@ -11,21 +11,21 @@
         <method signature="WebTablesTest.verifyWebTableRecords()[pri:0, instance:tests.WebTablesTest@56aaaecd]" name="verifyWebTableRecords" class="tests.WebTablesTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-08-11T05:54:55Z" name="SmokeTest" finished-at="2021-08-11T05:56:45Z" duration-ms="110022">
+    <test started-at="2021-08-11T06:02:46Z" name="SmokeTest" finished-at="2021-08-11T06:04:48Z" duration-ms="122020">
       <class name="tests.WebTablesTest">
-        <test-method signature="verifyWebTableRecords()[pri:0, instance:tests.WebTablesTest@56aaaecd]" started-at="2021-08-11T05:56:17Z" name="verifyWebTableRecords" finished-at="2021-08-11T05:56:24Z" duration-ms="6629" status="PASS">
+        <test-method signature="verifyWebTableRecords()[pri:0, instance:tests.WebTablesTest@56aaaecd]" started-at="2021-08-11T06:04:21Z" name="verifyWebTableRecords" finished-at="2021-08-11T06:04:24Z" duration-ms="3426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWebTableRecords -->
       </class> <!-- tests.WebTablesTest -->
       <class name="tests.ButtonsTest">
-        <test-method signature="verifyButtons()[pri:0, instance:tests.ButtonsTest@522a32b1]" started-at="2021-08-11T05:56:24Z" name="verifyButtons" finished-at="2021-08-11T05:56:28Z" duration-ms="4251" status="PASS">
+        <test-method signature="verifyButtons()[pri:0, instance:tests.ButtonsTest@522a32b1]" started-at="2021-08-11T06:04:24Z" name="verifyButtons" finished-at="2021-08-11T06:04:27Z" duration-ms="2830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyButtons -->
       </class> <!-- tests.ButtonsTest -->
       <class name="tests.TextBoxTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T05:54:55Z" name="beforeTest" finished-at="2021-08-11T05:55:15Z" duration-ms="20258" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T06:02:46Z" name="beforeTest" finished-at="2021-08-11T06:03:14Z" duration-ms="27294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,29 +36,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyTextBoxes()[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T05:55:15Z" name="verifyTextBoxes" finished-at="2021-08-11T05:56:03Z" duration-ms="47419" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyTextBoxes()[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T06:03:14Z" name="verifyTextBoxes" finished-at="2021-08-11T06:03:44Z" duration-ms="30811" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-"}
+              <![CDATA[timeout: Timed out receiving message from renderer: 27.919
   (Session info: chrome=93.0.4577.25)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
-*** Element info: {Using=id, value=submit-}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4522e0ef8098320fd2867999217f3a1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
   (Session info: chrome=93.0.4577.25)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-9SGE8AP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
-*** Element info: {Using=id, value=submit-}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4522e0ef8098320fd2867999217f3a1
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -70,11 +66,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:43)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+at pageObjects.HomePageObjects.<init>(HomePageObjects.java:21)
+at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,35 +96,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTextBoxes -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T05:56:45Z" name="afterTest" finished-at="2021-08-11T05:56:45Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.TextBoxTest@2e554a3b]" started-at="2021-08-11T06:04:48Z" name="afterTest" finished-at="2021-08-11T06:04:48Z" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- tests.TextBoxTest -->
       <class name="tests.CheckBoxTest">
-        <test-method signature="verifyCheckBoxes()[pri:0, instance:tests.CheckBoxTest@54a67a45]" started-at="2021-08-11T05:56:05Z" name="verifyCheckBoxes" finished-at="2021-08-11T05:56:10Z" duration-ms="5310" status="PASS">
+        <test-method signature="verifyCheckBoxes()[pri:0, instance:tests.CheckBoxTest@54a67a45]" started-at="2021-08-11T06:03:47Z" name="verifyCheckBoxes" finished-at="2021-08-11T06:04:15Z" duration-ms="27628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckBoxes -->
       </class> <!-- tests.CheckBoxTest -->
       <class name="tests.RadioButtonTest">
-        <test-method signature="verifyRadioButtons()[pri:0, instance:tests.RadioButtonTest@7d42c224]" started-at="2021-08-11T05:56:10Z" name="verifyRadioButtons" finished-at="2021-08-11T05:56:17Z" duration-ms="7625" status="PASS">
+        <test-method signature="verifyRadioButtons()[pri:0, instance:tests.RadioButtonTest@7d42c224]" started-at="2021-08-11T06:04:15Z" name="verifyRadioButtons" finished-at="2021-08-11T06:04:21Z" duration-ms="5699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRadioButtons -->
       </class> <!-- tests.RadioButtonTest -->
       <class name="tests.LinksTest">
-        <test-method signature="verifyLinks()[pri:0, instance:tests.LinksTest@35390ee3]" started-at="2021-08-11T05:56:28Z" name="verifyLinks" finished-at="2021-08-11T05:56:35Z" duration-ms="6460" status="PASS">
+        <test-method signature="verifyLinks()[pri:0, instance:tests.LinksTest@35390ee3]" started-at="2021-08-11T06:04:27Z" name="verifyLinks" finished-at="2021-08-11T06:04:34Z" duration-ms="7251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
       </class> <!-- tests.LinksTest -->
       <class name="tests.BrokenLinksImagesTest">
-        <test-method signature="verifyBrokenLinksAndImages()[pri:0, instance:tests.BrokenLinksImagesTest@5e01a982]" started-at="2021-08-11T05:56:35Z" name="verifyBrokenLinksAndImages" finished-at="2021-08-11T05:56:45Z" duration-ms="9972" status="PASS">
+        <test-method signature="verifyBrokenLinksAndImages()[pri:0, instance:tests.BrokenLinksImagesTest@5e01a982]" started-at="2021-08-11T06:04:34Z" name="verifyBrokenLinksAndImages" finished-at="2021-08-11T06:04:48Z" duration-ms="13532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBrokenLinksAndImages -->

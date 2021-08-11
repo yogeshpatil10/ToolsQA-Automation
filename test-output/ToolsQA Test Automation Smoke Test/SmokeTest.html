@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 11 11:24:55 IST 2021</td>
+<td>Started on:</td><td>Wed Aug 11 11:32:46 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>110 seconds (110022 ms)</td>
+<tr><td>Total time:</td><td>122 seconds (122020 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,36 +76,30 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.TextBoxTest.verifyTextBoxes()'><b>verifyTextBoxes</b><br>Test class: tests.TextBoxTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#submit\-&quot;}
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
   (Session info: chrome=93.0.4577.25)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
-*** Element info: {Using=id, value=submit-}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4522e0ef8098320fd2867999217f3a1
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:43)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1184527733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1184527733'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#submit\-&quot;}
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at pageObjects.HomePageObjects.&lt;init&gt;(HomePageObjects.java:21)
+	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976042249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace976042249'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
   (Session info: chrome=93.0.4577.25)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
-*** Element info: {Using=id, value=submit-}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4522e0ef8098320fd2867999217f3a1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,11 +111,9 @@ Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at pageObjects.HomePageObjects.&lt;init&gt;(HomePageObjects.java:21)
+	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,7 +140,7 @@ Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>47</td>
+<td>30</td>
 <td>tests.TextBoxTest@2e554a3b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -161,32 +153,32 @@ Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
 <tr>
 <td title='tests.BrokenLinksImagesTest.verifyBrokenLinksAndImages()'><b>verifyBrokenLinksAndImages</b><br>Test class: tests.BrokenLinksImagesTest</td>
 <td></td>
-<td>9</td>
+<td>13</td>
 <td>tests.BrokenLinksImagesTest@5e01a982</td></tr>
 <tr>
 <td title='tests.ButtonsTest.verifyButtons()'><b>verifyButtons</b><br>Test class: tests.ButtonsTest</td>
 <td></td>
-<td>4</td>
+<td>2</td>
 <td>tests.ButtonsTest@522a32b1</td></tr>
 <tr>
 <td title='tests.CheckBoxTest.verifyCheckBoxes()'><b>verifyCheckBoxes</b><br>Test class: tests.CheckBoxTest</td>
 <td></td>
-<td>5</td>
+<td>27</td>
 <td>tests.CheckBoxTest@54a67a45</td></tr>
 <tr>
 <td title='tests.LinksTest.verifyLinks()'><b>verifyLinks</b><br>Test class: tests.LinksTest</td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>tests.LinksTest@35390ee3</td></tr>
 <tr>
 <td title='tests.RadioButtonTest.verifyRadioButtons()'><b>verifyRadioButtons</b><br>Test class: tests.RadioButtonTest</td>
 <td></td>
-<td>7</td>
+<td>5</td>
 <td>tests.RadioButtonTest@7d42c224</td></tr>
 <tr>
 <td title='tests.WebTablesTest.verifyWebTableRecords()'><b>verifyWebTableRecords</b><br>Test class: tests.WebTablesTest</td>
 <td></td>
-<td>6</td>
+<td>3</td>
 <td>tests.WebTablesTest@56aaaecd</td></tr>
 </table><p>
 </body>

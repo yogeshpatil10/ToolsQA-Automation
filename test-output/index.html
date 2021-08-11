@@ -167,26 +167,22 @@
                   <a name="verifyTextBoxes">
                   </a> <!-- verifyTextBoxes -->
                   <span class="method-name">verifyTextBoxes</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#submit\-&quot;}
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
   (Session info: chrome=93.0.4577.25)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
 System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
-*** Element info: {Using=id, value=submit-}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4522e0ef8098320fd2867999217f3a1
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at pageObjects.HomePageObjects.&lt;init&gt;(HomePageObjects.java:21)
+	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -241,21 +237,6 @@ Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
           <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LinksTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLinks">
-                  </a> <!-- verifyLinks -->
-                  <span class="method-name">verifyLinks</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_Test_Automation_Smoke_Test-class-passed -->
-          <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tests.BrokenLinksImagesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -264,6 +245,21 @@ Session ID: 73e7e7cfe889c1490ae533fe1ba503a8
                   <a name="verifyBrokenLinksAndImages">
                   </a> <!-- verifyBrokenLinksAndImages -->
                   <span class="method-name">verifyBrokenLinksAndImages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ToolsQA_Test_Automation_Smoke_Test-class-passed -->
+          <div class="suite-ToolsQA_Test_Automation_Smoke_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinks">
+                  </a> <!-- verifyLinks -->
+                  <span class="method-name">verifyLinks</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -370,31 +366,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTextBoxes')
 data.setCell(0, 2, 'tests.TextBoxTest')
-data.setCell(0, 3, 47419);
+data.setCell(0, 3, 30811);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyBrokenLinksAndImages')
-data.setCell(1, 2, 'tests.BrokenLinksImagesTest')
-data.setCell(1, 3, 9972);
+data.setCell(1, 1, 'verifyCheckBoxes')
+data.setCell(1, 2, 'tests.CheckBoxTest')
+data.setCell(1, 3, 27628);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyRadioButtons')
-data.setCell(2, 2, 'tests.RadioButtonTest')
-data.setCell(2, 3, 7625);
+data.setCell(2, 1, 'verifyBrokenLinksAndImages')
+data.setCell(2, 2, 'tests.BrokenLinksImagesTest')
+data.setCell(2, 3, 13532);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyWebTableRecords')
-data.setCell(3, 2, 'tests.WebTablesTest')
-data.setCell(3, 3, 6629);
+data.setCell(3, 1, 'verifyLinks')
+data.setCell(3, 2, 'tests.LinksTest')
+data.setCell(3, 3, 7251);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLinks')
-data.setCell(4, 2, 'tests.LinksTest')
-data.setCell(4, 3, 6460);
+data.setCell(4, 1, 'verifyRadioButtons')
+data.setCell(4, 2, 'tests.RadioButtonTest')
+data.setCell(4, 3, 5699);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyCheckBoxes')
-data.setCell(5, 2, 'tests.CheckBoxTest')
-data.setCell(5, 3, 5310);
+data.setCell(5, 1, 'verifyWebTableRecords')
+data.setCell(5, 2, 'tests.WebTablesTest')
+data.setCell(5, 3, 3426);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyButtons')
 data.setCell(6, 2, 'tests.ButtonsTest')
-data.setCell(6, 3, 4251);
+data.setCell(6, 3, 2830);
 window.suiteTableData['ToolsQA_Test_Automation_Smoke_Test']= { tableData: data, tableDiv: 'times-div-ToolsQA_Test_Automation_Smoke_Test'}
 return data;
 }
@@ -488,56 +484,56 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyTextBoxes</span>
-                <span class="method-start">20279 ms</span>
+                <span class="method-start">27417 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyCheckBoxes</span>
-                <span class="method-start">69350 ms</span>
+                <span class="method-start">61175 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.RadioButtonTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyRadioButtons</span>
-                <span class="method-start">74662 ms</span>
+                <span class="method-start">88808 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.WebTablesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyWebTableRecords</span>
-                <span class="method-start">82289 ms</span>
+                <span class="method-start">94509 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ButtonsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyButtons</span>
-                <span class="method-start">88921 ms</span>
+                <span class="method-start">97937 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LinksTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyLinks</span>
-                <span class="method-start">93174 ms</span>
+                <span class="method-start">100769 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.BrokenLinksImagesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyBrokenLinksAndImages</span>
-                <span class="method-start">99636 ms</span>
+                <span class="method-start">108023 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TextBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">109610 ms</span>
+                <span class="method-start">121557 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

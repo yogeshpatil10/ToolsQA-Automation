@@ -1,0 +1,49 @@
+2021-08-11 12:19:34,480 4731 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-11 12:19:35,643 5894 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-11 12:19:35,778 6029 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-11 12:19:35,780 6031 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-08-11 12:21:04,804 95055 [main] INFO  tests.WebTablesTest - Chrome Browser has been initiated
+2021-08-11 12:21:36,910 127161 [main] INFO  tests.WebTablesTest - User clicked Broken Links-Images Element Page present on Left Side
+2021-08-11 12:21:41,731 131982 [main] INFO  tests.WebTablesTest - Invalid Images have been verified
+2021-08-11 12:21:45,018 135269 [main] INFO  tests.WebTablesTest - Invalid Links have been verified
+2021-08-11 12:21:53,247 143498 [main] INFO  tests.WebTablesTest - User clicked Buttons Element Page present on Left Side
+2021-08-11 12:21:54,349 144600 [main] INFO  tests.WebTablesTest - User performed Double Click on Button
+2021-08-11 12:21:54,819 145070 [main] INFO  tests.WebTablesTest - User performed Right Click on Button
+2021-08-11 12:21:54,992 145243 [main] INFO  tests.WebTablesTest - User perforemd Single Click on a Button
+2021-08-11 12:21:57,934 148185 [main] INFO  tests.WebTablesTest - User clicked on CheckBox element
+2021-08-11 12:21:58,207 148458 [main] INFO  tests.WebTablesTest - User clicked Home expand option to see sub-node checkboxes
+2021-08-11 12:21:58,412 148663 [main] INFO  tests.WebTablesTest - User clicked Desktop expand option to see it's sub-node checkboxes
+2021-08-11 12:21:58,572 148823 [main] INFO  tests.WebTablesTest - User selected Commands sub-node checkbox from Desktop
+2021-08-11 12:22:02,361 152612 [main] INFO  tests.WebTablesTest - User Clicked Links Element From Left Panel
+2021-08-11 12:22:03,120 153371 [main] INFO  tests.WebTablesTest - User Clicked Home Hyperlink on Page
+2021-08-11 12:22:09,214 159465 [main] INFO  tests.WebTablesTest - User switched to the Second Window and got the title
+2021-08-11 12:22:09,330 159581 [main] INFO  tests.WebTablesTest - User switched to First WIndow
+2021-08-11 12:22:09,521 159772 [main] INFO  tests.WebTablesTest - User Clicked Dynamic Hyperlink on Page
+2021-08-11 12:22:09,622 159873 [main] INFO  tests.WebTablesTest - Second Winodw is launched
+2021-08-11 12:22:09,748 159999 [main] INFO  tests.WebTablesTest - User switched to First WIndow
+2021-08-11 12:22:10,043 160294 [main] INFO  tests.WebTablesTest - User Clicked Created Hyperlink on Page
+2021-08-11 12:22:12,447 162698 [main] INFO  tests.WebTablesTest - User switched to First WIndow
+2021-08-11 12:22:14,530 164781 [main] INFO  tests.WebTablesTest - User clicked on Radio Buttons Element from Elements List
+2021-08-11 12:22:14,698 164949 [main] INFO  tests.WebTablesTest - User clicked YES radio button
+2021-08-11 12:22:25,126 175377 [main] INFO  tests.WebTablesTest - User clicked on TextBox element
+2021-08-11 12:22:25,653 175904 [main] INFO  tests.WebTablesTest - User entered full name
+2021-08-11 12:22:25,919 176170 [main] INFO  tests.WebTablesTest - User entered an email address
+2021-08-11 12:22:26,318 176569 [main] INFO  tests.WebTablesTest - User entered current address
+2021-08-11 12:22:26,756 177007 [main] INFO  tests.WebTablesTest - User enetered permanent address
+2021-08-11 12:22:59,275 209526 [main] INFO  tests.WebTablesTest - User clicked BookStore App on Home Page
+2021-08-11 12:23:00,510 210761 [main] INFO  tests.WebTablesTest - User clicked Login option from left panel
+2021-08-11 12:23:01,809 212060 [main] INFO  tests.WebTablesTest - Login successful
+2021-08-11 12:23:02,815 213066 [main] INFO  tests.WebTablesTest - User clicked BookStore App on Home Page
+2021-08-11 12:23:03,172 213423 [main] INFO  tests.WebTablesTest - User clicked Login option from left panel
+2021-08-11 12:23:04,043 214294 [main] INFO  tests.WebTablesTest - Invalid user name and password
+2021-08-11 12:23:05,198 215449 [main] INFO  tests.WebTablesTest - User clicked BookStore App on Home Page
+2021-08-11 12:23:07,402 217653 [main] INFO  tests.WebTablesTest - User clicked Login option from left panel
+2021-08-11 12:23:08,609 218860 [main] INFO  tests.WebTablesTest - Login successful
+2021-08-11 12:23:10,167 220418 [main] INFO  tests.WebTablesTest - User clicked Web Tables element
+2021-08-11 12:23:10,325 220576 [main] INFO  tests.WebTablesTest - User deleted second person details from Web Tables
+2021-08-11 12:23:11,475 221726 [main] INFO  tests.WebTablesTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+2021-08-11 12:23:11,726 221977 [main] INFO  tests.WebTablesTest - User clicked Login Menu Option from list
+2021-08-11 12:23:12,519 222770 [main] INFO  tests.WebTablesTest - User is successfully logged in to BookStore App
+2021-08-11 12:23:13,397 223648 [main] INFO  tests.WebTablesTest - User is redirected to the Book Store
+2021-08-11 12:23:15,557 225808 [main] INFO  tests.WebTablesTest - User redirected to the Book Details Page
+2021-08-11 12:27:05,803 456054 [main] INFO  tests.WebTablesTest - Book successfully deleted from your collection
