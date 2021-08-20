@@ -1,0 +1,4 @@
+2021-08-12 11:48:53,767 5551 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-12 11:48:55,577 7361 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-12 11:48:55,643 7427 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-12 11:48:55,645 7429 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
