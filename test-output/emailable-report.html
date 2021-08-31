@@ -9,15 +9,63 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">ToolsQA Test Automation Regression Test</th></tr>
-<tr><td><a href="#t0">RegressionTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">47,334</td><td></td><td></td></tr>
+<tr><td><a href="#t0">RegressionTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,715</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ToolsQA Test Automation Regression Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.AddAndDeleteBookFromCollectionTest</td><td><a href="#m0">addBook</a></td><td rowspan="1">1629173976198</td><td rowspan="1">5884</td></tr><tr class="passedeven"><td><a href="#m1">deleteBookFromProfile</a></td><td rowspan="1">1629173982097</td><td rowspan="1">1029</td></tr><tr class="passedodd"><td rowspan="1">tests.BookStoreLoginTest</td><td><a href="#m2">loginToBookStorePage</a></td><td rowspan="1">1629173972298</td><td rowspan="1">3897</td></tr><tr class="passedeven"><td rowspan="3">tests.VerifyLoginTest</td><td><a href="#m3">verifyLoginWithMultipleUsers</a></td><td rowspan="3">1629173969112</td><td rowspan="3">3180</td></tr><tr class="passedeven"><td><a href="#m4">verifyLoginWithMultipleUsers</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginWithMultipleUsers</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ToolsQA Test Automation Regression Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.BookStoreLoginTest</td><td><a href="#m0">beforeTest</a></td><td rowspan="1">1629430186952</td><td rowspan="1">10113</td></tr><tr><th colspan="4">RegressionTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.BookStoreLoginTest</td><td><a href="#m1">afterTest</a></td><td rowspan="1">1629430197753</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>RegressionTest</h2><h3 id="m0">tests.AddAndDeleteBookFromCollectionTest#addBook</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.AddAndDeleteBookFromCollectionTest#deleteBookFromProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.BookStoreLoginTest#loginToBookStorePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.VerifyLoginTest#verifyLoginWithMultipleUsers</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>ritu</td><td>Ritu@123</td><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.VerifyLoginTest#verifyLoginWithMultipleUsers</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>joybutta</td><td>Joybutta@123</td><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.VerifyLoginTest#verifyLoginWithMultipleUsers</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>sam</td><td>Sam@123</td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RegressionTest</h2><h3 id="m0">tests.BookStoreLoginTest#beforeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 93
+Current browser version is 92.0.4515.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0105A2D3+2663123]
+	Ordinal0 [0x00FEA491+2204817]
+	Ordinal0 [0x00ED2118+1057048]
+	Ordinal0 [0x00EF041A+1180698]
+	Ordinal0 [0x00EEC335+1164085]
+	Ordinal0 [0x00EE9B7F+1153919]
+	Ordinal0 [0x00F19D8F+1351055]
+	Ordinal0 [0x00F199FA+1350138]
+	Ordinal0 [0x00F1589B+1333403]
+	Ordinal0 [0x00EF1F74+1187700]
+	Ordinal0 [0x00EF2DC9+1191369]
+	GetHandleVerifier [0x011F30D6+1610054]
+	GetHandleVerifier [0x0129B53B+2299307]
+	GetHandleVerifier [0x010E8DA9+519705]
+	GetHandleVerifier [0x010E7759+513993]
+	Ordinal0 [0x00FF112D+2232621]
+	Ordinal0 [0x00FF55F8+2250232]
+	Ordinal0 [0x00FF5732+2250546]
+	Ordinal0 [0x00FFE591+2286993]
+	BaseThreadInitThunk [0x7596FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778A7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778A7A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base.BaseClass.beforeTest(BaseClass.java:36)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.BookStoreLoginTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
