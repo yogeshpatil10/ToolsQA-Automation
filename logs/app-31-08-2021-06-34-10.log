@@ -1,0 +1,20 @@
+2021-08-31 06:34:15,231 5227 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-31 06:34:16,237 6233 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-31 06:34:16,324 6320 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-31 06:34:16,331 6327 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-08-31 06:34:42,291 32287 [main] INFO  tests.VerifyLoginTest - Chrome Browser has been initiated
+2021-08-31 06:34:59,405 49401 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked BookStore App on Home Page
+2021-08-31 06:35:01,540 51536 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked Login option from left panel
+2021-08-31 06:35:03,907 53903 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - Login successful
+2021-08-31 06:35:11,749 61745 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked BookStore App on Home Page
+2021-08-31 06:35:11,967 61963 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked Login option from left panel
+2021-08-31 06:35:13,395 63391 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - Invalid user name and password
+2021-08-31 06:35:17,426 67422 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked BookStore App on Home Page
+2021-08-31 06:35:17,770 67766 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - User clicked Login option from left panel
+2021-08-31 06:35:19,372 69368 [TestNG-test=RegressionTest-1] INFO  tests.VerifyLoginTest - Login successful
+2021-08-31 06:35:21,816 71812 [TestNG-test=RegressionTest-2] INFO  tests.VerifyLoginTest - Element Book Store Application has been clicked and user is redirected to the Book Store Page
+2021-08-31 06:35:22,688 72684 [TestNG-test=RegressionTest-2] INFO  tests.VerifyLoginTest - User clicked Login Menu Option from list
+2021-08-31 06:35:23,659 73655 [TestNG-test=RegressionTest-2] INFO  tests.VerifyLoginTest - User is successfully logged in to BookStore App
+2021-08-31 06:35:24,791 74787 [TestNG-test=RegressionTest-3] INFO  tests.VerifyLoginTest - User is redirected to the Book Store
+2021-08-31 06:35:30,697 80693 [TestNG-test=RegressionTest-3] INFO  tests.VerifyLoginTest - User redirected to the Book Details Page
+2021-08-31 06:36:15,016 125012 [TestNG-test=RegressionTest-4] INFO  tests.VerifyLoginTest - Book successfully deleted from your collection

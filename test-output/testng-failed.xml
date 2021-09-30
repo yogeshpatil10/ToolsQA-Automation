@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="RegressionTest(failed)">
     <classes>
-      <class name="tests.VerifyLoginTest">
+      <class name="tests.AddAndDeleteBookFromCollectionTest">
         <methods>
+          <include name="addBook"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="verifyLoginWithMultipleUsers" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.VerifyLoginTest -->
+      </class> <!-- tests.AddAndDeleteBookFromCollectionTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [ToolsQA Test Automation Regression Test] -->

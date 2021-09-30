@@ -1,0 +1,9 @@
+2021-08-31 07:26:37,841 1455 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-08-31 07:26:38,926 2540 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-08-31 07:26:38,980 2594 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-08-31 07:26:38,982 2596 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-08-31 07:26:56,092 19706 [main] INFO  tests.CheckBoxTest - Chrome Browser has been initiated
+2021-08-31 07:27:12,411 36025 [main] INFO  tests.CheckBoxTest - User clicked on CheckBox element
+2021-08-31 07:27:12,818 36432 [main] INFO  tests.CheckBoxTest - User clicked Home expand option to see sub-node checkboxes
+2021-08-31 07:27:13,041 36655 [main] INFO  tests.CheckBoxTest - User clicked Desktop expand option to see it's sub-node checkboxes
+2021-08-31 07:27:13,292 36906 [main] INFO  tests.CheckBoxTest - User selected Commands sub-node checkbox from Desktop

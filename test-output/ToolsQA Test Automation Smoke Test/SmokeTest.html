@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SmokeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 11 11:32:46 IST 2021</td>
+<td>Started on:</td><td>Tue Sep 07 11:25:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>122 seconds (122020 ms)</td>
+<tr><td>Total time:</td><td>140 seconds (140891 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,82 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.TextBoxTest.verifyTextBoxes()'><b>verifyTextBoxes</b><br>Test class: tests.TextBoxTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
-  (Session info: chrome=93.0.4577.25)
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d4522e0ef8098320fd2867999217f3a1
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at pageObjects.HomePageObjects.&lt;init&gt;(HomePageObjects.java:21)
-	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976042249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace976042249'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.919
-  (Session info: chrome=93.0.4577.25)
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;DESKTOP-9SGE8AP&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.25, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d4522e0ef8098320fd2867999217f3a1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at pageObjects.HomePageObjects.&lt;init&gt;(HomePageObjects.java:21)
-	at tests.TextBoxTest.verifyTextBoxes(TextBoxTest.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>30</td>
-<td>tests.TextBoxTest@2e554a3b</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -153,33 +77,38 @@ Session ID: d4522e0ef8098320fd2867999217f3a1
 <tr>
 <td title='tests.BrokenLinksImagesTest.verifyBrokenLinksAndImages()'><b>verifyBrokenLinksAndImages</b><br>Test class: tests.BrokenLinksImagesTest</td>
 <td></td>
-<td>13</td>
-<td>tests.BrokenLinksImagesTest@5e01a982</td></tr>
+<td>10</td>
+<td>tests.BrokenLinksImagesTest@315f43d5</td></tr>
 <tr>
 <td title='tests.ButtonsTest.verifyButtons()'><b>verifyButtons</b><br>Test class: tests.ButtonsTest</td>
 <td></td>
-<td>2</td>
-<td>tests.ButtonsTest@522a32b1</td></tr>
+<td>5</td>
+<td>tests.ButtonsTest@68044f4</td></tr>
 <tr>
 <td title='tests.CheckBoxTest.verifyCheckBoxes()'><b>verifyCheckBoxes</b><br>Test class: tests.CheckBoxTest</td>
 <td></td>
-<td>27</td>
-<td>tests.CheckBoxTest@54a67a45</td></tr>
+<td>20</td>
+<td>tests.CheckBoxTest@3a1dd365</td></tr>
 <tr>
 <td title='tests.LinksTest.verifyLinks()'><b>verifyLinks</b><br>Test class: tests.LinksTest</td>
 <td></td>
-<td>7</td>
-<td>tests.LinksTest@35390ee3</td></tr>
+<td>6</td>
+<td>tests.LinksTest@52d239ba</td></tr>
 <tr>
 <td title='tests.RadioButtonTest.verifyRadioButtons()'><b>verifyRadioButtons</b><br>Test class: tests.RadioButtonTest</td>
 <td></td>
-<td>5</td>
-<td>tests.RadioButtonTest@7d42c224</td></tr>
+<td>2</td>
+<td>tests.RadioButtonTest@395b56bb</td></tr>
+<tr>
+<td title='tests.TextBoxTest.verifyTextBoxes()'><b>verifyTextBoxes</b><br>Test class: tests.TextBoxTest</td>
+<td></td>
+<td>43</td>
+<td>tests.TextBoxTest@6b7906b3</td></tr>
 <tr>
 <td title='tests.WebTablesTest.verifyWebTableRecords()'><b>verifyWebTableRecords</b><br>Test class: tests.WebTablesTest</td>
 <td></td>
 <td>3</td>
-<td>tests.WebTablesTest@56aaaecd</td></tr>
+<td>tests.WebTablesTest@256f8274</td></tr>
 </table><p>
 </body>
 </html>
