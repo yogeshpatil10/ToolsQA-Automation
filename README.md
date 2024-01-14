@@ -18,15 +18,15 @@
 
 * WebDriverEventListener to Generate Useful Logs in the Console during Tests Execution.
 
-* log-back classic anf slf4j API to Generate Loggers.
+* log-back classic and slf4j API to Generate Loggers.
 
 * Extent Report V5 API to Generate Excellent Test Report.
 
 * Retry Logic to Execute Failed Test Scripts with More Chances Automatically at Run Time.
 
-* Driving the Common Properties like Url, Username and Password from Configuration.properites File.
+* Driving the Common Properties like Url, Username and Password from Configuration.properties File.
 
 * All Common Methods have been written in TestUtility.java
 
-* Failed Test Screenshot that gets added into Extent Report - Code is Written in utility.CaptureScreenshot.java Class.
+* Failed Test Screenshot - Code is Written in utility.CaptureScreenshot.java Class.
 

@@ -1,0 +1,34 @@
+2021-09-07 11:25:19,354 2309 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2021-09-07 11:25:20,358 3313 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Latest version of chromedriver is 93.0.4577.15
+2021-09-07 11:25:20,383 3338 [main] INFO  io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+2021-09-07 11:25:20,386 3341 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.m2\repository\webdriver\chromedriver\win32\93.0.4577.15\chromedriver.exe
+2021-09-07 11:26:03,617 46572 [main] INFO  tests.BrokenLinksImagesTest - Chrome Browser has been initiated
+2021-09-07 11:26:38,288 81243 [main] INFO  tests.BrokenLinksImagesTest - User clicked on TextBox element
+2021-09-07 11:26:40,646 83601 [main] INFO  tests.BrokenLinksImagesTest - User entered full name
+2021-09-07 11:26:42,190 85145 [main] INFO  tests.BrokenLinksImagesTest - User entered an email address
+2021-09-07 11:26:42,856 85811 [main] INFO  tests.BrokenLinksImagesTest - User entered current address
+2021-09-07 11:26:47,039 89994 [main] INFO  tests.BrokenLinksImagesTest - User enetered permanent address
+2021-09-07 11:27:06,975 109930 [main] INFO  tests.BrokenLinksImagesTest - User clicked on CheckBox element
+2021-09-07 11:27:07,360 110315 [main] INFO  tests.BrokenLinksImagesTest - User clicked Home expand option to see sub-node checkboxes
+2021-09-07 11:27:08,353 111308 [main] INFO  tests.BrokenLinksImagesTest - User clicked Desktop expand option to see it's sub-node checkboxes
+2021-09-07 11:27:08,756 111711 [main] INFO  tests.BrokenLinksImagesTest - User selected Commands sub-node checkbox from Desktop
+2021-09-07 11:27:11,145 114100 [main] INFO  tests.BrokenLinksImagesTest - User clicked on Radio Buttons Element from Elements List
+2021-09-07 11:27:11,313 114268 [main] INFO  tests.BrokenLinksImagesTest - User clicked YES radio button
+2021-09-07 11:27:14,179 117134 [main] INFO  tests.BrokenLinksImagesTest - User clicked Web Tables element
+2021-09-07 11:27:14,426 117381 [main] INFO  tests.BrokenLinksImagesTest - User deleted second person details from Web Tables
+2021-09-07 11:27:18,456 121411 [main] INFO  tests.BrokenLinksImagesTest - User clicked Buttons Element Page present on Left Side
+2021-09-07 11:27:18,945 121900 [main] INFO  tests.BrokenLinksImagesTest - User performed Double Click on Button
+2021-09-07 11:27:19,248 122203 [main] INFO  tests.BrokenLinksImagesTest - User performed Right Click on Button
+2021-09-07 11:27:19,500 122455 [main] INFO  tests.BrokenLinksImagesTest - User perforemd Single Click on a Button
+2021-09-07 11:27:21,858 124813 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Links Element From Left Panel
+2021-09-07 11:27:22,141 125096 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Home Hyperlink on Page
+2021-09-07 11:27:25,408 128363 [main] INFO  tests.BrokenLinksImagesTest - User switched to the Second Window and got the title
+2021-09-07 11:27:25,445 128400 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-09-07 11:27:25,749 128704 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Dynamic Hyperlink on Page
+2021-09-07 11:27:25,882 128837 [main] INFO  tests.BrokenLinksImagesTest - Second Winodw is launched
+2021-09-07 11:27:25,934 128889 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-09-07 11:27:26,175 129130 [main] INFO  tests.BrokenLinksImagesTest - User Clicked Created Hyperlink on Page
+2021-09-07 11:27:26,392 129347 [main] INFO  tests.BrokenLinksImagesTest - User switched to First WIndow
+2021-09-07 11:27:28,471 131426 [main] INFO  tests.BrokenLinksImagesTest - User clicked Broken Links-Images Element Page present on Left Side
+2021-09-07 11:27:33,438 136393 [main] INFO  tests.BrokenLinksImagesTest - Invalid Images have been verified
+2021-09-07 11:27:37,139 140094 [main] INFO  tests.BrokenLinksImagesTest - Invalid Links have been verified
